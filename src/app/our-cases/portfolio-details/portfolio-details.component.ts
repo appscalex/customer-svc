@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PluginsService} from "../../xamin/plugins.service";
+import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 
 @Component({
@@ -8,25 +8,24 @@ import { topMenuBarItems } from '../../../constants/menu';
 })
 export class PortfolioDetails implements OnInit {
 
-
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Portfolio Details",
-    img:"04.png"
+  data: any = {
+    title: 'Portfolio Details',
+    img: '04.png'
   };
 
   List: any[] = [
     {
       img: '01.png',
-      title:'Business Growth',
-      type:'HTML',
-    } 
+      title: 'Business Growth',
+      type: 'HTML',
+    }
   ];
   constructor(private plugins: PluginsService) { }
 

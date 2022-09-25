@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PluginsService } from "../../xamin/plugins.service";
+import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 
 @Component({
@@ -11,15 +11,15 @@ export class IndexComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com',
-    address: '1234 North Avenue Luke Lane, South Bend, IN 360001'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com',
+    address: '12th Cross Rd, Koramangala, Bengaluru, Karnataka 560085, India'
   };
 
   footerProp: any = {
     class: 'iq-over-dark-90',
     logoImg: './assets/images/logo.png',
-    email: 'support@iqnonicthemes.com',
+    email: 'support@flashinfra.com',
     description: 'It is a long established fact that a reader will be distracted by the readable content.',
   };
 

@@ -9,75 +9,75 @@ import { topMenuBarItems } from '../../../constants/menu';
 export class PortfolioThreeComponent implements OnInit {
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Portfolio 3 Columns",
-    img:"04.png"
+  data: any = {
+    title: 'Portfolio 3 Columns',
+    img: '04.png'
   };
 
   List: any[] = [
     {
-      class : 'video',
+      class: 'video',
       href: '#',
       img: '08.png',
-      title:'Business Growth',
-      type:'Video'
+      title: 'Business Growth',
+      type: 'Video'
     },
     {
-      class : 'html',
+      class: 'html',
       href: '#',
       img: '02.png',
-      title:'Business Growth',
-      type:'Html'
+      title: 'Business Growth',
+      type: 'Html'
     },
     {
-      class : 'html',
+      class: 'html',
       href: '#',
       img: '03.png',
-      title:'Business Growth',
-      type:'Html'
+      title: 'Business Growth',
+      type: 'Html'
     },
     {
-      class : 'design',
+      class: 'design',
       href: '#',
       img: '08.png',
-      title:'Business Growth',
-      type:'Design'
+      title: 'Business Growth',
+      type: 'Design'
     },
     {
-      class : 'photography',
+      class: 'photography',
       href: '#',
       img: '01.png',
-      title:'Business Growth',
-      type:'Photography'
+      title: 'Business Growth',
+      type: 'Photography'
     },
     {
-      class : 'photography',
+      class: 'photography',
       href: '#',
       img: '08.png',
-      title:'Business Growth',
-      type:'Design, Photography'
+      title: 'Business Growth',
+      type: 'Design, Photography'
     },
     {
-      class : 'design photography',
+      class: 'design photography',
       href: '#',
       img: '03.png',
-      title:'Business Growth',
-      type:'Design, Photography'
+      title: 'Business Growth',
+      type: 'Design, Photography'
     },
     {
-      class : 'design',
+      class: 'design',
       href: '#',
       img: '02.png',
-      title:'Business Growth',
-      type:'Design'
+      title: 'Business Growth',
+      type: 'Design'
     }
   ];
-  
+
   constructor(private plugins: PluginsService) { }
 
   ngOnInit() {
@@ -86,6 +86,5 @@ export class PortfolioThreeComponent implements OnInit {
       current.plugins.index();
     }, 200);
   }
-
 
 }

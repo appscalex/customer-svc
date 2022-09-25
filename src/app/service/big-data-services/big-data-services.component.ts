@@ -10,34 +10,34 @@ export class BigDataServicesComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Big Data Services",
-    img:"06.png"
+  data: any = {
+    title: 'Big Data Services',
+    img: '06.png'
   };
 
   public activeMenu = '/services/big-data-services';
-     
-  className=" ";
+
+  className = ' ';
 
   List: any[] = [
-    { title: 'Apache Hadoop', image: './assets/images/about-us/03.png', desc: 'It is a long established.'},
-    { title: 'Apache Spark', image: './assets/images/about-us/04.png', desc: 'It is a long established.'},
-    { title: 'Apache Cassandra', image: './assets/images/about-us/05.png', desc: 'It is a long established.'},
-    { title: 'Big Data Consulting', image: './assets/images/about-us/04.png', desc: 'It is a long established.'},
+    { title: 'Apache Hadoop', image: './assets/images/about-us/03.png', desc: 'It is a long established.' },
+    { title: 'Apache Spark', image: './assets/images/about-us/04.png', desc: 'It is a long established.' },
+    { title: 'Apache Cassandra', image: './assets/images/about-us/05.png', desc: 'It is a long established.' },
+    { title: 'Big Data Consulting', image: './assets/images/about-us/04.png', desc: 'It is a long established.' },
   ];
-  checkList1 : any[] = [
+  checkList1: any[] = [
     'Simply dummy text of the Lorem Ipsum.',
     'There are many variations of passages.',
     'Contrary to popular belief, Lorem ',
     'It is a long established fact that a reader.',
     'All the Lorem Ipsum generators.'
   ];
-  
+
   constructor(private plugins: PluginsService) { }
 
   ngOnInit() {

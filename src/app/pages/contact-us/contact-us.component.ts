@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PluginsService} from "../../xamin/plugins.service";
+import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 @Component({
   selector: 'app-contact-us',
@@ -9,31 +9,27 @@ export class ContactUsComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Contact us",
-    img:"04.png"
+  data: any = {
+    title: 'Contact us',
+    img: '04.png'
   };
 
-  List : any[] =[
+  List: any[] = [
     {
-      title:"USA Office",
-      address:"Michael I. Days 3756 Preston Street Wichita, KS 67213 Phone:857-778-1265"
+      title: 'USA Office',
+      address: '10231 Redwood Blvd 100, Oakland, CA 94605, USA'
     },
     {
-      title:"Australia Office",
-      address:"Michael I. Days 3756 Preston Street Wichita, KS 67213 Phone:857-778-1265"
+      title: 'India Office',
+      address: '12th Cross Rd, Koramangala, Bengaluru, Karnataka 560085, India'
     },
-    {
-      title:"New zealand Office",
-      address:"Michael I. Days 3756 Preston Street Wichita, KS 67213 Phone:857-778-1265"
-    }
 
-  ]
+  ];
 
   constructor(private plugins: PluginsService) { }
 

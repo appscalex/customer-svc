@@ -10,21 +10,21 @@ export class DataScienceConsultingComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Data Science Consulting",
-    img:"07.png"
+  data: any = {
+    title: 'Data Science Consulting',
+    img: '07.png'
   };
 
   public activeMenu = '/services/data-science-consulting';
-     
-  className=" ";
 
-  checkList= [
+  className = ' ';
+
+  checkList = [
     'Predictive maintenance',
     'Operational intelligence',
     'Enhanced product quality',

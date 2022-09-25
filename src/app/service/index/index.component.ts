@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PluginsService} from "../../xamin/plugins.service";
+import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 
 @Component({
@@ -10,16 +10,15 @@ export class IndexComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Services",
-    img:"04.png"
+  data: any = {
+    title: 'Services',
+    img: '04.png'
   };
-
 
   constructor(private plugins: PluginsService) { }
 

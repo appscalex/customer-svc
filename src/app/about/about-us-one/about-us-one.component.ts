@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PluginsService} from "../../xamin/plugins.service";
+import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 
 @Component({
@@ -11,14 +11,14 @@ export class AboutUsOneComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"About us",
-    img:"04.png"
+  data: any = {
+    title: 'About us',
+    img: '04.png'
   };
 
   titleSectionProp: any = {
@@ -35,16 +35,16 @@ export class AboutUsOneComponent implements OnInit {
 
   cardData: any[] = [
     {
-      title : "Data for all people",
-      desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      title: 'Data for all people',
+      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
     },
     {
-      title : "A new breed of AI",
-      desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      title: 'A new breed of AI',
+      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
     },
     {
-      title : "Analytics business",
-      desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      title: 'Analytics business',
+      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
     },
   ];
 

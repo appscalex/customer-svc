@@ -10,17 +10,17 @@ export class BlogDetailsComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+0123456789',
-    email: 'support@iqnonicthemes.com'
+    contactNumber: '+19168084228',
+    email: 'support@flashinfra.com'
   };
   public navItems: any = topMenuBarItems;
 
-  data : any = {
-    title:"Construction industry",
-    img:"04.png"
+  data: any = {
+    title: 'Construction industry',
+    img: '04.png'
   };
 
-  grid : string = "12";
+  grid = '12';
   constructor(private plugins: PluginsService) { }
 
   ngOnInit() {
