@@ -1,0 +1,22 @@
+<div class="iq-widget-menu widget wow fadeInRight">
+  <h2 class="widget-title">Recent Post</h2>
+  <div class="list-inline iq-widget-menu">
+    <ul class="iq-post">
+      <li *ngFor="let list of List">
+        <div class="post-img">
+          <img width="150" height="150" src="./assets/images/about-us/{{ list.img }}"  alt="" />
+          <div class="post-blog">
+            <div class="blog-box">
+              <ul class="list-inline">
+                <li class="list-inline-item  mr-3"><a href="#"> <i class="fa fa-calendar mr-2" aria-hidden="true"></i>{{ list.time }}</a> </li>
+              </ul>
+              <a class="new-link" href="#">
+                <h5>{{ list.title }}</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

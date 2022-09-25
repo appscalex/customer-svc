@@ -1,0 +1,28 @@
+<div *ngIf="progressBar1; then progressBar_1 else progressBar_2"></div>
+
+<ng-template #progressBar_1>
+  <div class="iq-services-box wow fadeInUp text-left">
+    <div class="services-content" *ngFor="let progress of progressBarDetail">
+      <h6>{{ progress.title }}</h6>
+      <span class="progress-value">{{ progress.percentage + '%'}}</span>
+      <div class="iq-progress-bar"><span class="position-relative" [attr.data-percent]="progress.percentage"></span></div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #progressBar_2>
+  <div class="services-content wow fadeInUp progress-style text-left">
+    <div class="progress-content"  *ngFor="let progress of progressBarDetail">
+      <div class="progress-value">{{ progress.percentage + '%'}}</div>
+      <div class="progress-title">
+        <div class="progress-main">
+          <h6>{{ progress.title }}</h6>
+        </div>
+        <div class="iq-progress-bar">
+          <span class="position-relative" [attr.data-percent]="progress.percentage" ></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ng-template>

@@ -1,0 +1,23 @@
+<div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="false" data-items="4" data-items-laptop="4" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+  <div *ngFor="let list of List" class="item text-left">
+    <div class="iq-team">
+      <div class="iq-team-img"> <img src="./assets/images/team/{{ list.img }}" class="img-fluid" alt="#1"> </div>
+      <div class="iq-share">
+        <div class="slideouticons">
+          <label class="mainlabel"><i class="fa fa-share-alt"></i></label>
+          <div class="iconswrapper">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="iq-team-info text-center">
+        <a> <h5>{{ list.name }}</h5></a>
+        <span>{{ list.position }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <!-- Team Section -->
+  <section >
+    <div class="container">
+      <div class="row xamin-bg">
+        <div class="col-sm-12">
+          <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+        </div>
+        <div class="col-md-12 wow fadeInUp mb-5 ">
+          <app-team></app-team>
+        </div>
+        <div class="col-md-12 wow fadeInUp ">
+          <app-team></app-team>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->
+

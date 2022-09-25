@@ -1,0 +1,26 @@
+<section class="pt-0 iq-pb-55">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pr-lg-5">
+                <div class="plr-5">
+                    <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+                    
+                    <div *ngFor="let list of List" class="fancybox-visualization-service wow fadeInUp  text-left">
+                        <div class="icon-bg">
+                            <i aria-hidden="true" class="{{ list.icon }}"></i>
+                        </div>
+                        <div class="service-detail align-self-center">
+                            <h5 class="mb-2 text-primary" >{{ list.title }}</h5>
+                            <p>{{ list.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="iq-get-data-right">
+                    <img src="./assets/images/visual/02.png" width="745" height="513">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

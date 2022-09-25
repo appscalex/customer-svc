@@ -1,0 +1,20 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-4">
+                <div class="consult-services wow fadeInUp large text-center">
+                    <div class="circle-effect">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <h4 class="mb-2">{{ list.title }}</h4>
+                    <p class="mb-0">{{ list.subtitle }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 

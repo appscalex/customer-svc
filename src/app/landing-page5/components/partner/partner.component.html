@@ -1,0 +1,25 @@
+<section class="iq-bg-over iq-pb-70">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="title-box wow fadeInUp text-center">
+                    <span class="title-design">PARTNER</span>
+                    <h2>A trusted, proven leader.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div *ngFor="let list of List" class="col-md-3">
+                <div class="xamin-client wow fadeInUp text-center">
+                    <div class="client-icon">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <div class="client-detail">
+                        <h6 class="mb-1">{{ list.title }}</h6>
+                        <p class="mb-0">{{ list.subtitle }}</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>

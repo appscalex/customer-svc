@@ -1,0 +1,26 @@
+<section class="iq-bg-over">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="custom-tab">
+          <ul class="nav nav-pills text-center flex-column mb-5 mb-md-0" id="pills-tab" role="tablist" aria-orientation="vertical">
+            <li *ngFor="let nav of navList" class="nav-item w-inherit ">
+              <a class="nav-link w-100" data-toggle="pill" href="{{ '#' + nav.id }}" role="tab" [attr.aria-selected]=" nav.active !== undefined ? true : false ">
+                <h5 class="tab-title">{{ nav.title }}</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="tab-content">
+          <div *ngFor="let nav of navList" id="{{ nav.id }}" class="tab-pane fade  {{ nav.active !== undefined && nav.active ? 'show active' : '' }}">
+            <h3 class="pb-3">{{ nav.sub_title }}</h3>
+            <p>{{ nav.desc }}</p>
+            <app-check-list [lists]="nav.chkList"></app-check-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

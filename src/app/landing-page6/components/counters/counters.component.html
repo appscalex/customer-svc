@@ -1,0 +1,18 @@
+<section class="pt-0 iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-3 col-md-3 col-sm-6">
+                <div class="iq-timer style3 text-left">
+                    <div class="iq-img">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <div class="timer-details">
+                        <span class="timer dark-text" [attr.data-to]="list.number" data-speed="5000">{{ list.number }}</span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <p class="dark-text">{{ list.title }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

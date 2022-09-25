@@ -1,0 +1,14 @@
+<div class="testimonial-widget-menu widget {{ className!== undefined  ? className : 'fadeInRight  wow' }}">
+  <div class="owl-carousel" data-dots="true" data-nav="false" data-autoplay="true" data-loop="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
+    <div *ngFor="let list of List" class="testimonial-info">
+      <p>{{ list.desc }}</p>
+      <div class="post-img">
+        <img width="150" height="150" src="./assets/images/testimonials/{{ list.img }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" />
+        <div class="testimonial-name">
+          <h5>{{ list.name }}</h5>
+          <span class="sub-title">{{ list.designation }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

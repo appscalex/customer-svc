@@ -1,0 +1,15 @@
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div  *ngFor="let lists of List" class="col-lg-3 col-sm-12">
+        <div class="xamin-services  mb-0 wow fadeInUp text-center">
+          <div class="services-detail">
+            <img src="./assets/images/services/{{ lists.img }}" alt="img" />
+            <h5 class="mb-1">{{ lists.title }}</h5>
+            <p class="mb-0">{{ lists.sub_title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

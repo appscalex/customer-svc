@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext');
+@import url('https://fonts.googleapis.com/css?family=Karla%3A400%2C700&#038;display=swap&#038;ver=1.0');
+@import url('https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C900&#038;display=swap&#038;ver=1.0');
+
+/* Bootstrap import */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Font-awesome import */
+/*@import "~@fortawesome/fontawesome-free/css/all.min.css";*/
+
+/* REVOLUTION STYLE SHEETS */
+@import "assets/revslider/css/rs6.css";
+
+/* Fontawesome Fonts */
+@import "assets/css/all.min.css";
+
+/* Xamin custom */
+@import "assets/css/xamin-style.css";
+
+/** App CSS */
+@import "assets/css/responsive.css";
+
+/* ionicons CSS */
+@import "assets/css/ionicons.min.css";
+
+/* flaticon CSS */
+@import "assets/css/flaticon.css";
+
+/*Chart CSS*/
+@import "assets/css/Chart.min.css";
+
+/* Magnific Popup */
+@import "assets/css/magnific-popup.css";
+
+/* owl-carousel */
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
+
+/* wow */
+@import "assets/css/wow.css";
+
+/* Slick */
+@import "assets/css/slick-theme.css";
+
+@import "assets/css/slick.css";
+
+

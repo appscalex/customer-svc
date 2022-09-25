@@ -1,0 +1,43 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="iq-accordion career-style">
+            <div *ngFor="let lists of List" class="iq-accordion-block">
+              <div class="active-faq clearfix">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-9 col-sm-12 "> <a href="javascript:void(0)" class="accordion-title"><span>{{ lists.title }}</span></a> </div>
+                    <div class="col-md-3 col-sm-12 text-center text-lg-right text-md-right"> <a class="button" href="#">Apply Now</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-details">
+                <div class="container">
+                  <div class="row mt-4">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                      <h4 class="mb-3">Job Descriptions:</h4>
+                          <app-check-list [lists]="lists.job"></app-check-list>
+                    </div>
+                    <div class="col-lg-6">
+                      <h4 class="mb-3">Qualifications:</h4>
+                          <app-check-list [lists]="lists.qualification"></app-check-list>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->

@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-md-12 wow fadeInUp">
+    <div *ngIf="navigation; else elseblock" class="owl-carousel testimonial-style owl-loaded owl-drag" data-dots="true" data-nav="true" data-autoplay="true" data-loop="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
+      <div *ngFor="let lists of List" class="item text-center">
+        <div class="iq-testimonial">
+          <div class="testimonial-info">
+            <img alt="#" class="img-fluid rounded-circle" src="./assets/images/testimonials/{{ lists.img }}" />
+            <div class="testimonial-name">
+              <h5>{{ lists.name }}</h5>
+              <span class="sub-title">{{ lists.designation }}</span>
+            </div>
+          </div>
+          <p> {{ lists.desc }} </p>
+        </div>
+      </div>
+    </div>
+    <ng-template #elseblock>
+      <div class="owl-carousel testimonial-style owl-loaded owl-drag" data-dots="true" data-nav="false" data-autoplay="true" data-loop="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
+        <div *ngFor="let lists of List" class="item text-center">
+          <div class="iq-testimonial">
+            <div class="testimonial-info">
+              <img alt="#" class="img-fluid rounded-circle" src="./assets/images/testimonials/{{ lists.img }}" />
+              <div class="testimonial-name">
+                <h5>{{ lists.name }}</h5>
+                <span class="sub-title">{{ lists.designation }}</span>
+              </div>
+            </div>
+            <p> {{ lists.desc }} </p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

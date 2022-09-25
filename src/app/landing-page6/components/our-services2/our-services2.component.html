@@ -1,0 +1,20 @@
+<section class="pt-0 iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-md-3 col-sm-6">
+                <div class="consult-services xamin-square right wow fadeInUp text-left">
+                    <div class="square-effect bg">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <h5 class="mb-2">{{ list.title }}</h5>
+                    <p class="mb-0">{{ list.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

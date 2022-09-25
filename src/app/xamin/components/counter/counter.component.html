@@ -1,0 +1,28 @@
+<div *ngIf="style; then style_2 else style_1"></div>
+
+<ng-template #style_1>
+<div class="row">
+  <div *ngFor="let list of List" class="col-md-3 col-sm-6 mb-3 mb-md-0">
+    <div class="iq-timer style1 text-center">
+      <div class="timer-details">
+        <span class="timer"  [attr.data-to]="list.value" data-speed="15000"> {{ list.value }}</span>
+        <i class="{{ list.icon}}" aria-hidden="true"></i>
+        <p>{{ list.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</ng-template>
+<ng-template #style_2>
+  <div class="row">
+    <div *ngFor="let list of List"  class="col-md-3 col-sm-6">
+      <div class="iq-timer style2 mb-5  mb-md-0 mb-lg-0   text-center">
+        <div class="iq-icon">  <i aria-hidden="true" class="{{ list.icon }}"></i> </div>
+        <div class="timer-details ">
+          <span class="timer dark-timer" data-to="1520" data-speed="5000">{{ list.value }}</span><span class="timer_postfix dark-timer">M</span><i class="fa fa-percent" aria-hidden="true"></i>
+          <p class="dark-timer"> {{ list.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

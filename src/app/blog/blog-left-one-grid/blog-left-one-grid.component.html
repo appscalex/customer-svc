@@ -1,0 +1,29 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <section>
+    <div class="container">
+      <div class="row flex-row-reverse">
+        <!-- Blog List Section -->
+        <div class="col-lg-8 col-sm-12">
+          <app-blog-card [List]="List"></app-blog-card>
+          <app-blog-pagination></app-blog-pagination>
+        </div>
+        <div class="col-lg-4 col-sm-12 sidebar-service-right mt-5 mt-lg-0">
+          <div id="secondary" class="widget-area" >
+            <app-blog-search></app-blog-search>
+            <app-blog-slider></app-blog-slider>
+            <app-blog-recent-post></app-blog-recent-post>
+            <app-blog-category></app-blog-category>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->
+

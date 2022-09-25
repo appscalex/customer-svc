@@ -1,0 +1,26 @@
+<section class="aboutus-two-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box wow fadeInUp text-center mb-0">
+                    <span class="title-design">our Services</span>
+                    <h2 class="mb-0">We Provide Useful Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-4 col-md-6">
+                <div class="service-box wow fadeInUp text-left">
+                    <img class="fancy-list-img" src="{{ list.image }}" alt="fancy-list" />
+                    <div class="service-detail align-self-center">
+                        <h4 class="mb-2">{{ list.title }}</h4>
+                        <p>{{ list.desc }}</p>
+                        <div class="text-left">
+                            <app-check-list [lists]="list.checkList"></app-check-list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

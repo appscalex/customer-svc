@@ -1,0 +1,34 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="data-science">
+                    <div class="owl-carousel testimonial-style owl-loaded owl-drag" data-dots="false" data-nav="false" data-autoplay="false" data-loop="true" data-items="2" data-items-laptop="2" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" >
+                        <div *ngFor="let list of List" class="item">
+                            <div class="iq-boxslider-detail">
+                                <div class="boxslider-content">
+                                    <div class="box-detail">
+                                        <img class="arrow-img" src="{{ list.image }}" alt="fancybox">
+                                        <h5 class="title">{{ list.title }}</h5>
+                                        <p>{{ list.subtitle }}</p>
+                                        <span class="fas fa-calendar-alt"></span>
+                                        <a href="#">{{ list.year }}</a>
+                                    </div>
+                                </div>
+                                <div class="box-gpa">
+                                    <h6>{{ list.grade }}</h6>
+                                    <span>{{ list.gpa }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

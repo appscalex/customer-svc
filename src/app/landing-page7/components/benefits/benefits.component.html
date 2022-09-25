@@ -1,0 +1,30 @@
+<section class="pt-0 iq-pb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 wow fadeInUp">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-6 col-md-6 col-sm-12">
+                <div class="fancy_service style2 wow fadeInUp  text-left">
+                    <div class="bg_img">
+                        <img class="bg_img-img" src="{{ list.bg_img }}" alt="fancybox">
+                    </div>
+                    <div class="fancy_block">
+                        <div class="fancy-info">
+                            <h4 class="mb-3 title">{{ list.title }}</h4>
+                            <p class="text-dark">{{ list.desc }}</p>
+                            <a class="button blue-btn" href="#">
+                                <span class="btn-effect"> Find Out More</span>
+                            </a>
+                        </div>
+                        <div class="fancy_img">
+                            <img src="{{ list.image }}" alt="fancybox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

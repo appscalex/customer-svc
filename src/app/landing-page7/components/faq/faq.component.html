@@ -1,0 +1,23 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="title-box wow fadeInUp text-center">
+                    <span class="title-design">STILL HAVE QUESTIONS? </span>
+                    <h2>Relax because we always will be here for you</h2>
+                    <img width="600" height="360" src="./assets/images/fancybox/7-9.png" alt="question">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="iq-faq">
+                    <div *ngFor="let list of List" class="iq-block  {{ list.active !== undefined && list.active ? 'iq-active' : ''  }}">
+                        <a class="iq-title">{{ list.title }}</a>
+                        <div class="iq-details ">
+                            <p>{{ list.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

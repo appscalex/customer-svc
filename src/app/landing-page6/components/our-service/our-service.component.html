@@ -1,0 +1,35 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row custom-tab verticaltab3">
+            <div class="col-lg-6">
+                <div class="col-lg-12 col-md-12 ">
+                    <ul class="nav nav-pills nav-pills-style-3 mb-5" id="pills-tab" role="tablist" aria-orientation="vertical">
+                        <li  class="nav-item" *ngFor="let list of List">
+                            <a class="nav-link {{ list.active !== undefined && list.active ? 'active show' : '' }}" data-toggle="pill" (click)="tabActive(list.id)"  href="{{ '#' + list.id }}" role="tab" [attr.aria-selected]=" list.active !== undefined ? true : false ">
+                                <div class="media">
+                                    <img src="{{ list.image }}" alt="tab-image" class="img-fluid">
+                                    <div class="media-body">
+                                        <h5 class="mb-2 active-title">{{ list.title }}</h5>
+                                        <p class="mb-0">{{ list.subtitle }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 tab-content">
+                <div *ngFor="let list of List" id="{{ list.id }}" class="tab-pane fade {{ list.active !== undefined && list.active ? 'show active' : '' }}">
+                    <div class="xamin-right-img-wm">
+                        <img width="863" height="528" src="{{ list.tabImage }}" class="attachment-full"  >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

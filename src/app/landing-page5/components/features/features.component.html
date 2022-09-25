@@ -1,0 +1,33 @@
+<section class="iq-bg-over">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div *ngFor="let list of List1" class="xamin-analytics wow fadeInUp  text-left" >
+                    <div class="analytics-icon">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <div class="analytics-detail">
+                        <h4 class="mb-1">{{ list.title }}</h4>
+                        <p class="mb-0">{{ list.subtitle }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div *ngFor="let list of List2" class="xamin-analytics wow fadeInUp  text-left" >
+                    <div class="analytics-icon">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <div class="analytics-detail">
+                        <h4 class="mb-1">{{ list.title }}</h4>
+                        <p class="mb-0">{{ list.subtitle }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

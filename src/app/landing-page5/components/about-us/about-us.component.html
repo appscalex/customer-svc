@@ -1,0 +1,24 @@
+<section>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp align-items-center">
+                <div class="fancy_service wow fadeInUp text-center">
+                    <div class="hover-effect"></div>
+                    <div class="fancy-info">
+                        <img src="{{ list.image }}" alt="fancybox"/>
+                        <h4 class="mt-4 mb-3 title">{{ list.title }}</h4>
+                        <p class="">{{ list.subtitle }}</p>
+                        <a class="link-btn" href="#">
+                            <span class="btn-effect"> Read More<i class="ion-ios-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <section>
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-sm-12">
+          <div class="iq-masonry-block ">
+            <div class="isotope-filters isotope-tooltip"><button data-filter="" class="active">All<span class="post_no">8</span></button><button data-filter=".design">Design<span class="post_no">3</span></button><button data-filter=".html">HTML<span class="post_no">2</span></button><button data-filter=".photography">Photography<span class="post_no">3</span></button><button data-filter=".video">Video<span class="post_no">1</span></button></div>
+            <div class=" iq-masonry iq-columns-3 no-padding">
+              <app-portfolio-box [portfolioList]="List"></app-portfolio-box>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->
+

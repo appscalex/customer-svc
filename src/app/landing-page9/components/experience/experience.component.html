@@ -1,0 +1,36 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="main-timeline-section ">
+                    <div class="conference-center-line"></div>
+                    <div class="conference-timeline-content">
+                        <div *ngFor="let list of List" class="timeline-article {{ list.align }}">
+                            <div class="meta-date"></div>
+                            <div class="content-box">
+                                <div class="iqtml-top-box">
+                                    <div class="data1">
+                                        <h4 class="title">{{ list.title }}</h4>
+                                        <h6 class="primary-color">{{ list.subtitle }}</h6>
+                                    </div>
+                                    <div class="data2">
+                                        <span><i class="fas fa-calendar-alt"></i>{{ list.year }}</span>
+                                        <span><i class="fas fa-map-marker-alt"></i>{{ list.address }}</span>
+                                    </div>
+                                </div>
+                                <ul *ngFor="let text of list.contact" class="iq-contant">
+                                    <li>{{ text }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<section class="position-relative ">
+
+  <ng-template [ngIf]="List.isOuter">
+    <img src="./assets/images/about-us/{{ List.img }}" class="about-right-box-img" alt="">
+  </ng-template>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 wow fadeInUp align-items-center">
+        <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+        <ng-template [ngIf]="List.ischkList!==undefined">
+          <app-check-list [lists]="List.chkList"></app-check-list>
+        </ng-template>
+        <ng-template [ngIf]="List.ischkList===undefined">
+          <p> {{ List.desc }}</p>
+        </ng-template>
+        <div class="text-left mt-5">
+          <a class="button button-icon" href="about-us.html"><span class="btn-effect">Read More</span></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <ng-template [ngIf]="!List.isOuter">
+          <img src="./assets/images/about-us/{{ List.img }}" alt="">
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</section>

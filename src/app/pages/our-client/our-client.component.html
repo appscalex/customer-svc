@@ -1,0 +1,25 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+  <section>
+    <div class="container">
+      <div class="row xamin-bg">
+        <div class="col-sm-12">
+          <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+        </div>
+        <div class="col-sm-12">
+          <div class="row fancy-clients  wow fadeIn">
+            <div *ngFor="let lists of List" class="col-lg-2 col-md-3 col-sm-6 text-center">
+              <a class="clients-block wow fadeIn" data-wow-delay="0.6s" href="#"> <img class="img-fluid" src="./assets/images/partners/{{ lists.img }}" alt="image"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->

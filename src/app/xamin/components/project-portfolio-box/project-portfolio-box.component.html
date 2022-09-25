@@ -1,0 +1,19 @@
+<div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="false" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="false" data-loop="true" data-margin="30">
+  <div *ngFor="let port of portfolioList" class="iq-masonry-item item {{ port.class }}">
+    <div class="iq-portfolio">
+      <a href="{{ port.href }}" class="iq-portfolio-img">
+        <img width="1260" height="954" src="{{ port.img }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+      </a>
+      <div class="iq-portfolio-content text-center">
+        <div class="details-box clearfix">
+          <div class="consult-details">
+            <a href="{{ port.href }}">
+              <h5 class="text-hover">{{ port.title }}</h5>
+            </a>
+            <p class="mb-0">{{ port.type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

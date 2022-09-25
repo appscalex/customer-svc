@@ -1,0 +1,28 @@
+<div class="row">
+  <div *ngFor="let lists of List" class="col-md-{{ grid }}" >
+    <div  class="item">
+      <div class="iq-blog-box  wow fadeInUp">
+        <div class="iq-blog-image clearfix">
+          <img src="{{ lists.img }}" class="img-fluid center-block" alt="blogimage1">
+          <ul class="iq-blogtag">
+            <li><a routerLink="/blog">{{ lists.name }}</a> </li>
+          </ul>
+        </div>
+        <div class="iq-blog-detail">
+          <div class="iq-blog-meta">
+            <ul>
+              <li class="list-inline-item">  <a routerLink="/blog/blog-details" rel="bookmark"> <time class="entry-date published updated" datetime="2019-09-26T06:49:49+00:00" >{{ lists.time }} </time> </a> </li>
+            </ul>
+          </div>
+          <div class="blog-title">
+            <a routerLink="/blog/blog-details">
+              <h4>{{ lists.title }}</h4>
+            </a>
+          </div>
+          <p>{{ lists.desc }}</p>
+          <div class="blog-button"><a class="button-link" routerLink="/blog/blog-details">Read More<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

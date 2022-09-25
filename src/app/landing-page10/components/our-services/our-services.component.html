@@ -1,0 +1,17 @@
+<section class="pt-0 iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List" class="col-md-3 col-sm-6">
+                <div class="xamin-services wow fadeInUp text-left">
+                    <div class="services-detail">
+                        <div>
+                            <i aria-hidden="true" class="{{ list.icon }}"></i>
+                        </div>
+                        <h5 class="mb-1">{{ list.title }}</h5>
+                        <p class="mb-0">{{ list.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<section class="xamin-custom-bg iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 wow fadeInUp">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List;let i = index" class="col-lg-3 col-md-3 col-sm-12">
+                <div class="consult-services xamin-square wow fadeInUp text-left {{  i < List.length - 1  ? '' : 'right' }}">
+                    <div class="arrow_img" *ngIf="list.arrow_image">
+                        <img class="arrow-img" src="{{ list.arrow_image }}" alt="fancybox">
+                    </div>
+                    <div class="square-effect bg">
+                        <img src="{{ list.image }}" alt="fancybox">
+                        <div class="arrowbg_img">
+                            <img src="{{ list.arrowbg_img }}" alt="fancybox">
+                        </div>
+                    </div>
+                    <h5 class="mb-2">{{ list.title }}</h5>
+                    <p class="mb-0">{{ list.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

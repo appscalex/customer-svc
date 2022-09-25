@@ -1,0 +1,27 @@
+<section class="xamin-custom-bg iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="title-box wow fadeInUp  text-left" >
+                    <span class="title-design"></span>
+                    <h3>Types of Sentiment Analysis</h3>
+                    <p>It is a long established fact that a reader will be distracted by the<br>
+                        readable content of a page when .
+                    </p>
+                </div>
+            </div>
+            <div *ngFor="let list of List" class="col-lg-3 col-md-3 col-sm-12">
+                <div class="service-box style2 wow fadeInUp  text-left" >
+                    <img class="fancy-list-img" src="{{ list.image }}" alt="fancy-list">
+                    <div class="service-detail align-self-center">
+                        <h5 class="mb-2">{{ list.title }}</h5>
+                        <p>{{ list.desc }}</p>
+                        <div class="text-left">
+                            <app-check-list [lists]="list.checklist"></app-check-list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

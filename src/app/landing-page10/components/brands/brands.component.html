@@ -1,0 +1,20 @@
+<section class="pt-0">
+    <div class="container">
+        <div class="row xamin-bg">
+            <div class="col-sm-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+            <div class="col-sm-12">
+                <div class="container-visualization wow fadeIn" >
+                    <ul class="iq-client column-5">
+                        <li *ngFor="let list of List" class="iq-client-list ">
+                            <a class="clients-block wow fadeIn" data-wow-delay="0.6s" href="#" >
+                                <img class="img-fluid" src="{{ list.image }}" alt="image1">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

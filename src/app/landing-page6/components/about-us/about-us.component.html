@@ -1,0 +1,37 @@
+<section class="pt-0 postion-relative overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 wow fadeInUp align-items-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+                    </div>
+                </div>
+                <div class="row custom-tab verticaltab2 text-left  ">
+                    <div class="col-lg-4 col-md-12 ">
+                        <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist" aria-orientation="vertical">
+                            <li  class="nav-item" *ngFor="let list of List">
+                                <a class="nav-link {{ list.active !== undefined && list.active ? 'active show' : '' }}" data-toggle="pill" (click)="tabActive(list.id)"  href="{{ '#' + list.id }}" role="tab" [attr.aria-selected]=" list.active !== undefined ? true : false ">
+                                    <h6 class="tab-title">{{ list.title }}</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-md-12 tab-content">
+                        <div *ngFor="let list of List" id="{{ list.id }}" class="tab-pane fade {{ list.active !== undefined && list.active ? 'show active' : '' }}">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p *ngFor="let text of list.desc">{{ text }}</p>
+                                    <div class="text-left"><a class="button button-icon" href="#"><span class="btn-effect"> Read More</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp xamin-right-img">
+                <img src="./assets/images/about-us/16.png" alt="about">
+            </div>
+        </div>
+    </div>
+</section>

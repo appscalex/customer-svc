@@ -1,0 +1,80 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+<!-- Header component end-->
+<app-top-banner [data]="data"></app-top-banner>
+<div class="main-content">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 sidebar-service-left">
+                    <app-service-menu [activeMenu]="activeMenu"></app-service-menu>
+                    <app-blog-slider [className]="className"></app-blog-slider>
+                    <div class="widget get-file">
+                        <h2 class="widget-title">Downloads</h2>
+                        <a href="#">
+                            <ul class="list-inline download-item">
+                                <li class="list-inline-item"> <i class="fa fa-file-pdf-o"></i><span class="ml-3">PDF download</span> </li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="widget get-file mb-5">
+                        <a href="#">
+                            <ul class="list-inline download-item">
+                                <li class="list-inline-item"><i class="fa fa-file-pdf-o"></i><span class="ml-3">Company White Paper</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <h3 class="text-left mb-2">Our Services</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything hidden in the middle of text.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>
+                        </div>
+                    </div>
+                    <div class="row iq-pb-45">
+                        <div class="col-md-12">
+                            <div class="owl-carousel owl-loaded owl-drag" data-dots="true" data-nav="false" data-items="2" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+                                <div class="consulting-img  text-left"> <img src="./assets/images/about-us/03.png" alt="slider"> </div>
+                                <div class="consulting-img  text-left"> <img src="./assets/images/about-us/04.png" alt="slider"> </div>
+                                <div class="consulting-img  text-left"> <img src="./assets/images/about-us/05.png" alt="slider"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="text-left mb-2">Improved production efficiency</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden .</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div *ngFor="let list of List" class="col-md-6">
+                            <div class="service-box my-3 wow fadeInUp  text-left">
+                                <i aria-hidden="true" class="{{ list.icon }}"></i>
+                                <div class="service-detail align-self-center">
+                                    <h4 class="mb-2">{{ list.title }}</h4>
+                                    <p>{{ list.desc }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="text-left mb-2">Challenges We Solve</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden.</p>
+                            <div class="text-left  ">
+                                <app-check-list [lists]="checkList"></app-check-list>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->

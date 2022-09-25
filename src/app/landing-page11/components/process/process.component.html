@@ -1,0 +1,20 @@
+<section class="xamin-custom-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List;let i = index" class="col-md-4 col-sm-6">
+                <div class="xamin-process xamin-circle {{  i < List.length - 1  ? 'right' : '' }} wow fadeInUp text-center">
+                    <div class="circle-effect">
+                        <img src="{{ list.image }}" alt="fancybox">
+                    </div>
+                    <h5 class="mb-2">{{ list.title }}</h5>
+                    <p class="mb-0">{{ list.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
