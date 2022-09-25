@@ -1,15 +1,14 @@
 const topMenuBarItems = [
   {
-    href: '/landing-page1',
-    title: 'Home  ',
-    isCurrent: true
+    href: '/home',
+    title: 'Home  '
   },
   {
-    href: '/about-us/about-us-two',
+    href: '/about-us',
     title: 'About Us '
   },
   {
-    href: '/landing-page5',
+    href: '/services',
     title: 'Services'
   },
   {
@@ -17,23 +16,23 @@ const topMenuBarItems = [
     title: 'Blog'
   },
   {
-    href: '/pages/our-team',
+    href: '/company/our-team',
     title: 'Company ',
     submenu: [
       {
-        href: '/pages/our-team',
+        href: '/company/our-team',
         title: 'Our Team'
       },
       {
-        href: '/pages/client',
+        href: '/company/client',
         title: 'Clients'
       },
       {
-        href: '/pages/career',
+        href: '/company/career',
         title: 'Careers',
       },
       {
-        href: '/pages/contact-us',
+        href: '/company/contact-us',
         title: 'Contact Us',
       }
     ]
@@ -41,10 +40,6 @@ const topMenuBarItems = [
 ];
 
 const servicesMenu =  [
-  {
-    href: '/services/data-analytics',
-    title: 'Data Analytics'
-  }
 ];
 
 export { servicesMenu, topMenuBarItems };

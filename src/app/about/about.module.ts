@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {  RouterModule, Routes  } from "@angular/router";
-import { XaminModule } from "../xamin/xamin.module";
+import { RouterModule, Routes } from '@angular/router';
+import { XaminModule } from '../xamin/xamin.module';
 import { AboutUsOneComponent } from './about-us-one/about-us-one.component';
 import { HistoryComponent } from './history/history.component';
 import { OurTeamComponent } from './our-team/our-team.component';
@@ -15,7 +15,7 @@ import { OurPartnerComponent } from './about-us-two/components/our-partner/our-p
 const routes: Routes = [
   {
     path: '',
-    component: AboutUsOneComponent,
+    component: AboutUsTwoComponent,
   },
   {
     path: 'about-us-two',
