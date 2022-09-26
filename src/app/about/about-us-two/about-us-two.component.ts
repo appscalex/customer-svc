@@ -16,7 +16,7 @@ export class AboutUsTwoComponent implements OnInit {
   public navItems: any = topMenuBarItems;
 
   data: any = {
-    title: 'About Us Two',
+    title: 'About Us',
     img: '04.png'
   };
 

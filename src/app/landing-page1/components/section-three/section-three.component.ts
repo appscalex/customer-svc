@@ -9,7 +9,7 @@ export class SectionThreeComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     title: 'How it’s work',
-    subTitle: 'How Does Xamin Works'
+    subTitle: 'How Does Flash Infra Works'
   };
 
   circle1Data: any = {
@@ -18,7 +18,7 @@ export class SectionThreeComponent implements OnInit {
     description: 'It is a long established fact that a reader will be distracted by the of readable.',
     delay: '0.6s',
     positionClass: 'right',
-    type:'consult-services'
+    type: 'consult-services'
 
   };
 
@@ -29,7 +29,7 @@ export class SectionThreeComponent implements OnInit {
     description: 'It is a long established fact that a reader will be distracted by the of readable.',
     delay: '1s',
     positionClass: 'right',
-    type:'consult-services'
+    type: 'consult-services'
 
   };
 
@@ -39,7 +39,7 @@ export class SectionThreeComponent implements OnInit {
     title: 'Analytics business',
     description: 'It is a long established fact that a reader will be distracted by the of readable.',
     delay: '1.4s',
-    type:'consult-services'
+    type: 'consult-services'
 
   };
 

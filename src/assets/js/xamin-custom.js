@@ -1,5 +1,5 @@
 /*
-Template: Xamin -Data Science & Analytics HTML Template
+Template: Flash Infr
 Author: iqonicthemes.in
 Version: 1.0
 Design and Developed by: iqonicthemes.in
