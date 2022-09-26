@@ -16,7 +16,7 @@ export class DataAnalyticsComponent implements OnInit {
   public navItems: any = topMenuBarItems;
 
   data: any = {
-    title: 'Data Analytics',
+    title: 'Devops',
     img: '05.png'
   };
 

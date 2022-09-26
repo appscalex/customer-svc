@@ -6,17 +6,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionFourServicesComponent implements OnInit {
 
-
   titleSectionProp: any = {
     class: 'text-center',
     title: 'our Services',
-    subTitle: 'Explore Our Data Services'
+    subTitle: 'Explore Our Services'
   };
 
   navList: any[] = [
     {
       id: 'tab-big-data',
-      title: 'Big Data',
+      title: 'Infrastructure',
       img: '03.png',
       link: '/services',
       active: true,
@@ -28,7 +27,7 @@ export class SectionFourServicesComponent implements OnInit {
     },
     {
       id: 'tab-machine-learning',
-      title: 'Machine Learning',
+      title: 'Costing',
       img: '02.png',
       link: '/services',
       subtitle: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis',
@@ -38,7 +37,7 @@ export class SectionFourServicesComponent implements OnInit {
     },
     {
       id: 'tab-analytical-ai',
-      title: 'Analytical AI',
+      title: 'Analytics',
       img: '01.png',
       link: '/services',
       subtitle: 'Choose Your Software Development Service by Category',
@@ -49,7 +48,7 @@ export class SectionFourServicesComponent implements OnInit {
     },
     {
       id: 'tab-computer-vision',
-      title: 'Computer Vision',
+      title: 'Reporting',
       img: '04.png',
       link: '/services',
       subtitle: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis',

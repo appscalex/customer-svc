@@ -18,15 +18,15 @@ export class SectionVerticalTwoComponent implements OnInit {
 
   progressBarDetail: any[] = [
     {
-      title: 'Big Data Services',
+      title: 'Deployment',
       percentage: 70
     },
     {
-      title: 'Data Science Consulting',
+      title: 'Reporting',
       percentage: 50
     },
     {
-      title: 'Data Analytics Consulting',
+      title: 'Cost Estimation',
       percentage: 80
     }
   ];
