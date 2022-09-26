@@ -26,10 +26,10 @@ export class BusinessIntelligenceComponent implements OnInit {
   className = ' ';
 
   List: any[] = [
-    { title: 'BI Consulting', icon: 'flaticon flaticon-worker', desc: 'It is a long established fact that a reader will be distracted.' },
-    { title: 'BI Implementation', icon: 'flaticon flaticon-document', desc: 'It is a long established fact that a reader will be distracted.' },
-    { title: 'Data Warehouse', icon: 'flaticon flaticon-business', desc: 'It is a long established fact that a reader will be distracted.' },
-    { title: 'BI Solutions', icon: 'flaticon flaticon-project-management', desc: 'It is a long established fact that a reader will be distracted.' }
+    { title: 'BI Consulting', icon: 'flaticon flaticon-worker', desc: 'The most powerful tool we have as developers is automation.' },
+    { title: 'BI Implementation', icon: 'flaticon flaticon-document', desc: 'The most powerful tool we have as developers is automation.' },
+    { title: 'Data Warehouse', icon: 'flaticon flaticon-business', desc: 'The most powerful tool we have as developers is automation.' },
+    { title: 'BI Solutions', icon: 'flaticon flaticon-project-management', desc: 'The most powerful tool we have as developers is automation.' }
   ];
 
   checkList = [

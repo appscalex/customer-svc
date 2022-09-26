@@ -8,8 +8,8 @@ export class OurBlogComponent implements OnInit {
 
   titleSectionProp: any = {
     class: 'text-center',
-    title: 'BLOG',
-    subTitle: 'Recent Blog',
+    title: 'BLOGS',
+    subTitle: 'Recent Blogs',
     desc: 'It is a long established fact that a reader will be distracted'
   };
 

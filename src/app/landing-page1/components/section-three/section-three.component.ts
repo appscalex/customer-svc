@@ -15,7 +15,7 @@ export class SectionThreeComponent implements OnInit {
   circle1Data: any = {
     img: '01.png',
     title: 'Data for all your people',
-    description: 'It is a long established fact that a reader will be distracted by the of readable.',
+    description: 'The most powerful tool we have as developers is automation.',
     delay: '0.6s',
     positionClass: 'right',
     type: 'consult-services'
@@ -26,7 +26,7 @@ export class SectionThreeComponent implements OnInit {
     class: 'mt-4 mt-md-0',
     img: '02.png',
     title: 'A new breed of AI',
-    description: 'It is a long established fact that a reader will be distracted by the of readable.',
+    description: 'The most powerful tool we have as developers is automation.',
     delay: '1s',
     positionClass: 'right',
     type: 'consult-services'
@@ -37,7 +37,7 @@ export class SectionThreeComponent implements OnInit {
     class: 'mt-4 mt-md-0',
     img: '03.png',
     title: 'Analytics business',
-    description: 'It is a long established fact that a reader will be distracted by the of readable.',
+    description: 'The most powerful tool we have as developers is automation.',
     delay: '1.4s',
     type: 'consult-services'
 

@@ -24,7 +24,7 @@ export class AboutUsOneComponent implements OnInit {
   titleSectionProp: any = {
     title: 'ABOUT US',
     subTitle: 'Human Behaviour, Data Science',
-    description: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.'
+    description: 'The most powerful tool we have as developers is automation.'
   };
 
   Lists: any = {
@@ -36,15 +36,15 @@ export class AboutUsOneComponent implements OnInit {
   cardData: any[] = [
     {
       title: 'Data for all people',
-      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+      desc: 'The most powerful tool we have as developers is automation.'
     },
     {
       title: 'A new breed of AI',
-      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+      desc: 'The most powerful tool we have as developers is automation.'
     },
     {
       title: 'Analytics business',
-      desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+      desc: 'The most powerful tool we have as developers is automation.'
     },
   ];
 

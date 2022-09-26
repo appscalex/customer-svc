@@ -15,17 +15,17 @@ export class FeaturesComponent implements OnInit {
   List1: any[] = [
     {
       title: 'Embeded',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/01.png'
     },
     {
       title: 'Analyzed',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/02.png'
     },
     {
       title: 'Deploy',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/03.png'
     }
   ];
@@ -33,20 +33,20 @@ export class FeaturesComponent implements OnInit {
   List2: any[] = [
     {
       title: 'MashUp',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/04.png'
     },
     {
       title: 'Impact',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/05.png'
     },
     {
       title: 'Control',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/06.png'
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

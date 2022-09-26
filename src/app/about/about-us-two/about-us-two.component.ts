@@ -23,7 +23,7 @@ export class AboutUsTwoComponent implements OnInit {
   titleSectionProp: any = {
     title: 'ABOUT US',
     subTitle: 'Human Behaviour, Data Science',
-    description: 'It is a long established fact that a reader will be distracted by the of readable content of a page when looking at its layout.'
+    description: 'The most powerful tool we have as developers is automation.'
   };
 
   constructor(private plugins: PluginsService) { }

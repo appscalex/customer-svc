@@ -25,13 +25,13 @@ export class DataVisualizationServicesComponent implements OnInit {
   className = ' ';
 
   List1: any[] = [
-    { title: 'Big Data Consulting', icon: 'flaticon flaticon-growth', desc: 'It is a long established fact that a reader will be distracted.' },
-    { title: 'Apache Hadoop', icon: 'flaticon flaticon-grouping', desc: 'It is a long established fact that a reader will be distracted.' }
+    { title: 'Big Data Consulting', icon: 'flaticon flaticon-growth', desc: 'The most powerful tool we have as developers is automation.' },
+    { title: 'Apache Hadoop', icon: 'flaticon flaticon-grouping', desc: 'The most powerful tool we have as developers is automation.' }
   ];
 
   List2: any[] = [
-    { title: 'Apache Spark', icon: 'flaticon flaticon-cloud-1', desc: 'It is a long established fact that a reader will be distracted.' },
-    { title: 'Apache Cassandra', icon: 'flaticon flaticon-box', desc: 'It is a long established fact that a reader will be distracted.' }
+    { title: 'Apache Spark', icon: 'flaticon flaticon-cloud-1', desc: 'The most powerful tool we have as developers is automation.' },
+    { title: 'Apache Cassandra', icon: 'flaticon flaticon-box', desc: 'The most powerful tool we have as developers is automation.' }
   ];
 
   teamList: any[] = [

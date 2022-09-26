@@ -17,7 +17,7 @@ export class SolutionsComponent implements OnInit {
       id: 'tab-one-platform',
       title: 'One Platform',
       desc: [
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+        'The most powerful tool we have as developers is automation.',
         'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
       ],
       active: true
@@ -27,19 +27,19 @@ export class SolutionsComponent implements OnInit {
       title: 'Time value',
       desc: [
         'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+        'The most powerful tool we have as developers is automation.',
       ]
     },
     {
       id: 'tab-smart-work',
       title: 'Smart work',
       desc: [
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+        'The most powerful tool we have as developers is automation.',
         'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
         'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
       ]
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

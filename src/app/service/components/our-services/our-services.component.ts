@@ -17,37 +17,37 @@ export class OurServicesComponent implements OnInit {
     {
       title: 'Devops',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
     {
       title: 'Managed Analytics',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
     {
       title: 'Managed Analytics',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
     {
       title: 'Managed Analytics',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
     {
       title: 'Managed Analytics',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
     {
       title: 'Managed Analytics',
       img: '01.png',
-      desc: 'It is a long established fact that a reader will be distracted by the of readable content .',
+      desc: 'The most powerful tool we have as developers is automation.',
       chkList: ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center']
     },
   ];

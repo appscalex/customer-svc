@@ -8,8 +8,8 @@ export class SectionNineBlogComponent implements OnInit {
 
   titleSectionProp: any = {
     class: 'text-center',
-    title: 'BLOG',
-    subTitle: 'Recent Blog',
+    title: 'BLOGS',
+    subTitle: 'Recent Blogs',
   };
 
   List: any[] = [

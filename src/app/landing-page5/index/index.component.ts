@@ -20,7 +20,7 @@ export class IndexComponent implements OnInit {
     class: 'iq-over-dark-90',
     logoImg: './assets/images/logo.png',
     email: 'support@flashinfra.com',
-    description: 'It is a long established fact that a reader will be distracted by the readable content.',
+    description: 'The most powerful tool we have as developers is automation.',
   };
 
   constructor(private plugins: PluginsService) { }

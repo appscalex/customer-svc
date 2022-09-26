@@ -11,21 +11,21 @@ export class AboutUsComponent implements OnInit {
     title: 'PARTNER',
     subTitle: 'A trusted, proven leader.'
   };
-  
+
   List: any[] = [
     {
       title: 'Individual Analyst',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content Deploy at scale on the.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/10.png'
     },
     {
       title: 'Teams & Organizations',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content Deploy at scale on the.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/11.png'
     },
     {
       title: 'Embedded Analytics',
-      subtitle: 'It is a long established fact that a reader will be distracted by the of readable content Deploy at scale on the.',
+      subtitle: 'The most powerful tool we have as developers is automation.',
       image: './assets/images/services/12.png'
     }
   ];
