@@ -13,16 +13,12 @@ const topMenuBarItems = [
   },
   {
     href: '/blog',
-    title: 'Blog'
+    title: 'Blogs'
   },
   {
-    href: '/company/our-team',
+    href: '/company/client',
     title: 'Company ',
     submenu: [
-      {
-        href: '/company/our-team',
-        title: 'Our Team'
-      },
       {
         href: '/company/client',
         title: 'Clients'
