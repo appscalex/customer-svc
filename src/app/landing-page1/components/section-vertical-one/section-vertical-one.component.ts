@@ -10,13 +10,13 @@ export class SectionVerticalOneComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-left',
     title: 'About us',
-    subTitle: 'Focused on Actionable Insights',
+    subTitle: 'You Build It, You Run It',
     // tslint:disable-next-line:max-line-length
-    description: 'The most powerful tool we have as developers is automation.'
+    description: 'Flash Infra automate your DevOps practice in order to eliminate repetitive tasks.'
   };
 
   // tslint:disable-next-line:max-line-length
-  lists: any[] = ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center', 'Customer Service &amp; Operations'];
+  lists: any[] = ['Enhanced Operational Efficiency', 'Frequent Deployment', 'Increased Collaboration', 'Faster Recovery Time'];
 
   constructor() { }
 

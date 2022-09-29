@@ -9,9 +9,9 @@ export class SectionVerticalTwoComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-left',
     title: 'How We Work',
-    subTitle: 'See Flash Infra In Action',
+    subTitle: 'Flash Infra In Action',
     // tslint:disable-next-line:max-line-length
-    description: 'The most powerful tool we have as developers is automation.It is a long established fact.'
+    description: 'The most powerful tool that enables customers to automate, decrease risk, break silos and improve release management.'
   };
 
   progressBar1 = true;
@@ -19,15 +19,15 @@ export class SectionVerticalTwoComponent implements OnInit {
   progressBarDetail: any[] = [
     {
       title: 'Deployment',
-      percentage: 70
+      percentage: 90
     },
     {
       title: 'Reporting',
-      percentage: 50
+      percentage: 65
     },
     {
       title: 'Cost Estimation',
-      percentage: 80
+      percentage: 75
     }
   ];
 

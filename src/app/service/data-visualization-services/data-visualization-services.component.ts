@@ -43,7 +43,7 @@ export class DataVisualizationServicesComponent implements OnInit {
     },
     {
       img: '3.jpg',
-      name: 'Jack White',
+      name: 'Michele White',
       position: 'CEO',
 
     },

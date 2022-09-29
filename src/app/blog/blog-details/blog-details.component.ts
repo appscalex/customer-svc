@@ -16,7 +16,7 @@ export class BlogDetailsComponent implements OnInit {
   public navItems: any = topMenuBarItems;
 
   data: any = {
-    title: 'Construction industry',
+    title: 'DevOps Unbound',
     img: '04.png'
   };
 

@@ -8,36 +8,36 @@ export class TeamComponent implements OnInit {
 
   List: any[] = [
     {
-      img:  "2.jpg",
-      name: "Mark McManus",
-      position: "COO",
+      img: '2.jpg',
+      name: 'Mark McManus',
+      position: 'COO',
 
     },
     {
-      img:  "3.jpg",
-      name: "Jack White",
-      position: "CEO",
+      img: '3.jpg',
+      name: 'Michele White',
+      position: 'CEO',
 
     },
     {
-      img:  "4.jpg",
-      name: "Handry White",
-      position: "CTO",
+      img: '4.jpg',
+      name: 'Handry White',
+      position: 'CTO',
 
     },
     {
-      img:  "5.jpg",
-      name: "Jack McManus",
-      position: "Project Manager",
+      img: '5.jpg',
+      name: 'Jack McManus',
+      position: 'Project Manager',
 
     },
     {
-      img:  "1.jpg",
-      name: "Marcash Dane",
-      position: "Project Manager",
+      img: '1.jpg',
+      name: 'Marcash Dane',
+      position: 'Project Manager',
 
     }
-    ];
+  ];
   constructor() { }
 
   ngOnInit() {

@@ -13,22 +13,22 @@ export class OurTestimonialComponent implements OnInit {
 
   List: any[] = [
     {
-      img: '1.jpg',
-      name: 'Jack White',
-      designation: 'CEO',
-      desc: 'Richard McClintock, a Latin professor at Hampden-Sydney consectetur adip isicing elit, sed dolore magna aliqua hampden. Latin professor at Hampden-Sydney consectetur.'
-    },
-    {
       img: '2.jpg',
       name: 'Walhan Bobe',
-      designation: 'Business Advisor',
-      desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed ut perspiciatis error. Perspiciatis unde omnis iste.'
+      designation: 'Head Of Engineering',
+      desc: 'Our AWS (Amazon Web Services) bill was cut by 30% when services started using auto-scaling Terraform modules.'
+    },
+    {
+      img: '1.jpg',
+      name: 'Michele White',
+      designation: 'CEO',
+      desc: 'You want to start with low hanging fruits to feel the wins quickly. This is a great way to find out more about the world you’re getting into.'
     },
     {
       img: '3.jpg',
       name: 'Mark McManus',
       designation: 'COO',
-      desc: '“Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.”'
+      desc: 'Since we have decreased the risk by using Blue/Green deployment strategies, we are able to do deployments during the day and not have to work late nights as frequently.'
     }
   ];
   constructor() { }

@@ -8,26 +8,26 @@ export class PartnerComponent implements OnInit {
 
   List: any[] = [
     {
-      title: 'Onduo by Google',
-      subtitle: 'Defined brand style guide and created narrative illustrations.',
+      title: 'Byte Helathcare',
+      subtitle: 'Byte Helathcare is a digital health brand that is designed to help people with chronic conditions.',
       image: './assets/images/partners/1.png'
     },
     {
-      title: 'Titan Eye Plus',
-      subtitle: 'Defined brand style guide and created narrative illustrations.',
+      title: 'EyeCare True',
+      subtitle: 'EyeCare True is a digital vision care service provider that brings technology to eye doctors and patients',
       image: './assets/images/partners/3.png'
     },
     {
-      title: 'DHL',
-      subtitle: 'Defined brand style guide and created narrative illustrations.',
+      title: 'Kindle Mail',
+      subtitle: 'Kindle Mail is a logistics company providing courier, package delivery and express mail service.',
       image: './assets/images/partners/4.png'
     },
     {
-      title: 'Cake Browser',
-      subtitle: 'Defined brand style guide and created narrative illustrations.',
+      title: 'Newstar',
+      subtitle: 'Newstar is a e-commerce platform for online stores and retail point-of-sale systems.',
       image: './assets/images/partners/2.png'
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

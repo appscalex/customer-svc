@@ -8,25 +8,25 @@ export class BlogRecentPostComponent implements OnInit {
 
   List: any[] = [
     {
-      img:  "02.png",
-      name:  "HTML",
-      time: "September 26, 2019 ",
-      title: "Build Construction",
+      img: '02.png',
+      name: 'Cloud',
+      time: 'September 26, 2019 ',
+      title: 'The Real Pipeline',
     },
     {
-      img:  "03.png",
-      name:  "Design",
-      time: "September 26, 2019 ",
-      title: "Life Lack Meaning",
+      img: '03.png',
+      name: 'Infrastrcture',
+      time: 'September 26, 2019 ',
+      title: 'AI-Augmented DevOps',
     },
     {
-      img:  "04.png",
-      name:  "HTML",
-      time: "September 26, 2019 ",
-      title: "Construction industry",
+      img: '04.png',
+      name: 'Cloud',
+      time: 'September 26, 2019 ',
+      title: 'Empower Your Developers',
     }
 
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

@@ -7,28 +7,27 @@ import { Component, OnInit } from '@angular/core';
 
 export class OurCounterComponent implements OnInit {
 
-
   List: any[] = [
     {
-      number: 50,
-      title: 'Tranding Volumn',
-      image: './assets/images/fancybox/5-1.png'
-    },
-    {
-      number: 400,
-      title: 'Transaction',
-      image: './assets/images/fancybox/5-2.png'
-    },
-    {
       number: 150,
-      title: 'Happy User',
+      title: 'Happy Customers',
       image: './assets/images/fancybox/5-3.png'
     },
     {
-      number: 750,
-      title: 'Custom Portfolio Created',
+      number: 25000,
+      title: 'Total Users',
+      image: './assets/images/fancybox/5-2.png'
+    },
+    {
+      number: '55%',
+      title: 'Cost Save',
       image: './assets/images/fancybox/5-4.png'
-    }
+    },
+    {
+      number: 80000,
+      title: 'Total Deployments',
+      image: './assets/images/fancybox/5-1.png'
+    },
   ];
 
   constructor() { }
