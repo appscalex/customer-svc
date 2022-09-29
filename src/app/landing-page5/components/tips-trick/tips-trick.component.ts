@@ -8,18 +8,20 @@ export class TipsTrickComponent implements OnInit {
 
   titleSectionProp1: any = {
     class: 'text-left',
-    subTitle: 'Get tips & tricks on how to skyrocket your sales.',
-    description: 'Faff about only a quid blower I don’t want no agro bleeding chimney pot burke tosser cras nice one boot fanny.! '
+    subTitle: 'Business Benefits',
+    description: 'Based on the analysis, Flash Infra create a detailed plan which helps the organization to adopt the DevOps strategy.'
   };
 
   titleSectionProp2: any = {
     class: 'text-left',
-    subTitle: 'Get tips & tricks on how to skyrocket your sales.',
-    description: 'Faff about only a quid blower I don’t want no agro bleeding chimney pot burke tosser cras nice one boot fanny.! '
+    subTitle: 'Operational Benefits',
+    description: 'Companies that incorporate Flash Infra practices can deliver with maximum speed, functionality, and innovation.'
   };
 
-  List1: any[] = ['Boost SEO ranking', 'Social Sharing', 'Marketing', 'Retention', 'Visual Reviews', 'Reviews Generation'];
-  List2: any[] = ['Boost SEO ranking', 'Social Sharing', 'Marketing', 'Retention', 'Visual Reviews', 'Reviews Generation'];
+  List1: any[] = ['Faster delivery of new features', 'Better release control & versioning', 'More frequent software releases', 'Better development velocity',
+    'Reduce Time for Action', 'Reduced IT Costs'];
+  List2: any[] = ['Increase Business Efficiency', 'Improve Response Time', 'Reduced Cost over time', 'Improve Business Agility',
+    'Better Employee Productivity & Satisfaction', 'Increase Customer Satisfaction'];
   constructor() { }
 
   ngOnInit() {
