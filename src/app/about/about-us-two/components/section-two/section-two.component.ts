@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionTwoComponent implements OnInit {
 
-  checkList1: any[] = ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center', 'Customer Service & Operations'];
-  checkList2: any[] = ['Advance Advisory Team', 'Professional Consulting Services', '24/7 Support Help Center', 'Customer Service & Operations'];
-  
+  checkList1: any[] = ['Enhanced Operational Efficiency', 'Frequent Deployment', 'Increased Collaboration', 'Faster Recovery Time'];
+  checkList2: any[] = ['Better development velocity', 'Reduce Time for Action', 'Reduced IT Costs', 'More frequent software releases'];
+
   constructor() { }
 
   ngOnInit() {

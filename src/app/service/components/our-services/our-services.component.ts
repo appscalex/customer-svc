@@ -8,7 +8,7 @@ export class OurServicesComponent implements OnInit {
 
   titleSectionProp: any = {
     title: 'OUR SERVICES',
-    subTitle: 'We Provide Useful Services',
+    subTitle: 'We Provide Numerous Services',
     description: ''
   };
 

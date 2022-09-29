@@ -22,8 +22,8 @@ export class AboutUsTwoComponent implements OnInit {
 
   titleSectionProp: any = {
     title: 'ABOUT US',
-    subTitle: 'Human Behaviour, Data Science',
-    description: 'The most powerful tool we have as developers is automation.'
+    subTitle: 'You Build It, You Run It',
+    description: 'Flash Infra automate your DevOps practice in order to eliminate repetitive tasks.'
   };
 
   constructor(private plugins: PluginsService) { }
