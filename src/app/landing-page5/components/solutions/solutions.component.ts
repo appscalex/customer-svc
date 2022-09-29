@@ -9,7 +9,7 @@ export class SolutionsComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-left',
     title: 'Solutions',
-    subTitle: 'Secure and governed. A single source of truth for all.'
+    subTitle: 'Secure and governed. A single devops tool for all.'
   };
 
   List: any[] = [
@@ -17,26 +17,25 @@ export class SolutionsComponent implements OnInit {
       id: 'tab-one-platform',
       title: 'One Platform',
       desc: [
-        'The most powerful tool we have as developers is automation.',
-        'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
+        'Flash Infra helps teams quickly manage their infrastructure and enriches developer experience by mitigating the burden of unwanted manual tasks.',
+        'It aims at merging development, quality assurance, and operations (deployment and integration) into a single, continuous set of processes.',
       ],
       active: true
     },
     {
       id: 'tab-time-value',
-      title: 'Time value',
+      title: 'Innovation',
       desc: [
-        'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
-        'The most powerful tool we have as developers is automation.',
+        'Customers crave innovation.The faster the delivery cycle, the more innovative a service can be.',
+        'Innovation is the key to attracting customers and keeping them satisfied. Bringing something new to the table that provides a creative solution is incredibly important.',
       ]
     },
     {
       id: 'tab-smart-work',
-      title: 'Smart work',
+      title: 'Lower Costs',
       desc: [
-        'The most powerful tool we have as developers is automation.',
-        'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
-        'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.',
+        'Cost is a major factor in consumer satisfaction. Nobody wants to feel like they are paying for a service that does not satisfy them.',
+        'A more efficient service makes customers more satisfied, and a cheaper service makes customers more satisfied too. In turn, this reduces abandonment rate and improves conversion.',
       ]
     }
   ];
