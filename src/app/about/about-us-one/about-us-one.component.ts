@@ -23,8 +23,8 @@ export class AboutUsOneComponent implements OnInit {
 
   titleSectionProp: any = {
     title: 'ABOUT US',
-    subTitle: 'Human Behaviour, Data Science',
-    description: 'The most powerful tool we have as developers is automation.'
+    subTitle: 'Infrastructure and Deployment',
+    description: 'The most powerful tool for devops.'
   };
 
   Lists: any = {
@@ -35,16 +35,16 @@ export class AboutUsOneComponent implements OnInit {
 
   cardData: any[] = [
     {
-      title: 'Data for all people',
-      desc: 'The most powerful tool we have as developers is automation.'
+      title: 'One Platform',
+      desc: 'It aims at merging development, quality assurance, and operations into a single, continuous set of processes.'
     },
     {
-      title: 'A new breed of AI',
-      desc: 'The most powerful tool we have as developers is automation.'
+      title: 'Innovation',
+      desc: 'Innovation is the key to attracting customers and keeping them satisfied. Bringing something new to the table is important.'
     },
     {
-      title: 'Analytics business',
-      desc: 'The most powerful tool we have as developers is automation.'
+      title: 'Lower Costs',
+      desc: 'Cost is a major factor in consumer satisfaction. Nobody wants to feel like they are paying for a service that does not satisfy them.'
     },
   ];
 
