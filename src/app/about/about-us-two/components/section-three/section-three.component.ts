@@ -41,7 +41,7 @@ export class SectionThreeComponent implements OnInit {
       title: 'Delivery',
       image: './assets/images/services/05.png',
       desc: 'It is a DevOps tool that helps businesses to enhance their brand reputation.',
-      checkList: ['It supports Platform Extensibility', 'Gain visibility into critical systems and applications.', 'It allows scheduling & automated Escalations.']
+      checkList: ['It supports Platform Extensibility.', 'Gain visibility into critical systems and applications.', 'It allows scheduling & automated Escalations.']
     }
   ];
 
