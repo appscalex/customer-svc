@@ -9,7 +9,7 @@ export class OurTestimonialComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     title: 'Testimonials',
-    subTitle: '100+ Companies are Using Flash Infra',
+    subTitle: '100+ Companies are Using AppScaleX',
   };
 
   List: any[] = [

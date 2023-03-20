@@ -12,7 +12,7 @@ export class SectionVerticalOneComponent implements OnInit {
     title: 'About us',
     subTitle: 'You Build It, You Run It',
     // tslint:disable-next-line:max-line-length
-    description: 'Flash Infra automate your DevOps practice in order to eliminate repetitive tasks.'
+    description: 'AppScaleX automate your DevOps practice in order to eliminate repetitive tasks.'
   };
 
   // tslint:disable-next-line:max-line-length

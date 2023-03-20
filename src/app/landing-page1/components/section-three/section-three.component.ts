@@ -9,7 +9,7 @@ export class SectionThreeComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     title: 'How it’s work',
-    subTitle: 'How Does Flash Infra Works'
+    subTitle: 'How Does AppScaleX Works'
   };
 
   circle1Data: any = {

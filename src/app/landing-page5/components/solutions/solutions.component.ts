@@ -17,7 +17,7 @@ export class SolutionsComponent implements OnInit {
       id: 'tab-one-platform',
       title: 'One Platform',
       desc: [
-        'Flash Infra helps teams quickly manage their infrastructure and enriches developer experience by mitigating the burden of unwanted manual tasks.',
+        'AppScaleX helps teams quickly manage their infrastructure and enriches developer experience by mitigating the burden of unwanted manual tasks.',
         'It aims at merging development, quality assurance, and operations (deployment and integration) into a single, continuous set of processes.',
       ],
       active: true

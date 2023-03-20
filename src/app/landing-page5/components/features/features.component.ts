@@ -9,7 +9,7 @@ export class FeaturesComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     title: 'FEATURES',
-    subTitle: 'Features Bring By Flash Infra As Devops Tool'
+    subTitle: 'Features Bring By AppScaleX As Devops Tool'
   };
 
   List1: any[] = [

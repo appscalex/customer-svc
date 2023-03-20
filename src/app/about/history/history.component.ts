@@ -9,7 +9,7 @@ export class HistoryComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     title: 'OUR HISTORY',
-    subTitle: 'Flash Infra Company History',
+    subTitle: 'AppScaleX Company History',
     description: ''
   };
 

@@ -11,7 +11,7 @@ export class ManagedAnalyticsComponent implements OnInit {
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
     contactNumber: '+19168084228',
-    email: 'support@flashinfra.com'
+    email: 'support@appscalex.com'
   };
   public navItems: any = topMenuBarItems;
 

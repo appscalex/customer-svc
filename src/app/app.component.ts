@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private plugins: PluginsService, private router: Router) { }
 
-  title = 'flash-infra';
+  title = 'AppScaleX';
 
   ngOnInit() {
     this.router.events.subscribe((evt) => {

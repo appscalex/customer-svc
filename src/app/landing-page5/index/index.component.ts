@@ -12,14 +12,14 @@ export class IndexComponent implements OnInit {
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
     contactNumber: '+19168084228',
-    email: 'support@flashinfra.com',
+    email: 'support@appscalex.com',
     address: '12th Cross Rd, Koramangala, Bengaluru, Karnataka 560085, India'
   };
 
   footerProp: any = {
     class: 'iq-over-dark-90',
     logoImg: './assets/images/logo.png',
-    email: 'support@flashinfra.com',
+    email: 'support@appscalex.com',
     description: 'The most powerful tool we have as developers is automation.',
   };
 

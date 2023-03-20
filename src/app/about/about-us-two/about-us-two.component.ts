@@ -11,7 +11,7 @@ export class AboutUsTwoComponent implements OnInit {
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
     contactNumber: '+19168084228',
-    email: 'support@flashinfra.com'
+    email: 'support@appscalex.com'
   };
   public navItems: any = topMenuBarItems;
 
@@ -23,7 +23,7 @@ export class AboutUsTwoComponent implements OnInit {
   titleSectionProp: any = {
     title: 'ABOUT US',
     subTitle: 'You Build It, You Run It',
-    description: 'Flash Infra automate your DevOps practice in order to eliminate repetitive tasks.'
+    description: 'AppScaleX automate your DevOps practice in order to eliminate repetitive tasks.'
   };
 
   constructor(private plugins: PluginsService) { }

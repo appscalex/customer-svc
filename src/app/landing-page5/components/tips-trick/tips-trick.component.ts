@@ -9,13 +9,13 @@ export class TipsTrickComponent implements OnInit {
   titleSectionProp1: any = {
     class: 'text-left',
     subTitle: 'Business Benefits',
-    description: 'Based on the analysis, Flash Infra create a detailed plan which helps the organization to adopt the DevOps strategy.'
+    description: 'Based on the analysis, AppScaleX create a detailed plan which helps the organization to adopt the DevOps strategy.'
   };
 
   titleSectionProp2: any = {
     class: 'text-left',
     subTitle: 'Operational Benefits',
-    description: 'Companies that incorporate Flash Infra practices can deliver with maximum speed, functionality, and innovation.'
+    description: 'Companies that incorporate AppScaleX practices can deliver with maximum speed, functionality, and innovation.'
   };
 
   List1: any[] = ['Faster delivery of new features', 'Better release control & versioning', 'More frequent software releases', 'Better development velocity',
