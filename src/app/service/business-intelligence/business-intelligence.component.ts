@@ -11,7 +11,7 @@ export class BusinessIntelligenceComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+19168084228',
+    contactNumber: '+91-7349081267',
     email: 'support@appscalex.com'
   };
   public navItems: any = topMenuBarItems;
