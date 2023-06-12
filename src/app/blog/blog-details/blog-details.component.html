@@ -1,6 +1,4 @@
-<!-- Header component start-->
 <app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
-<!-- Header component end-->
 <app-top-banner [data]="data"></app-top-banner>
 
 <div class="main-content">
@@ -8,38 +6,32 @@
         <div class="container">
             <div class="container">
                 <div class="row">
-                    <!-- Blog Detail Section -->
                     <div class="col-lg-8 col-sm-12">
                         <div class="iq-blog-box">
                             <div class="iq-blog-image wow fadeInUp">
-                                <img width="1260" height="954" src="./assets/images/blog/1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
+                                <img width="1260" height="954" src="{{details.img}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
                                 <ul class="iq-blogtag">
-                                    <li><a href="#">Cloud</a></li>
+                                    <li><a href="#">{{details.name}}</a></li>
                                 </ul>
                             </div>
                             <div class="iq-blog-detail">
+                                <div class="blog-title">
+                                    <a routerLink="#">
+                                        <h4>{{ details.title }}</h4>
+                                    </a>
+                                </div>
                                 <div class="iq-blog-meta wow fadeInUp">
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" rel="bookmark"> <time class="entry-date published updated" datetime="2019-09-26T06:49:49+00:00">September 26, 2019 </time> </a> </li>
+                                        <li class="list-inline-item"><a href="#" rel="bookmark"> <time class="entry-date published updated" datetime="2019-09-26T06:49:49+00:00">{{details.time}}</time> </a> </li>
                                     </ul>
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-content wow fadeInUp">
-                                        <p>Before we explore the DevOps ins and outs, let me explain what it is used for and to what end. In my opinion, this aspect is no less significant than the technological background, and the answer is much more apparent than it might seem. DevOps increases the effectiveness of the team, and it helps to solve the eternal problem that we face in IT projects: the dependence of the production environment on the new releases. When the process is operating smoothly, we release a new version to production because we do not wait for the incidents to be fixed until the work on new functionalities are over. If we get any reports, we react to them and fix them on an ongoing basis.</p>
-                                        <h4 class="mb-2">DevOps in practice step by step</h4>
-                                        <p>Theoretically, it is something that is pretty obvious in projects, but not so obvious in Salesforce. At Craftware, we keep to the principle: if there is no repository, there is no control. Furthermore, there is no DevOps without a repository. Working with a repository is the foundation of this approach.
-                                        An essential element of version control is the rule of at least one acceptance. What does it mean? When there is more than just one developer in a project, we recommend mutual verification of changes in the code before storing it into the repository. The more extensive the acceptance system is, the better.</p>
-                                        <div class="row ">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 mb-5 mt-3"><img src="./assets/images/blog/2.png" alt="images" /></div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 mb-5 mt-3"><img src="./assets/images/blog/3.png" alt="images" /></div>
-                                        </div>
-                                        <h4 class="mb-2">DevOps — why does it pay off?</h4>
-                                        <p>The integration environment is a working one; it is not recommended for official tests because there can be many changes in projects, even during one day. A version is released to the next stage of testing only after a stabilization in this working environment. Often, the business is also invited to the latter stage.</p>
+                                       <p>{{details.details}}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Blog Comment Section -->
                         <div id="comments" class="comments-area wow fadeInUp">
                             <div id="respond" class="comment-respond">
                                 <h3 id="reply-title" class="comment-reply-title mb-3">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="#">Cancel reply</a></small></h3>
@@ -70,15 +62,11 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- Blog Comment Section End -->
                     </div>
-                    <!-- Blog Detail Section End -->
                     <div class="col-lg-4 col-sm-12 sidebar-service-right mt-5 mt-lg-0">
                         <div id="secondary" class="widget-area" >
                             <app-blog-search></app-blog-search>
-                            <!-- <app-blog-slider></app-blog-slider> -->
                             <app-blog-recent-post></app-blog-recent-post>
-                            <!-- <app-blog-category></app-blog-category> -->
                         </div>
                     </div>
                 </div>
@@ -86,7 +74,4 @@
         </div>
     </section>
 </div>
-
-<!-- Footer start -->
 <app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
-<!-- Footer end -->
