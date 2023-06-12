@@ -8,8 +8,8 @@ export class SectionThreeComponent implements OnInit {
 
   titleSectionProp: any = {
     class: 'text-center',
-    title: 'How it’s work',
-    subTitle: 'How Does AppScaleX Works'
+    title: 'How Does It Work',
+    subTitle: 'AppScaleX Process Flow'
   };
 
   circle1Data: any = {
