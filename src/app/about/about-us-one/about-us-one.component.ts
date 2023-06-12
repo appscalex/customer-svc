@@ -11,7 +11,7 @@ export class AboutUsOneComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+91-7349081267',
+    contactNumber: '+91-8638386533',
     email: 'support@appscalex.com'
   };
   public navItems: any = topMenuBarItems;

@@ -19,10 +19,10 @@ const topMenuBarItems = [
     href: '/company/client',
     title: 'Company ',
     submenu: [
-      {
-        href: '/company/client',
-        title: 'Clients'
-      },
+      // {
+      //   href: '/company/client',
+      //   title: 'Clients'
+      // },
       {
         href: '/company/career',
         title: 'Careers',
