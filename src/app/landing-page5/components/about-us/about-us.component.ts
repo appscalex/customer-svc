@@ -8,7 +8,7 @@ export class AboutUsComponent implements OnInit {
 
   titleSectionProp: any = {
     class: 'text-center',
-    title: 'PARTNER',
+    // title: 'PARTNER',
     subTitle: 'A trusted, proven tool.'
   };
 
