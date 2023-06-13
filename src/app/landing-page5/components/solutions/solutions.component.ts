@@ -9,7 +9,7 @@ export class SolutionsComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-left',
     title: 'Solutions',
-    subTitle: 'Secure and governed. A single devops tool for all.'
+    subTitle: 'Secure and governed. A single devops tool for all'
   };
 
   List: any[] = [

@@ -9,7 +9,7 @@ export class AboutUsComponent implements OnInit {
   titleSectionProp: any = {
     class: 'text-center',
     // title: 'PARTNER',
-    subTitle: 'A trusted, proven tool.'
+    subTitle: 'A Trusted, Proven Tool'
   };
 
   List: any[] = [
