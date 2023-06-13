@@ -16,7 +16,7 @@ const topMenuBarItems = [
     title: 'Blogs'
   },
   {
-    href: '/company/client',
+    href: '#',
     title: 'Company ',
     submenu: [
       // {

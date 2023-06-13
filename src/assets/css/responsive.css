@@ -1,6 +1,6 @@
 @media(max-width:1920px) {
   .testimonial-img { position: absolute; right: 0; top: -62px; z-index: 2 }
-  header .main-header, header.style-one .sub-header, .admin-bar header.menu-sticky .main-header { padding: 0 246px; }
+  header .main-header, header.style-one .sub-header, .admin-bar header.menu-sticky .main-header { padding: 0 276px; }
 }
 @media(max-width:1680px) {
   header .main-header, header.style-one .sub-header, .admin-bar header.menu-sticky .main-header { padding: 0 208px; }
