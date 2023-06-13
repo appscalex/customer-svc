@@ -521,3 +521,11 @@
   padding-top: 0px;
   /* padding-left: 80px; */
 }
+
+
+.home-blog .iq-blog-detail {
+    display: flex;
+    flex: 1 0 auto;
+    height: 320px;
+}
+
