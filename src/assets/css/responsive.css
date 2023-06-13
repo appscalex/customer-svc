@@ -537,3 +537,9 @@ header .navbar-light .navbar-brand img.logo {
   width: 220px !important;
 }
 
+
+
+@media(max-width:776px) {
+  .about-box-img { display: none; }
+}
+
