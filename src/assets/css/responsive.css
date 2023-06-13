@@ -516,3 +516,8 @@
   .error-404 h1 { font-size: 62px; }
   header.style-one .search-box { display: none }
 }
+
+.slider-box {
+  padding-top: 0px;
+  /* padding-left: 80px; */
+}
