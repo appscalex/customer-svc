@@ -8,27 +8,17 @@ import { BLOG_DETAILS } from 'src/app/blog/blogs';
 })
 export class BlogPaginationComponent implements OnInit {
 
-  id: string = "";
+  id: number = 1;
   details: any;
 
   constructor( private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
       this.id = params['id'];
-      this.fetchDetails();
    });
 
    }
 
   ngOnInit() {
-  }
-
-  fetchDetails() : void {
-    BLOG_DETAILS.forEach(blog => {
-       if (this.id == blog.id) {
-          this.details = blog;
-       }  
-    });
-
   }
 
 }

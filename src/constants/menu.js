@@ -12,7 +12,7 @@ const topMenuBarItems = [
     title: 'Services'
   },
   {
-    href: '/blog',
+    href: '/blog?id=1',
     title: 'Blogs'
   },
   {
