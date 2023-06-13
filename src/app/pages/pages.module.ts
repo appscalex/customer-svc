@@ -6,6 +6,8 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { OurClientComponent } from './our-client/our-client.component';
 import { CareersComponent } from './careers/careers.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TermsComponent } from '../xamin/components/terms/terms.component';
+import { PrivacyComponent } from '../xamin/components/privacy/privacy.component';
 
 
 const routes: Routes = [
@@ -25,9 +27,17 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsComponent,
   },
+  {
+    path: 'terms',
+    component: TermsComponent,
+  },
+  {
+    path: 'privacy',
+    component: PrivacyComponent,
+  },
   ];
 @NgModule({
-  declarations: [OurTeamComponent, OurClientComponent, CareersComponent, ContactUsComponent],
+  declarations: [OurTeamComponent, OurClientComponent, CareersComponent, ContactUsComponent, TermsComponent, PrivacyComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

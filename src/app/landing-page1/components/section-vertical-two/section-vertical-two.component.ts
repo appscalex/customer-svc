@@ -8,7 +8,7 @@ export class SectionVerticalTwoComponent implements OnInit {
 
   titleSectionProp: any = {
     class: 'text-left',
-    title: 'How We Work',
+    title: 'What It Offers',
     subTitle: 'AppScaleX In Action',
     // tslint:disable-next-line:max-line-length
     description: 'The most powerful tool that enables customers to automate, decrease risk, break silos and improve release management.'
