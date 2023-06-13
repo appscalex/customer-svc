@@ -18,7 +18,7 @@ export class BlogDetailsComponent implements OnInit {
   public navItems: any = topMenuBarItems;
 
   data: any = {
-    title: '',
+    title: 'Blogs',
     img: '04.png'
   };
   id: string = "";
