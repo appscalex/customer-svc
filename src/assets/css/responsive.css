@@ -533,3 +533,7 @@
   padding-bottom: 20px;
 }
 
+header .navbar-light .navbar-brand img.logo {
+  width: 220px !important;
+}
+
