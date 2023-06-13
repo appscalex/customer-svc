@@ -40,7 +40,7 @@ export const BLOG_DETAILS = [
         img: './assets/images/about-us/02.png',
         name: 'Cloud',
         time: 'March 28, 2023',
-        title: 'DevOps Security: Securing the Continuous Delivery Pipeline',
+        title: 'Securing the Continuous Delivery Pipeline',
         desc: 'DevOps security plays a crucial role in ensuring the integrity and protection of the continuous delivery pipeline.',
         details: 'DevOps security plays a crucial role in ensuring the integrity and protection of the continuous delivery pipeline. With the rapid pace of software development and deployment in a DevOps environment, it is essential to integrate security practices throughout the entire software delivery lifecycle. DevOps security focuses on identifying and mitigating risks, automating security checks, and incorporating security controls at each stage of the pipeline. This includes secure coding practices, vulnerability scanning, and automated security testing. Implementing secure DevOps practices involves integrating security tools and processes into the pipeline, such as static code analysis, dynamic application security testing (DAST), container scanning, and security information and event management (SIEM) solutions. By incorporating security early on and continuously monitoring the pipeline, organizations can identify and address vulnerabilities, prevent security breaches, and ensure the delivery of secure and reliable software. DevOps security is a collaborative effort that involves close cooperation between development, operations, and security teams to create a culture of security awareness and accountability throughout the organization.'
     },
@@ -49,7 +49,7 @@ export const BLOG_DETAILS = [
         img: './assets/images/about-us/03.png',
         name: 'Infrastrcture',
         time: 'April 03, 2023',
-        title: 'Serverless Computing and DevOps: Optimizing Scalability and Cost',
+        title: 'Serverless Computing and Optimizing Scalability',
         desc: 'Serverless computing and DevOps synergize to optimize scalability and cost-efficiency in modern application development and deployment.',
         details: 'Serverless computing and DevOps synergize to optimize scalability and cost-efficiency in modern application development and deployment. Serverless architecture allows developers to focus on writing code without the need to manage underlying infrastructure. By abstracting away servers and automatically scaling resources based on demand, serverless computing enables rapid and elastic scaling, aligning perfectly with the scalability requirements of DevOps practices. This scalability ensures that applications can handle fluctuating workloads without manual intervention, enabling organizations to deliver better performance and user experiences. Furthermore, serverless computing follows a pay-per-use model, where resources are only consumed when a function is triggered, leading to cost optimization. DevOps teams can leverage serverless technologies, such as AWS Lambda or Azure Functions, to build microservices-based architectures that facilitate seamless integration, continuous delivery, and easier management of distributed systems. By combining serverless computing and DevOps, organizations can achieve scalability, flexibility, and cost-efficiency in their application deployments, enabling faster innovation and enhanced resource utilization.'
       },
@@ -67,8 +67,8 @@ export const BLOG_DETAILS = [
         img: './assets/images/about-us/05.png',
         name: 'Infrastrcture',
         time: 'May 09, 2023',
-        title: 'DevSecOps: Integrating Security into the DevOps Culture',
-        desc: 'DevSecOps is an approach that emphasizes the integration of security practices into the DevOps culture, recognizing the importance of addressing security considerations throughout the software development lifecycle.',
+        title: 'Integrating Security into the DevOps Culture',
+        desc: 'DevSecOps is an approach that emphasizes the integration of security practices into the DevOps culture.',
         details: 'DevSecOps is an approach that emphasizes the integration of security practices into the DevOps culture, recognizing the importance of addressing security considerations throughout the software development lifecycle. Traditionally, security has been an afterthought, with organizations attempting to bolt it on at the end of the development process. However, DevSecOps recognizes that security should be an integral part of every stage of the DevOps pipeline. By integrating security into the DevOps culture, organizations can proactively identify and mitigate security risks, protect sensitive data, and ensure compliance with regulations. DevSecOps promotes collaboration between development, operations, and security teams, fostering a shared responsibility for security. It involves incorporating security controls, automated security testing, and vulnerability scanning into the CI/CD pipeline. Additionally, it encourages security awareness training, threat modeling, and continuous monitoring to identify and respond to security threats promptly. By integrating security into the DevOps culture, organizations can create a secure and resilient software delivery process, reducing the risk of security breaches and maintaining the trust of customers and stakeholders.'
       },
       {
@@ -76,7 +76,7 @@ export const BLOG_DETAILS = [
         img: './assets/images/about-us/02.png',
         name: 'Cloud',
         time: 'May 21, 2023',
-        title: 'Artificial Intelligence and DevOps: A Powerful Combination',
+        title: 'Artificial Intelligence and DevOps',
         desc: 'The combination of artificial intelligence (AI) and DevOps represents a powerful synergy that can revolutionize software development and operations.',
         details: 'The combination of artificial intelligence (AI) and DevOps represents a powerful synergy that can revolutionize software development and operations. AI technologies, such as machine learning and natural language processing, can enhance various aspects of the DevOps lifecycle. AI-powered automation can streamline repetitive tasks, improve efficiency, and reduce human error. For instance, AI algorithms can analyze vast amounts of data to identify patterns, optimize resource allocation, and predict system failures, enabling proactive monitoring and maintenance. AI can also enhance quality assurance by automating testing and identifying anomalies or vulnerabilities in code. Additionally, AI-powered chatbots and virtual assistants can provide real-time support and enable self-service for developers and operations teams. By harnessing the capabilities of AI in DevOps, organizations can achieve faster innovation, increased productivity, and improved system reliability, ultimately driving better business outcomes. The combination of AI and DevOps empowers organizations to leverage data-driven insights, automate mundane tasks, and unlock new levels of efficiency and effectiveness in the software development and operations processes.'
       },
