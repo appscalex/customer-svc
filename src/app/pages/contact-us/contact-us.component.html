@@ -23,7 +23,7 @@
         <div class="col-sm-6">
           <h2 class="text-left mb-4">Let's talk about for your<br> business</h2>
           <div class="response-output "></div>
-          <form [formGroup]="angForm" novalidate (ngSubmit)="onSubmit()" novalidate>
+          <form *ngIf="showForm"  [formGroup]="angForm" novalidate (ngSubmit)="onSubmit()" novalidate>
             <div class="contact-form form-group">
               <div class=""> 
                 <input type="text" name="your-name" formControlName="name" class="form-control text" placeholder="Your Name" required> 
@@ -55,6 +55,9 @@
               <div> <button id="submit-4" name="submit" type="submit" value="Send"  class="button d-block w-100">Send Message</button> </div>
             </div>
          </form>
+         <div *ngIf="!showForm" class="response-output">
+          <span>Message sent to AppScaleX team.</span>
+         </div>
         </div>
         <div class="mt-5 col-sm-6 offset-lg-1 col-lg-5 offset-md-1 col-md-5">
           <div class="wrapper">

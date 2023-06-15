@@ -18,6 +18,7 @@ export class ContactUsComponent implements OnInit {
     contactNumber: '+91-8638386533',
     email: 'support@appscalex.com'
   };
+  showForm: boolean = true;
   public navItems: any = topMenuBarItems;
   apiUrl: string = "https://api.appscalex.com/Prod/records";
 
@@ -62,12 +63,10 @@ export class ContactUsComponent implements OnInit {
     this.submitted = true;
     if (this.angForm.valid) {
         let data =  this.angForm.value ||  {};
-        console.log("form submit")
-        // this.http.post(this.apiUrl, data);
         this.contactService.create(data)
         .subscribe({
           next: (res) => {
-           console.log("res >>>>>>>>>", res);
+          this.showForm = false;
           },
           error: (e) => { 
             console.error(e);
