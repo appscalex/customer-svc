@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-us',
@@ -10,12 +11,14 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 export class ContactUsComponent implements OnInit {
 
   angForm: FormGroup;
+  submitted = false;
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
     contactNumber: '+91-8638386533',
     email: 'support@appscalex.com'
   };
   public navItems: any = topMenuBarItems;
+  apiUrl: string = "https://api.appscalex.com/Prod/records";
 
   data: any = {
     title: 'Contact us',
@@ -34,7 +37,7 @@ export class ContactUsComponent implements OnInit {
 
   ];
 
-  constructor(private plugins: PluginsService, private fb: FormBuilder) {
+  constructor(private plugins: PluginsService, private fb: FormBuilder, private http: HttpClient) {
 
     this.angForm = this.fb.group({
       name: ['', Validators.required ],
@@ -54,9 +57,11 @@ export class ContactUsComponent implements OnInit {
   }
 
   onSubmit() {
-
+    this.submitted = true;
     if (this.angForm.valid) {
-        console.log('form submitted');
+        let data =  this.angForm.value ||  {};
+        console.log("form submit")
+       // this.http.post(this.apiUrl, data);
     }
 }
 

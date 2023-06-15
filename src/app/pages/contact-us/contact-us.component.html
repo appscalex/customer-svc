@@ -27,13 +27,13 @@
             <div class="contact-form form-group">
               <div class=""> 
                 <input type="text" name="your-name" formControlName="name" class="form-control text" placeholder="Your Name" required> 
-                <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+                <div *ngIf="submitted && angForm.controls['name'].invalid" class="text-error">
                   <div *ngIf="angForm.controls['name'].errors.required"> Name is required.</div>
                 </div>
               </div>
               <div class=""> 
                 <input type="text" name="your-email" formControlName="email" class="form-control text" placeholder="Your Email" required> 
-                <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+                <div *ngIf="submitted && angForm.controls['email'].invalid" class="text-error">
                   <div *ngIf="angForm.controls['email'].errors.required"> Email is required.</div>
                 </div>
               </div>
@@ -42,13 +42,13 @@
               </div>
               <div class=""> 
                 <input type="text" name="subject" formControlName="subject" class="form-control text" placeholder="Subject" required> 
-                <div *ngIf="angForm.controls['subject'].invalid && (angForm.controls['subject'].dirty || angForm.controls['subject'].touched)" class="alert alert-danger">
+                <div *ngIf="submitted && angForm.controls['subject'].invalid" class="text-error">
                   <div *ngIf="angForm.controls['subject'].errors.required"> Subject is required.</div>
                 </div>
               </div>
               <div class=""> 
                 <textarea name="your-message" formControlName="message"  cols="40" rows="10" class="form-control textarea " placeholder="Message" required></textarea>
-                <div *ngIf="angForm.controls['message'].invalid && (angForm.controls['message'].dirty || angForm.controls['message'].touched)" class="alert alert-danger">
+                <div *ngIf="submitted && angForm.controls['message'].invalid"  class="text-error">
                   <div *ngIf="angForm.controls['message'].errors.required"> Message is required.</div>
                 </div>
               </div>

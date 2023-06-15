@@ -543,3 +543,9 @@ header .navbar-light .navbar-brand img.logo {
   .about-box-img { display: none; }
 }
 
+.text-error {
+  color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
