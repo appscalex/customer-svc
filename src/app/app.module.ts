@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { XaminModule } from './xamin/xamin.module';
 import { LandingPage1Module } from './landing-page1/landing-page1.module';
@@ -15,7 +16,8 @@ import { LandingPage1Module } from './landing-page1/landing-page1.module';
     BrowserModule,
     AppRoutingModule,
     XaminModule,
-    LandingPage1Module
+    LandingPage1Module,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

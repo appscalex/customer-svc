@@ -8,7 +8,7 @@ import { CareersComponent } from './careers/careers.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TermsComponent } from '../xamin/components/terms/terms.component';
 import { PrivacyComponent } from '../xamin/components/privacy/privacy.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -41,7 +41,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    XaminModule
+    XaminModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ]
 })

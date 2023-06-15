@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
+import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
 })
 export class ContactUsComponent implements OnInit {
 
+  angForm: FormGroup;
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
     contactNumber: '+91-8638386533',
@@ -31,7 +34,17 @@ export class ContactUsComponent implements OnInit {
 
   ];
 
-  constructor(private plugins: PluginsService) { }
+  constructor(private plugins: PluginsService, private fb: FormBuilder) {
+
+    this.angForm = this.fb.group({
+      name: ['', Validators.required ],
+      email: ['', Validators.required ],
+      phone: ['' ],
+      subject: ['', Validators.required ],
+      message: ['', Validators.required ]
+   });
+
+   }
 
   ngOnInit() {
     const current = this;
@@ -39,5 +52,12 @@ export class ContactUsComponent implements OnInit {
       current.plugins.index();
     }, 200);
   }
+
+  onSubmit() {
+
+    if (this.angForm.valid) {
+        console.log('form submitted');
+    }
+}
 
 }
