@@ -3,6 +3,7 @@ import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -37,7 +38,8 @@ export class ContactUsComponent implements OnInit {
 
   ];
 
-  constructor(private plugins: PluginsService, private fb: FormBuilder, private http: HttpClient) {
+  constructor(private plugins: PluginsService, private fb: FormBuilder, private http: HttpClient,
+    private contactService: ContactService) {
 
     this.angForm = this.fb.group({
       name: ['', Validators.required ],
@@ -61,7 +63,17 @@ export class ContactUsComponent implements OnInit {
     if (this.angForm.valid) {
         let data =  this.angForm.value ||  {};
         console.log("form submit")
-       // this.http.post(this.apiUrl, data);
+        // this.http.post(this.apiUrl, data);
+        this.contactService.create(data)
+        .subscribe({
+          next: (res) => {
+           console.log("res >>>>>>>>>", res);
+          },
+          error: (e) => { 
+            console.error(e);
+          }
+        });
+      
     }
 }
 
