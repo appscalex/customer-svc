@@ -5,10 +5,10 @@
         <ul class='page-numbers'>
           <li> 
             <a aria-current='page' [ngClass]="{'current': id == 1, 'page-numbers' : true }"
-            routerLink="/blog" [queryParams]="{id: 1 }">1</a> 
+            routerLink="/app/blog" [queryParams]="{id: 1 }">1</a> 
           </li>
           <li> 
-            <a aria-current='page' [ngClass]="{'current': id == 2, 'page-numbers' : true }" routerLink="/blog" [queryParams]="{id: 2 }">2</a> 
+            <a aria-current='page' [ngClass]="{'current': id == 2, 'page-numbers' : true }" routerLink="/app/blog" [queryParams]="{id: 2 }">2</a> 
           </li>
           <!-- <li> <a class="next page-numbers" href="#?paged=2'"> <span aria-hidden="true">Next page</span> </a> </li> -->
         </ul>
