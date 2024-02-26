@@ -1,18 +1,18 @@
 const topMenuBarItems = [
   {
-    href: '/app/home',
+    href: '/home',
     title: 'Home  '
   },
   {
-    href: '/app/about-us',
+    href: '/about-us',
     title: 'About Us '
   },
   {
-    href: '/app/services',
+    href: '/services',
     title: 'Services'
   },
   {
-    href: '/app/blog?id=1',
+    href: '/blog?id=1',
     title: 'Blogs'
   },
   {
