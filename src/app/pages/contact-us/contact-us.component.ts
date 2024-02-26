@@ -15,7 +15,7 @@ export class ContactUsComponent implements OnInit {
   submitted = false;
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+91-8638386533',
+    contactNumber: '+91-9435187656',
     email: 'support@appscalex.com'
   };
   showForm: boolean = true;
@@ -34,7 +34,7 @@ export class ContactUsComponent implements OnInit {
     // },
     {
       title: 'India Office',
-      address: '12th Cross Rd, Koramangala, Bengaluru, Karnataka 560085, India'
+      address: '123, Arlington Court, Clover Village, Wanowrie, Pune 411040'
     },
 
   ];

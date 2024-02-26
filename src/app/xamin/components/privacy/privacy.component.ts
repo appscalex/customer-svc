@@ -12,7 +12,7 @@ export class PrivacyComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+91-8638386533',
+    contactNumber: '+91-9435187656',
     email: 'support@appscalex.com'
   };
 
