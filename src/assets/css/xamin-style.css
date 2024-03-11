@@ -279,7 +279,7 @@ header.style-one.style-two .navbar ul li .sub-menu li:hover, header.style-one.st
 .button:hover { text-decoration: none; color: #ffffff; -webkit-transform: translate3d(0, 0px, 0); transform: translate3d(0, 0px, 0); }
 .button:focus, .button.blue-btn:focus { color: #ffffff; }
 .button span { z-index: 2; position: relative; }
-.xamin-left-img img { position: relative; left: -47%; max-width: 155% !important; margin-top: -200px; }
+.xamin-left-img img { position: relative; left: -35%; max-width: 130% !important; margin-top: 0px; }
 .xamin-right-img img { right: -19%; max-width: 150% !important; margin-top: -100px; }
 .xamin-right-img-wm img { right: -19%; max-width: 150% !important;  }
 
