@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { XaminModule } from './xamin/xamin.module';
 import { LandingPage1Module } from './landing-page1/landing-page1.module';
 import { HttpClientModule, HTTP_INTERCEPTORS, HttpClient, HttpClientXsrfModule } from '@angular/common/http';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
