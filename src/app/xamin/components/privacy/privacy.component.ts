@@ -9,6 +9,8 @@ export class PrivacyComponent implements OnInit {
 
   @Input() List: any[];
   @Input() titleSectionProp: any[];
+  navItems = [];
+
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
