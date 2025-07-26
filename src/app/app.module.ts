@@ -21,7 +21,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS, HttpClient, HttpClientXsrfModule }
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
