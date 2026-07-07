@@ -23,6 +23,8 @@ export class IndexComponent implements OnInit {
     description: 'The most powerful tool we have as developers is automation.',
   };
 
+  
+
   constructor(private plugins: PluginsService) { }
 
   public navItems: any = topMenuBarItems;
