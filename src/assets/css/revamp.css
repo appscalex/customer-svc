@@ -2815,3 +2815,19 @@ app-section-nine-blog section.pt-0 {
      display: block !important;
   text-align: center !important;
 }
+
+
+.owl-carousel .owl-dots .owl-dot {
+    background: #f2f6ff;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover {
+    background: #437eeb;
+    border: 1px solid #437eeb;
+}
+
+
+.owl-carousel .owl-dots .owl-dot:active {
+    background: #437eeb;
+    border: 1px solid #437eeb;
+}
