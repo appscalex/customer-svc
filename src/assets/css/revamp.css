@@ -1450,6 +1450,9 @@ ul.iq-list li i {
   .sub-header { display: none !important; }
   .main-header { padding: 0 20px !important; }
 
+  /* Hide Get Started button — sits outside collapse, overlaps hamburger on mobile */
+  .main-header .sub-main { display: none !important; }
+
   .carousel-indicators { justify-content: center !important; }
 
   section { padding: 68px 0 !important; }
@@ -1463,6 +1466,10 @@ ul.iq-list li i {
   .hero-buttons { flex-direction: column !important; align-items: flex-start !important; }
   .hero-buttons .btn { width: 100% !important; text-align: center !important; }
 
+  /* Banner — reduce vertical padding on small screens */
+  .ax-page-banner { padding: 60px 0 40px !important; }
+  .ax-banner-title { font-size: 1.9rem !important; }
+
   .title-box h2 { font-size: 1.75rem !important; }
   .xamin-circle { margin-bottom: 20px !important; }
   .show_content { padding: 20px !important; }
@@ -1472,6 +1479,8 @@ ul.iq-list li i {
 @media (max-width: 575px) {
   .hero-title { font-size: 1.6rem !important; }
   section     { padding: 52px 0 !important; }
+  .ax-page-banner { padding: 48px 0 32px !important; }
+  .ax-banner-title { font-size: 1.65rem !important; }
 }
 
 /* ============================================================
@@ -1739,7 +1748,16 @@ app-section-nine-blog section.pt-0 {
 
 
 .title-content-center {
-    padding: 100px 0px 0px 0px !important;
+  padding: 100px 0 0 0 !important;
+}
+@media (max-width: 991px) {
+  .title-content-center { padding: 60px 0 0 0 !important; }
+}
+@media (max-width: 767px) {
+  .title-content-center { padding: 40px 0 0 0 !important; }
+}
+@media (max-width: 575px) {
+  .title-content-center { padding: 28px 0 0 0 !important; }
 }
 
 .services-height {
