@@ -11,16 +11,34 @@ export class SectionVerticalOneComponent implements OnInit {
     class: 'text-left',
     title: 'About us',
     subTitle: 'You Build It, You Run It',
-    // tslint:disable-next-line:max-line-length
-    description: 'AppScaleX automate your DevOps practice in order to eliminate repetitive tasks.'
+    description: 'AppScaleX automates your DevOps practice to eliminate repetitive tasks, accelerate delivery, and give your teams full ownership of the pipeline.'
   };
 
-  // tslint:disable-next-line:max-line-length
-  lists: any[] = ['Enhanced Operational Efficiency', 'Frequent Deployment', 'Increased Collaboration', 'Faster Recovery Time'];
+  features: any[] = [
+    {
+      icon: 'fa-tachometer',
+      title: 'Operational Efficiency',
+      desc: 'Automate repetitive workflows and let your team focus on building.'
+    },
+    {
+      icon: 'fa-cloud-upload',
+      title: 'Frequent Deployment',
+      desc: 'Ship faster with automated CI/CD and zero-downtime release strategies.'
+    },
+    {
+      icon: 'fa-users',
+      title: 'Increased Collaboration',
+      desc: 'Unified tooling breaks silos between dev, QA, and ops.'
+    },
+    {
+      icon: 'fa-heartbeat',
+      title: 'Faster Recovery',
+      desc: 'Automated rollbacks and blue-green deploys minimise incident impact.'
+    }
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

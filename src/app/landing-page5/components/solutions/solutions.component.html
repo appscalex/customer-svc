@@ -1,32 +1,68 @@
-<section >
-    <div class="container">
-        <div class="row ">  
-            <div class="col-md-6">
-                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+<section class="ax-solutions-section">
+  <div class="container">
 
-                <div class="custom-tab text-left  ">
-                    <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
-                       <li  class="nav-item" *ngFor="let list of List">
-                            <a class="nav-link {{ list.active !== undefined && list.active ? 'active show' : '' }}" data-toggle="pill" (click)="tabActive(list.id)"  href="{{ '#' + list.id }}" role="tab" [attr.aria-selected]=" list.active !== undefined ? true : false ">
-                                <h6 class="tab-title">{{ list.title }}</h6>
-                            </a>
-                       </li>
-                    </ul>
-                </div>
-                <div class="tab-content">
-                    <div *ngFor="let list of List" id="{{ list.id }}" class="tab-pane fade {{ list.active !== undefined && list.active ? 'show active' : '' }}">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p *ngFor="let text of list.desc">{{ text }}</p>
-                                <!-- <div class="text-left"><a class="button button-icon" href="#"><span class="btn-effect"> Read More</span></a></div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <img src="./assets/images/about-us/18.png" alt="fancybox" style="max-width: 130%;">
-            </div>
-        </div>
+    <!-- Section heading — centred above stepper -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+      </div>
     </div>
+
+    <!-- Stepper nav row -->
+    <div class="ax-stepper-nav ax-sol-stepper-nav">
+      <ng-container *ngFor="let item of List; let i = index; let last = last">
+
+        <div class="ax-stepper-node {{ activeId === item.id ? 'is-active' : '' }} {{ i < activeIndex() ? 'is-done' : '' }}"
+             (click)="setActive(item.id)">
+          <div class="ax-stepper-circle">
+            <span class="ax-stepper-num">{{ i + 1 }}</span>
+          </div>
+          <span class="ax-stepper-label">{{ item.title }}</span>
+        </div>
+
+        <div *ngIf="!last" class="ax-stepper-line {{ i < activeIndex() ? 'is-done' : '' }}"></div>
+
+      </ng-container>
+    </div>
+
+    <!-- Content panel -->
+    <ng-container *ngFor="let item of List">
+      <div class="ax-stepper-panel ax-sol-panel" *ngIf="activeId === item.id">
+        <div class="row align-items-center">
+
+          <!-- Left: content -->
+          <div class="col-lg-6 col-md-12 ax-sol-panel-left">
+            <div class="ax-step-tag">{{ item.tag }}</div>
+            <h3 class="ax-step-title">{{ item.title }}</h3>
+            <p *ngFor="let text of item.desc" class="ax-step-desc">{{ text }}</p>
+            <a class="ax-step-cta" routerLink="/about-us">
+              Learn More <i class="ion-ios-arrow-forward"></i>
+            </a>
+          </div>
+
+          <!-- Right: image -->
+          <div class="col-lg-6 col-md-12 text-center ax-sol-panel-right">
+            <img src="./assets/images/about-us/18.png" alt="{{ item.title }}" class="ax-sol-panel-img">
+          </div>
+
+        </div>
+
+        <!-- Prev / Next -->
+        <div class="ax-step-footer">
+          <button class="ax-step-btn ax-step-btn--prev"
+                  *ngIf="activeIndex() > 0"
+                  (click)="setActive(List[activeIndex() - 1].id)">
+            <i class="ion-ios-arrow-back"></i> Previous
+          </button>
+          <button class="ax-step-btn ax-step-btn--next"
+                  *ngIf="activeIndex() < List.length - 1"
+                  (click)="setActive(List[activeIndex() + 1].id)">
+            Next <i class="ion-ios-arrow-forward"></i>
+          </button>
+        </div>
+
+      </div>
+    </ng-container>
+
+  </div>
 </section>

@@ -1,56 +1,73 @@
-<div class="custom-tab">
-  <ul class="nav nav-pills mb-5 text-center" id="pills-tab" role="tablist">
-    <li class="nav-item" *ngFor="let nav of navList">
-      <a class="nav-link {{ nav.active !== undefined && nav.active ? 'active show' : '' }}" data-toggle="pill" (click)="tabActive(nav.id)"  href="{{ '#' + nav.id }}" role="tab" [attr.aria-selected]=" nav.active !== undefined ? true : false ">
-        <img src="./assets/images/services/{{ nav.img }}" alt="tab-image" class="img-fluid">
-        <h5 class="tab-title">{{ nav.title }}</h5>
-      </a>
-    </li>
-  </ul>
-  <div class="show_content">
-    <div *ngFor="let nav of navList" id="{{ nav.id }}" class="tab-pane fade {{ nav.active !== undefined && nav.active ? 'show active' : '' }}">
-      <ng-template [ngIf]="nav.id === 'tab-big-data' || nav.id === 'tab-analytical-ai'">
-        <div class="row pl-lg-5 pr-lg-5">
-          <div class="col-sm-12">
-            <h4 class="custom_heading mb-2">{{ nav.subtitle }}</h4>
-            <div class="text-left mb-3">
-              <p>{{ nav.desc }}</p>
-            </div>
-          </div>
+<div class="ax-stepper-tabs">
+
+  <!-- Step header row -->
+  <div class="ax-stepper-nav">
+    <ng-container *ngFor="let nav of navList; let i = index; let last = last">
+
+      <!-- Step node -->
+      <div class="ax-stepper-node {{ activeId === nav.id ? 'is-active' : '' }} {{ i < activeIndex() ? 'is-done' : '' }}"
+           (click)="setActive(nav.id)">
+        <div class="ax-stepper-circle">
+          <span class="ax-stepper-num">{{ i + 1 }}</span>
         </div>
-        <div class="row pl-lg-5 pr-lg-5">
-          <div class="col-sm-4">
-            <app-check-list [lists]="nav.chkList1"></app-check-list>
-          </div>
-          <div class="col-sm-4">
-            <app-check-list [lists]="nav.chkList2"></app-check-list>
-          </div>
-          <div class="col-sm-4">
-            <app-check-list [lists]="nav.chkList3"></app-check-list>
-          </div>
-        </div>
-        <div class="row pl-lg-5 pr-lg-5">
-          <div class="col-sm-12">
-            <div class=" text-left mt-4 "><a class="button button-icon" [routerLink]="[nav.link]"><span class="btn-effect"> View all Services</span></a>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template [ngIf]="nav.id === 'tab-machine-learning' || nav.id === 'tab-computer-vision'">
-        <div class="row pl-lg-5 pr-lg-5">
-          <div class="col-sm-6">
-            <h4 class="custom_heading mb-2">{{ nav.subtitle }}</h4>
-            <div class="text-left no-margin">
-              <p> {{ nav.desc }} </p>
-            </div>
-            <div class=" text-left mt-4 mb-lg-0 mb-md-0 mb-4 "> <a class="button button-icon" [routerLink]="[nav.link]"><span class="btn-effect"> View all Services</span></a></div>
-          </div>
-          <div class="col-sm-6">
-            <h4 class="custom_heading mb-3" *ngIf="nav.subtitle2">{{ nav.subtitle2 }}</h4>
-            <app-check-list [lists]="nav.chkList"></app-check-list>
-          </div>
-        </div>
-      </ng-template>
-    </div>
+        <span class="ax-stepper-label">{{ nav.title }}</span>
+      </div>
+
+      <!-- Connector line (not after last) -->
+      <div *ngIf="!last" class="ax-stepper-line {{ i < activeIndex() ? 'is-done' : '' }}"></div>
+
+    </ng-container>
   </div>
+
+  <!-- Content panels -->
+  <ng-container *ngFor="let nav of navList">
+    <div class="ax-stepper-panel" *ngIf="activeId === nav.id">
+      <div class="row align-items-start">
+
+        <!-- Left: heading + desc + CTA -->
+        <div class="col-lg-5 col-md-12 ax-step-left">
+          <div class="ax-step-tag">Step {{ navList.indexOf(nav) + 1 }} of {{ navList.length }}</div>
+          <h3 class="ax-step-title">{{ nav.subtitle }}</h3>
+          <p class="ax-step-desc">{{ nav.desc }}</p>
+          <a class="ax-step-cta" href="{{ nav.link }}">
+            View all Services <i class="ion-ios-arrow-forward"></i>
+          </a>
+        </div>
+
+        <!-- Divider -->
+        <div class="col-lg-1 d-none d-lg-flex ax-step-divider-col">
+          <div class="ax-step-vline"></div>
+        </div>
+
+        <!-- Right: feature bullet grid -->
+        <div class="col-lg-6 col-md-12 ax-step-right">
+          <ul class="ax-step-points">
+            <li *ngFor="let point of nav.points" class="ax-step-point">
+              <div class="ax-step-point-icon">
+                <i class="fa fa-check"></i>
+              </div>
+              <span>{{ point }}</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Step navigation buttons -->
+      <div class="ax-step-footer">
+        <button class="ax-step-btn ax-step-btn--prev"
+                *ngIf="activeIndex() > 0"
+                (click)="setActive(navList[activeIndex() - 1].id)">
+          <i class="ion-ios-arrow-back"></i> Previous
+        </button>
+        <button class="ax-step-btn ax-step-btn--next"
+                *ngIf="activeIndex() < navList.length - 1"
+                (click)="setActive(navList[activeIndex() + 1].id)">
+          Next <i class="ion-ios-arrow-forward"></i>
+        </button>
+      </div>
+
+    </div>
+  </ng-container>
+
 </div>

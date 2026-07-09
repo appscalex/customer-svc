@@ -1,20 +1,65 @@
-<section class="position-relative">
-
+<section class="ax-about-section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <img src="./assets/images/about-us/04.png" class="about-box-img" alt="" style="width: 100%;">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6"></div>
-      <div class="col-lg-6 wow fadeInUp align-items-center">
-        <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
-        <app-check-list [lists]="lists"></app-check-list>
-        <div class="text-left mt-5">
-          <a class="button button-icon" href="/about-us"><span class="btn-effect">Read More</span></a>
+    <div class="row align-items-center">
+
+      <!-- Left: image with floating decorations -->
+      <div class="col-lg-6 wow fadeInLeft">
+        <div class="ax-about-img-wrap">
+
+          <!-- Decorative blobs -->
+          <div class="ax-about-blob ax-about-blob--a"></div>
+          <div class="ax-about-blob ax-about-blob--b"></div>
+
+          <!-- Main image -->
+          <img src="./assets/images/about-us/04.png" class="ax-about-img" alt="About AppScaleX">
+
+          <!-- Floating stat card -->
+          <div class="ax-about-float ax-about-float--stat">
+            <div class="ax-about-float__icon"><i class="fa fa-rocket"></i></div>
+            <div class="ax-about-float__body">
+              <strong>500+</strong>
+              <span>Teams Automated</span>
+            </div>
+          </div>
+
+          <!-- Floating badge -->
+          <div class="ax-about-float ax-about-float--badge">
+            <i class="fa fa-check-circle"></i>
+            <span>Zero-Downtime Deploys</span>
+          </div>
+
         </div>
       </div>
+
+      <!-- Right: content -->
+      <div class="col-lg-6 wow fadeInUp mt-5 mt-lg-0">
+
+        <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+
+        <!-- 2×2 feature grid -->
+        <div class="ax-feat-grid">
+          <div *ngFor="let feat of features; let i = index"
+               class="ax-feat-card wow fadeInUp"
+               [attr.data-wow-delay]="(i * 0.1) + 's'">
+            <div class="ax-feat-icon">
+              <i class="fa {{ feat.icon }}"></i>
+            </div>
+            <div class="ax-feat-body">
+              <h5 class="ax-feat-title">{{ feat.title }}</h5>
+              <p class="ax-feat-desc">{{ feat.desc }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-4">
+          <a class="ax-about-cta" routerLink="/about-us">
+            Discover More <i class="ion-ios-arrow-forward"></i>
+          </a>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </section>

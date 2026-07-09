@@ -1,24 +1,54 @@
-<section>
-    <div class="container">
-        <div class="row ">
-            <div class="col-md-12">
-                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
-            </div>
-        </div>
-        <div class="row">
-            <div *ngFor="let list of List" class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp align-items-center">
-                <div class="fancy_service wow fadeInUp text-center">
-                    <div class="hover-effect"></div>
-                    <div class="fancy-info">
-                        <img src="{{ list.image }}" alt="fancybox"/>
-                        <h4 class="mt-4 mb-3 title">{{ list.title }}</h4>
-                        <p class="">{{ list.subtitle }}</p>
-                        <a class="link-btn" href="#">
-                            <span class="btn-effect"> Read More<i class="ion-ios-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="ax-value-section">
+
+  <div class="container">
+
+    <!-- Section header -->
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <div class="title-design text-center">Why AppScaleX</div>
+        <h2 class="ax-val-heading">{{ titleSectionProp.subTitle }}</h2>
+        <p class="ax-val-subtext">
+          Empowering engineering teams to move faster, release confidently,
+          and scale without friction — all from a single integrated platform.
+        </p>
+      </div>
     </div>
+
+    <!-- Value cards -->
+    <div class="row ax-val-row mt-5">
+
+      <div *ngFor="let list of List; let i = index"
+           class="col-lg-4 col-md-6 mb-4 wow fadeInUp"
+           [attr.data-wow-delay]="(i * 0.15) + 's'">
+
+        <div class="ax-val-card">
+
+          <!-- Ghost number — background watermark -->
+          <div class="ax-val-ghost">{{ (i + 1) < 10 ? '0' + (i + 1) : (i + 1) }}</div>
+
+          <!-- Icon -->
+          <div class="ax-val-icon-wrap">
+            <img [src]="list.image" [alt]="list.title" class="ax-val-img">
+          </div>
+
+          <!-- Content -->
+          <h4 class="ax-val-title">{{ list.title }}</h4>
+          <p class="ax-val-desc">{{ list.subtitle }}</p>
+
+          <!-- Separator -->
+          <div class="ax-val-divider"></div>
+
+          <!-- CTA -->
+          <a class="ax-val-cta" href="/services">
+            Learn more <i class="ion-ios-arrow-forward"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>

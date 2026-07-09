@@ -33,12 +33,12 @@ export class FeaturesComponent implements OnInit {
   List2: any[] = [
     {
       title: 'Collaboration',
-      subtitle: 'It enables development and operations teams coalesce into a functional team that communicates and collaborates throughout the entire cycle.',
+      subtitle: 'It enables development and operations teams to coalesce into one team, communicating throughout the entire lifecycle.',
       image: './assets/images/services/04.png'
     },
     {
       title: 'Communication',
-      subtitle: 'It has support to track DevOps notifications to focus on specific events when multiple items configured for each environments.',
+      subtitle: 'It has support to track DevOps notifications to focus on events when multiple items configured for each environments.',
       image: './assets/images/services/05.png'
     },
     {

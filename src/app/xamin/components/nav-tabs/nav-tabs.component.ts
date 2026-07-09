@@ -1,5 +1,4 @@
-import {Component, Input, OnInit, TemplateRef} from '@angular/core';
-import {Template} from '@angular/compiler/src/render3/r3_ast';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-tabs',
@@ -9,16 +8,21 @@ export class NavTabsComponent implements OnInit {
 
   @Input() navList: any[];
 
+  activeId: string = '';
+
   constructor() { }
 
   ngOnInit() {
+    const first = this.navList && this.navList.find(n => n.active);
+    this.activeId = first ? first.id : (this.navList && this.navList[0] ? this.navList[0].id : '');
   }
 
-  tabActive(id) {
-    // @ts-ignore
-    const jquery = window.$;
-    jquery('.show_content').find('.active').removeClass('active show');
-    jquery('#' + id).addClass('active show');
+  setActive(id: string) {
+    this.activeId = id;
+  }
+
+  activeIndex(): number {
+    return this.navList ? this.navList.findIndex(n => n.id === this.activeId) : 0;
   }
 
 }

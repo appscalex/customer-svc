@@ -1,26 +1,61 @@
-<section class="aboutus-two-service">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-box wow fadeInUp text-center mb-0">
-                    <span class="title-design">Our Services</span>
-                    <h2 class="mb-0">We Provide Numerous Services</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div *ngFor="let list of List" class="col-lg-4 col-md-6">
-                <div class="service-box wow fadeInUp text-left">
-                    <img class="fancy-list-img" src="{{ list.image }}" alt="fancy-list" />
-                    <div class="service-detail align-self-center">
-                        <h4 class="mb-2">{{ list.title }}</h4>
-                        <p>{{ list.desc }}</p>
-                        <div class="text-left">
-                            <app-check-list [lists]="list.checkList"></app-check-list>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="ax-services-section">
+  <div class="container">
+
+    <!-- Section header -->
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <span class="title-design">Our Services</span>
+        <h2 class="ax-svc-main-title">We Provide Numerous Services</h2>
+        <p class="ax-svc-main-desc">
+          A unified DevOps platform — CI/CD, testing, deployment, monitoring,
+          auditing, and delivery all in one integrated suite.
+        </p>
+      </div>
     </div>
+
+    <!-- Service cards -->
+    <div class="row ax-svc-grid mt-5">
+
+      <div *ngFor="let list of List; let i = index"
+           class="col-lg-4 col-md-6 ax-svc-col wow fadeInUp"
+           [attr.data-wow-delay]="(i * 0.1) + 's'">
+
+        <div class="ax-svc-card">
+
+          <!-- Number badge -->
+          <span class="ax-svc-num">{{ (i + 1) < 10 ? '0' + (i + 1) : (i + 1) }}</span>
+
+          <!-- Icon -->
+          <div class="ax-svc-icon">
+            <img [src]="list.image" [alt]="list.title">
+          </div>
+
+          <!-- Body -->
+          <div class="ax-svc-body">
+
+            <h4 class="ax-svc-title">{{ list.title }}</h4>
+            <p class="ax-svc-desc">{{ list.desc }}</p>
+
+            <!-- Feature checklist -->
+            <ul class="ax-svc-checklist">
+              <li *ngFor="let item of list.checkList">
+                <i class="fa fa-check-circle"></i>
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+
+            <!-- CTA link -->
+            <a class="ax-svc-link" routerLink="/services">
+              Explore <i class="ion-ios-arrow-right"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </section>

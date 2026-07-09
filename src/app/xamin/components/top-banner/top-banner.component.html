@@ -1,18 +1,35 @@
-<!-- Breadcrumb -->
-<div class="text-left iq-breadcrumb-one iq-bg-over black">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-8 col-md-8 text-left align-self-center">
-        <nav aria-label="breadcrumb" class="text-left">
-          <h2 class="title">{{ data.title }}</h2>
-          <ol class="breadcrumb main-bg">
-            <li class="breadcrumb-item"><a href="index.html">Home</a> </li>
-            <li class="breadcrumb-item active">{{ data.title }}</li>
+<!-- Page Banner -->
+<div class="ax-page-banner">
+
+  <!-- Decorative orbs -->
+  <div class="ax-banner-orb ax-banner-orb--a"></div>
+  <div class="ax-banner-orb ax-banner-orb--b"></div>
+  <div class="ax-banner-orb ax-banner-orb--c"></div>
+
+  <!-- Content -->
+  <div class="container ax-banner-inner">
+    <div class="row title-content-center">
+      <div class="col-lg-7 col-md-9 col-12">
+
+        <span class="ax-banner-eyebrow">AppScaleX</span>
+
+        <h1 class="ax-banner-title">{{ data.title }}</h1>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb  ax-banner-breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a routerLink="/home">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">{{ data.title }}</li>
           </ol>
         </nav>
+
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 text-right wow fadeInRight"> <img src="./assets/images/about-us/{{ data.img }}" class="img-fluid float-right" alt="banner"> </div>
     </div>
   </div>
+
+  <!-- Image commented out per request -->
+  <!-- <img src="./assets/images/about-us/{{ data.img }}" class="img-fluid" alt="banner"> -->
+
 </div>
-<!-- Breadcrumb End -->
+<!-- Page Banner End -->
