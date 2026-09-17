@@ -15,7 +15,7 @@ export class ContactUsComponent implements OnInit {
   submitted = false;
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+91-9435187656',
+    contactNumber: '+91-9435160024',
     email: 'support@appscalex.com'
   };
   showForm: boolean = true;

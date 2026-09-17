@@ -11,7 +11,7 @@ export class IndexComponent implements OnInit {
 
   logoImage = './assets/images/logo.png';
   contactInfo: any = {
-    contactNumber: '+91-9435187656',
+    contactNumber: '+91-9435160024',
     email: 'support@appscalex.com',
     address: '123, Arlington Court, Clover Village, Wanowrie, Pune 411040'
   };
