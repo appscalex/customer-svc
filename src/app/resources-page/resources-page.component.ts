@@ -45,7 +45,7 @@ export class ResourcesPageComponent implements OnInit {
       category: 'DevOps Automation',
       badgeClass: 'badge-primary',
       readTime: '6 min read',
-      publishedDate: 'October 2026',
+      publishedDate: 'September 2026',
       author: 'AppScaleX DevOps Engineering Team',
       summary: 'Explore proven architectural strategies including remote Docker layer caching, parallel runner matrix orchestration, and dependency pre-heating that cut deployment cycles by over 60%.',
       keyTakeaways: [
@@ -98,7 +98,7 @@ RUN npm run build`
       category: 'FinOps & Cost',
       badgeClass: 'badge-success',
       readTime: '8 min read',
-      publishedDate: 'October 2026',
+      publishedDate: 'September 2026',
       author: 'AppScaleX FinOps Center of Excellence',
       summary: 'Learn how to detect orphaned storage volumes, eliminate over-provisioned staging clusters, and establish engineering-led cloud cost guardrails without slowing release velocity.',
       keyTakeaways: [
@@ -300,7 +300,7 @@ export const options = {
     private plugins: PluginsService,
     private route: ActivatedRoute,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -314,7 +314,7 @@ export const options = {
     });
 
     const current = this;
-    setTimeout(function() {
+    setTimeout(function () {
       current.plugins.index();
     }, 200);
   }
