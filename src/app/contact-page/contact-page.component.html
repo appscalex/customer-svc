@@ -1,0 +1,174 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge cyan">Book a Technical Consultation</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            See AppScaleX in Action
+          </h1>
+          <p class="lead text-white-50 mb-0" style="line-height: 1.7;">
+            Schedule a 30-minute demonstration with an AppScaleX solutions architect. Tell us about your stack and
+            engineering goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Request Form Section -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="row">
+        <!-- Form Column -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="bg-white p-4 p-md-5 rounded border shadow-sm">
+            <h3 class="font-weight-bold text-dark mt-4 mb-2">Request a Product Demo</h3>
+            <p class="text-muted small mb-4">Fill out the details below and an engineering specialist will connect with
+              you.</p>
+
+            <form *ngIf="showForm" [formGroup]="angForm" (ngSubmit)="onSubmit()" novalidate>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" formControlName="name" class="form-control" placeholder="Alex Morgan" required>
+                  <div *ngIf="submitted && angForm.controls['name'].invalid" class="text-danger small mt-1">
+                    Name is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Business Email <span
+                      class="text-danger">*</span></label>
+                  <input type="email" formControlName="email" class="form-control" placeholder="alex@company.com"
+                    required>
+                  <div *ngIf="submitted && angForm.controls['email'].invalid" class="text-danger small mt-1">
+                    Valid business email is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Company Name <span
+                      class="text-danger">*</span></label>
+                  <input type="text" formControlName="company" class="form-control" placeholder="Acme Technologies"
+                    required>
+                  <div *ngIf="submitted && angForm.controls['company'].invalid" class="text-danger small mt-1">
+                    Company name is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Job Title</label>
+                  <input type="text" formControlName="jobTitle" class="form-control"
+                    placeholder="CTO, VP Eng, DevOps Lead">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Engineering Team Size</label>
+                  <select formControlName="teamSize" class="form-control">
+                    <option value="1-10">1 - 10 engineers</option>
+                    <option value="11-50">11 - 50 engineers</option>
+                    <option value="51-200">51 - 200 engineers</option>
+                    <option value="201-500">201 - 500 engineers</option>
+                    <option value="500+">500+ engineers</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="font-weight-bold small text-dark">Primary Area of Interest</label>
+                  <select formControlName="primaryInterest" class="form-control">
+                    <option value="DevOps Automation">DevOps Automation & CI/CD</option>
+                    <option value="Quality Engineering">Quality Engineering & Testing</option>
+                    <option value="FinOps & Cost">FinOps & Cloud Cost Optimization</option>
+                    <option value="SRE & Reliability">SRE & Incident Management</option>
+                    <option value="AI Intelligence">AI-Powered Engineering</option>
+                    <option value="Unified Platform">Complete Unified Platform</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="font-weight-bold small text-dark">Phone Number (Optional)</label>
+                <input type="tel" formControlName="phone" class="form-control" placeholder="+91 or international">
+              </div>
+
+              <div class="form-group">
+                <label class="font-weight-bold small text-dark">Tell us about your requirements (Optional)</label>
+                <textarea formControlName="message" rows="4" class="form-control"
+                  placeholder="Describe your current tech stack, pain points, or timeline..."></textarea>
+              </div>
+
+              <button type="submit" [disabled]="isSubmitting"
+                class="ax-btn-primary btn-block font-weight-bold py-3 mar-20">
+                <span *ngIf="!isSubmitting">Request Live Demo <i class="fa fa-calendar ml-2"></i></span>
+                <span *ngIf="isSubmitting"><i class="fa fa-spinner fa-spin mr-2"></i> Submitting Request...</span>
+              </button>
+            </form>
+
+            <!-- Success State -->
+            <div *ngIf="!showForm && submissionSuccess" class="p-4 rounded border border-success text-center"
+              style="background: rgba(16,185,129,0.08);">
+              <i class="fa fa-check-circle text-success fa-3x mb-3"></i>
+              <h4 class="font-weight-bold text-dark mb-2">Thank You for Your Demo Request!</h4>
+              <p class="text-muted mb-3">
+                Our solutions architecture team has received your information. A technical specialist will contact you
+                within 24 hours to coordinate your live walkthrough.
+              </p>
+              <a routerLink="/platform" class="btn btn-outline-primary rounded-pill px-4 font-weight-bold small">
+                Explore Platform While You Wait &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Contact Details Column -->
+        <div class="col-lg-5 pl-lg-4">
+          <div class="p-4 rounded bg-white border shadow-sm mb-4">
+            <h5 class="font-weight-bold text-dark mb-3">Contact Information</h5>
+            <div class="mb-3 d-flex align-items-start">
+              <i class="fa fa-envelope text-primary mr-3 mt-1" style="font-size: 1.1rem;"></i>
+              <div>
+                <strong class="text-dark d-block">Email Support & Sales</strong>
+                <a href="mailto:{{ contactInfo.email }}" class="text-muted">{{ contactInfo.email }}</a>
+              </div>
+            </div>
+            <div class="mb-3 d-flex align-items-start">
+              <i class="fa fa-phone text-primary mr-3 mt-1" style="font-size: 1.1rem;"></i>
+              <div>
+                <strong class="text-dark d-block">Direct Phone</strong>
+                <a href="tel:{{ contactInfo.contactNumber }}" class="text-muted">{{ contactInfo.contactNumber }}</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-start">
+              <i class="fa fa-map-marker text-primary mr-3 mt-1" style="font-size: 1.2rem;"></i>
+              <div>
+                <strong class="text-dark d-block">Corporate Office</strong>
+                <span class="text-muted small">ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why Book A Demo Box -->
+          <div class="p-4 rounded border text-white" style="background: #0f172a;">
+            <h5 class="font-weight-bold text-white mb-3"><i class="fa fa-lightbulb-o text-warning mr-2"></i> What to
+              Expect:</h5>
+            <ul class="list-unstyled text-white-50 small mb-0">
+              <li class="mb-2"><i class="fa fa-check text-info mr-2"></i> 30-minute tailored platform walkthrough.</li>
+              <li class="mb-2"><i class="fa fa-check text-info mr-2"></i> Deep dive into CI/CD, k6 testing, or FinOps.
+              </li>
+              <li class="mb-2"><i class="fa fa-check text-info mr-2"></i> Discussion of custom VPC or dedicated cloud
+                deployment.</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Transparent pricing and quote estimates.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

@@ -1,0 +1,166 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero Banner -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge blue">Integrated Platform Architecture</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            The Engineering Control Plane for <span class="ax-gradient-text">Modern Cloud Operations</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            AppScaleX unites DevOps automation, quality engineering, FinOps cost control, SRE reliability, and AI intelligence into a cohesive, enterprise-ready delivery platform.
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3">
+              <span>Book a Technical Walkthrough</span>
+              <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <a routerLink="/features" class="ax-btn-secondary">
+              <span>Explore All Features</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Architecture Diagram Section -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge cyan">Architecture Blueprint</div>
+        <h2 class="font-weight-bold text-white mb-3">How AppScaleX Connects Your Toolchain</h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          From developer commit to production observability, our integrated architecture governs every step.
+        </p>
+      </div>
+
+      <!-- Unified Architecture Container -->
+      <div class="ax-dash-container p-4 mb-5">
+        <div class="ax-dash-header mb-4">
+          <span class="text-white font-weight-bold small"><i class="fa fa-cubes text-info mr-2"></i> APPSCALEX PLATFORM ARCHITECTURE</span>
+          <span class="badge badge-pill badge-primary">Enterprise Ready</span>
+        </div>
+
+        <div class="row text-center mb-4">
+          <!-- Layer 1 -->
+          <div class="col-12 mb-3">
+            <div class="p-3 rounded border border-info" style="background: rgba(37,99,235,0.12);">
+              <span class="text-info font-weight-bold text-uppercase small d-block mb-1">Developer & Ingestion Layer</span>
+              <strong class="text-white">Git Repositories (GitHub, GitLab, Bitbucket) &bull; Webhooks &bull; CLI & API Access &bull; IDE Plugins</strong>
+            </div>
+          </div>
+
+          <!-- Layer 2: Core Engine Grid -->
+          <div class="col-lg-12 mb-3">
+            <div class="row">
+              <div class="col-md-3 mb-2">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <div class="text-primary font-weight-bold mb-1"><i class="fa fa-code-fork mr-1"></i> CI/CD Engine</div>
+                  <p class="text-white-50 small mb-0">Pipeline orchestration, parallel runners, container image builds</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <div class="text-info font-weight-bold mb-1"><i class="fa fa-check-square mr-1"></i> Quality & Security</div>
+                  <p class="text-white-50 small mb-0">k6 load testing, OWASP ZAP, Semgrep, SonarQube, gates</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <div class="text-success font-weight-bold mb-1"><i class="fa fa-dollar mr-1"></i> FinOps Engine</div>
+                  <p class="text-white-50 small mb-0">Cloud cost tracking, idle resource detection, rightsizing</p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-2">
+                <div class="p-3 rounded bg-dark border border-secondary h-100">
+                  <div class="text-warning font-weight-bold mb-1"><i class="fa fa-heartbeat mr-1"></i> SRE Control</div>
+                  <p class="text-white-50 small mb-0">Threshold alerts, incident lifecycle, deployment correlation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layer 3: Intelligence & Governance -->
+          <div class="col-12 mb-3">
+            <div class="p-3 rounded border border-purple" style="background: rgba(139,92,246,0.12); border-color: rgba(139,92,246,0.4);">
+              <span class="text-purple font-weight-bold text-uppercase small d-block mb-1" style="color: #c084fc;">AI Operational Intelligence & Human Governance Plane</span>
+              <strong class="text-white">Telemetry Summarization &bull; Evidence-Backed Root Cause Analysis &bull; Mandatory Approval Gates &bull; Granular RBAC & Audit Trails</strong>
+            </div>
+          </div>
+
+          <!-- Layer 4: Infrastructure & Runtime Targets -->
+          <div class="col-12">
+            <div class="p-3 rounded border border-secondary" style="background: rgba(30,41,59,0.7);">
+              <span class="text-muted font-weight-bold text-uppercase small d-block mb-1">Target Cloud Infrastructure & Registries</span>
+              <strong class="text-white">Kubernetes (EKS, GKE, AKS, Self-Hosted) &bull; AWS &bull; Google Cloud &bull; Microsoft Azure &bull; Container Registries</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core 5 Pillars Grid -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-cogs text-primary mr-2"></i> DevOps Automation</h5>
+            <p class="text-white-50 small mb-3">Standardize pipelines, container packaging, and environment promotion with built-in auditability.</p>
+            <a routerLink="/solutions/devops-automation" class="text-info font-weight-bold small">Explore DevOps &rarr;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-shield text-info mr-2"></i> Quality Engineering</h5>
+            <p class="text-white-50 small mb-3">Embed k6 performance tests, OWASP security checks, and strict quality gates before production.</p>
+            <a routerLink="/solutions/quality-engineering" class="text-info font-weight-bold small">Explore Quality &rarr;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-line-chart text-success mr-2"></i> FinOps Optimization</h5>
+            <p class="text-white-50 small mb-3">Understand resource spending, identify orphaned storage, and evaluate savings trade-offs.</p>
+            <a routerLink="/solutions/finops" class="text-success font-weight-bold small">Explore FinOps &rarr;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-heartbeat text-warning mr-2"></i> SRE & Incident Ops</h5>
+            <p class="text-white-50 small mb-3">Detect service anomalies early, classify incidents, and correlate alerts with recent releases.</p>
+            <a routerLink="/solutions/sre" class="text-warning font-weight-bold small">Explore SRE &rarr;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-magic text-purple mr-2" style="color: #a78bfa;"></i> AI Intelligence</h5>
+            <p class="text-white-50 small mb-3">Generate log summaries, hypothesize root causes, and propose remediation with human verification.</p>
+            <a routerLink="/solutions/ai" class="text-purple font-weight-bold small" style="color: #a78bfa;">Explore AI &rarr;</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <h5 class="font-weight-bold text-white mb-2"><i class="fa fa-lock text-danger mr-2"></i> Security & Governance</h5>
+            <p class="text-white-50 small mb-3">Role-based access controls, secret encryption, immutable audit trails, and policy enforcement.</p>
+            <a routerLink="/security" class="text-danger font-weight-bold small">Explore Security &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Ready to Consolidate Your Engineering Operations?</h2>
+      <p class="text-white-50 lead mb-4">Talk to an AppScaleX solutions architect and see the platform in action.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Book a Technical Demo</span><i class="fa fa-calendar ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

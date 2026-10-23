@@ -1,0 +1,184 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+
+  <!-- =========================================================================
+       VIEW 1: DETAILED ARTICLE READER (When an article is selected)
+       ========================================================================= -->
+  <div *ngIf="selectedArticle" class="ax-article-reader">
+    <!-- Article Hero Header -->
+    <section class="ax-dark-section py-5" style="padding-top: 170px !important; padding-bottom: 70px !important;">
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <!-- Back Button -->
+            <button (click)="closeArticle()" class="btn btn-outline-light btn-sm mb-4 px-3 py-2" style="border-radius: 8px;">
+              <i class="fa fa-arrow-left mr-2"></i> Back to All Guides & Resources
+            </button>
+
+            <!-- Metadata Badges -->
+            <div class="d-flex align-items-center flex-wrap mb-3">
+              <span class="badge {{ selectedArticle.badgeClass }} px-3 py-1.5 font-weight-bold mr-3" style="font-size: 0.82rem;">
+                {{ selectedArticle.category }}
+              </span>
+              <span class="text-white-50 small mr-3">
+                <i class="fa fa-clock-o mr-1"></i> {{ selectedArticle.readTime }}
+              </span>
+              <span class="text-white-50 small mr-3">
+                <i class="fa fa-calendar mr-1"></i> {{ selectedArticle.publishedDate }}
+              </span>
+              <span class="text-white-50 small">
+                <i class="fa fa-user-circle-o mr-1"></i> {{ selectedArticle.author }}
+              </span>
+            </div>
+
+            <!-- Article Title -->
+            <h1 class="display-4 font-weight-bold text-white mb-3" style="font-size: 2.5rem; letter-spacing: -0.02em; line-height: 1.25;">
+              {{ selectedArticle.title }}
+            </h1>
+
+            <!-- Article Summary Lead -->
+            <p class="lead text-white-50" style="font-size: 1.15rem; line-height: 1.7;">
+              {{ selectedArticle.summary }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content Body -->
+    <section class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+
+            <!-- Key Takeaways Highlight Box -->
+            <div class="p-4 mb-5 border-left border-primary" style="background: #f8fafc; border-left-width: 4px !important; border-radius: 0 12px 12px 0; border: 1px solid #e2e8f0;">
+              <h5 class="font-weight-bold text-dark mb-3 d-flex align-items-center">
+                <i class="fa fa-lightbulb-o text-warning mr-2" style="font-size: 1.3rem;"></i> Key Strategic Takeaways
+              </h5>
+              <ul class="mb-0 pl-3">
+                <li *ngFor="let point of selectedArticle.keyTakeaways" class="text-secondary mb-2" style="font-size: 0.95rem; line-height: 1.6;">
+                  {{ point }}
+                </li>
+              </ul>
+            </div>
+
+            <!-- Article Sections -->
+            <article class="ax-article-body">
+              <div *ngFor="let section of selectedArticle.sections" class="mb-5">
+                <h3 class="font-weight-bold text-dark mb-3" style="font-size: 1.5rem; letter-spacing: -0.01em;">
+                  {{ section.heading }}
+                </h3>
+                <p class="text-secondary" style="font-size: 1.05rem; line-height: 1.8;">
+                  {{ section.content }}
+                </p>
+
+                <!-- Optional Callout -->
+                <div *ngIf="section.callout" class="p-3 my-3 bg-light border-left border-info" style="border-left-width: 4px !important; border-radius: 4px;">
+                  <strong class="text-info"><i class="fa fa-info-circle mr-1"></i> Industry Benchmark:</strong>
+                  <span class="text-dark ml-1">{{ section.callout }}</span>
+                </div>
+
+                <!-- Optional Bullet Points -->
+                <ul *ngIf="section.bulletPoints" class="pl-4 my-3">
+                  <li *ngFor="let bp of section.bulletPoints" class="text-secondary mb-2" style="font-size: 0.98rem; line-height: 1.6;">
+                    {{ bp }}
+                  </li>
+                </ul>
+
+                <!-- Optional Code Snippet -->
+                <div *ngIf="section.codeSnippet" class="my-4">
+                  <pre class="p-3 text-white" style="background: #0f172a; border-radius: 8px; font-size: 0.88rem; overflow-x: auto; line-height: 1.5;"><code>{{ section.codeSnippet }}</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bottom Back & CTA Navigation -->
+            <div class="pt-4 mt-5 border-top d-flex flex-wrap justify-content-between align-items-center">
+              <button (click)="closeArticle()" class="btn btn-outline-primary mb-3">
+                <i class="fa fa-arrow-left mr-2"></i> Back to All Guides & Resources
+              </button>
+              <a routerLink="/contact" class="ax-btn-primary mb-3">
+                <span>Implement in AppScaleX</span>
+                <i class="fa fa-calendar ml-2"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- =========================================================================
+       VIEW 2: RESOURCES CATALOG GRID (When no article is selected)
+       ========================================================================= -->
+  <div *ngIf="!selectedArticle">
+    <!-- Hero Banner -->
+    <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+      <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: -50px; right: -50px;"></div>
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <div class="ax-pill-badge cyan">Engineering Guides & Best Practices</div>
+            <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+              Resource Center for <span class="ax-gradient-text-cyan">Engineering Leaders</span>
+            </h1>
+            <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+              In-depth technical guides and architectural best practices on CI/CD optimization, FinOps governance, SRE incident response, and automated quality gates. Click any article below to read the comprehensive walkthrough.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section class="py-5 ax-light-section">
+      <div class="container py-4">
+        <div class="row">
+
+          <!-- Loop over all rich articles -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex" *ngFor="let article of articles">
+            <div class="ax-feature-matrix-card d-flex flex-column w-100" style="cursor: pointer;" (click)="openArticle(article)">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge {{ article.badgeClass }} px-2 py-1 font-weight-bold">
+                  {{ article.category }}
+                </span>
+                <span class="text-muted small">
+                  <i class="fa fa-clock-o mr-1"></i> {{ article.readTime }}
+                </span>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2" style="font-size: 1.15rem; line-height: 1.4;">
+                {{ article.title }}
+              </h5>
+              <p class="text-muted small mb-3 flex-grow-1" style="line-height: 1.6;">
+                {{ article.summary }}
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small">{{ article.publishedDate }}</span>
+                <button type="button" class="btn btn-link p-0 text-primary font-weight-bold" style="text-decoration: none;" (click)="openArticle(article); $event.stopPropagation();">
+                  Read Full Guide &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Global Bottom Walkthrough CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Want to Put These Best Practices to Work?</h2>
+      <p class="text-white-50 lead mb-4">See how AppScaleX implements these workflows natively out of the box.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Book a Technical Walkthrough</span><i class="fa fa-calendar ml-2"></i></a>
+    </div>
+  </section>
+
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

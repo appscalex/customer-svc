@@ -1,0 +1,285 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: -50px; right: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="ax-pill-badge cyan">Quality Engineering & Automated Testing</div>
+          <h1 class="display-4 font-weight-bolder text-white mb-3" style="letter-spacing: -0.02em;">
+            Test Smarter.<br>
+            <span class="ax-gradient-text-cyan">Release with Confidence.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Integrate quality validation into delivery workflows to identify defects earlier, evaluate performance, detect security issues, and apply consistent release criteria.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2"><span>Book Quality Engineering Demo</span><i class="fa fa-arrow-right ml-2"></i></a>
+            <a routerLink="/platform" class="ax-btn-secondary mb-2"><span>Platform Overview</span></a>
+          </div>
+        </div>
+
+        <!-- Testing Dashboard Mockup -->
+        <div class="col-lg-6">
+          <div class="ax-dash-container">
+            <div class="ax-dash-header d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="ax-window-dots mr-2 d-none d-sm-flex">
+                  <span class="ax-window-dot red"></span>
+                  <span class="ax-window-dot yellow"></span>
+                  <span class="ax-window-dot green"></span>
+                </div>
+                <span class="text-white font-weight-bold" style="font-size: 0.8rem; letter-spacing: 0.03em;">
+                  <i class="fa fa-check-circle text-success mr-1"></i> QUALITY GATE EXECUTION REPORT
+                </span>
+              </div>
+              <span class="badge badge-success px-2 py-1 flex-shrink-0" style="font-size: 0.72rem; letter-spacing: 0.04em;">
+                <i class="fa fa-check mr-1"></i> PASSED
+              </span>
+            </div>
+
+            <div class="p-3 p-md-4">
+              <div class="row">
+                <!-- Metric 1: k6 Load -->
+                <div class="col-6 mb-3">
+                  <div class="p-3 rounded h-100 d-flex flex-column justify-content-between" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div>
+                      <span class="text-white-50 small d-block mb-1" style="font-size: 0.78rem; font-weight: 500;">k6 Load (P95)</span>
+                      <div class="text-white font-weight-bold" style="font-size: 1.25rem; line-height: 1.2;">142 <span style="font-size: 0.75rem; font-weight: 400; color: #94a3b8;">ms</span></div>
+                    </div>
+                    <div class="mt-2 pt-1 border-top" style="border-color: rgba(255,255,255,0.06) !important;">
+                      <span class="text-success small" style="font-size: 0.72rem; font-weight: 600;"><i class="fa fa-check mr-1"></i> Target &lt; 250ms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 2: Throughput -->
+                <div class="col-6 mb-3">
+                  <div class="p-3 rounded h-100 d-flex flex-column justify-content-between" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div>
+                      <span class="text-white-50 small d-block mb-1" style="font-size: 0.78rem; font-weight: 500;">Throughput</span>
+                      <div class="text-white font-weight-bold" style="font-size: 1.25rem; line-height: 1.2;">2,500 <span style="font-size: 0.75rem; font-weight: 400; color: #94a3b8;">RPS</span></div>
+                    </div>
+                    <div class="mt-2 pt-1 border-top" style="border-color: rgba(255,255,255,0.06) !important;">
+                      <span class="text-success small" style="font-size: 0.72rem; font-weight: 600;"><i class="fa fa-check mr-1"></i> Zero errors</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 3: OWASP ZAP DAST -->
+                <div class="col-6 mb-3 mb-md-0">
+                  <div class="p-3 rounded h-100 d-flex flex-column justify-content-between" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div>
+                      <span class="text-white-50 small d-block mb-1 text-truncate" style="font-size: 0.78rem; font-weight: 500;" title="OWASP ZAP DAST">OWASP ZAP DAST</span>
+                      <div class="text-success font-weight-bold" style="font-size: 1.25rem; line-height: 1.2;">0 <span style="font-size: 0.75rem; font-weight: 400; color: #10b981;">Critical</span></div>
+                    </div>
+                    <div class="mt-2 pt-1 border-top" style="border-color: rgba(255,255,255,0.06) !important;">
+                      <span class="text-muted small" style="font-size: 0.72rem; font-weight: 500;">0 High &bull; 2 Info</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 4: Semgrep SAST -->
+                <div class="col-6 mb-3 mb-md-0">
+                  <div class="p-3 rounded h-100 d-flex flex-column justify-content-between" style="background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div>
+                      <span class="text-white-50 small d-block mb-1 text-truncate" style="font-size: 0.78rem; font-weight: 500;" title="Semgrep SAST">Semgrep SAST</span>
+                      <div class="text-success font-weight-bold" style="font-size: 1.25rem; line-height: 1.2;">Grade A</div>
+                    </div>
+                    <div class="mt-2 pt-1 border-top" style="border-color: rgba(255,255,255,0.06) !important;">
+                      <span class="text-success small" style="font-size: 0.72rem; font-weight: 600;"><i class="fa fa-check mr-1"></i> 88% coverage</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gate Status Banner -->
+              <div class="rounded border border-success" style="padding: 12px 18px !important; text-center text-success small font-weight-bold mt-3 d-flex align-items-center justify-content-center" style="background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3) !important; font-size: 0.82rem;">
+                <i class="fa fa-check-circle mr-2" style="font-size: 1rem;"></i>
+                <span>Release Gate Status: All 4 Thresholds Satisfied</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Quality Workflow -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge cyan">Automated Verification Engine</div>
+        <h2 class="font-weight-bold text-dark mb-3">The Quality Engineering Workflow</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Shift testing, performance validation, and security analysis left by inserting automated gates directly into your delivery pipeline.
+        </p>
+      </div>
+
+      <!-- Interactive Verification Pipeline Rail -->
+      <div class="ax-workflow-rail-box mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+          <span class="small font-weight-bold text-dark text-uppercase" style="letter-spacing: 0.05em;">
+            <i class="fa fa-shield text-cyan mr-1"></i> Multi-Stage Verification Pipeline Continuum
+          </span>
+          <span class="badge badge-info px-2 py-1"><i class="fa fa-check mr-1"></i> All 4 Gates Verified</span>
+        </div>
+        <div class="ax-workflow-rail-scroll">
+          <div class="ax-workflow-track">
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(6,182,212,0.1); color: #0891b2;"><i class="fa fa-code"></i></div>
+              <div class="ax-workflow-node-title">1. Unit & Lint</div>
+              <div class="ax-workflow-node-sub">Jest / Pytest</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i class="fa fa-search"></i></div>
+              <div class="ax-workflow-node-title">2. SAST Scan</div>
+              <div class="ax-workflow-node-sub">Sonar & Semgrep</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(245,158,11,0.1); color: #d97706;"><i class="fa fa-tachometer"></i></div>
+              <div class="ax-workflow-node-title">3. k6 Perf</div>
+              <div class="ax-workflow-node-sub">P95 / Throughput</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;"><i class="fa fa-shield"></i></div>
+              <div class="ax-workflow-node-title">4. DAST Audit</div>
+              <div class="ax-workflow-node-sub">OWASP ZAP</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(16,185,129,0.1); color: #059669;"><i class="fa fa-check-square"></i></div>
+              <div class="ax-workflow-node-title">5. Quality Gate</div>
+              <div class="ax-workflow-node-sub">Passed 4/4 Rules</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(15,23,42,0.1); color: #0f172a;"><i class="fa fa-rocket"></i></div>
+              <div class="ax-workflow-node-title">6. Promotion</div>
+              <div class="ax-workflow-node-sub">Canary Cutover</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none text-right text-muted small mt-2" style="font-size: 0.72rem;">
+          <i class="fa fa-arrows-h mr-1"></i> Scroll horizontally to view all stages &rarr;
+        </div>
+      </div>
+<!-- Feature Grid -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-tachometer"></i></div>
+              <span class="ax-micro-badge cyan">k6 Automation</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">k6 Performance Testing</h5>
+            <p class="text-muted small mb-3">Automate load, soak, and stress testing scenarios to validate API latency thresholds (P95/P99) and request throughput before cutover.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Sub-millisecond stats</span>
+              <strong class="text-info font-weight-bold">Load & Spike</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-shield"></i></div>
+              <span class="ax-micro-badge purple">DAST Scanning</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">OWASP ZAP Dynamic Scanning</h5>
+            <p class="text-muted small mb-3">Run automated dynamic application security testing (DAST) on live staging endpoints to uncover OWASP Top 10 vulnerabilities prior to release.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Active & Passive</span>
+              <strong class="text-purple font-weight-bold">Zero High CVEs</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-search"></i></div>
+              <span class="ax-micro-badge blue">SAST Analysis</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">SonarQube & Semgrep SAST</h5>
+            <p class="text-muted small mb-3">Scan source code for bugs, security hotspots, code smells, and dependency vulnerabilities in parallel with instant inline PR annotations.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> 80%+ Test Coverage</span>
+              <strong class="text-primary font-weight-bold">Grade A Target</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-archive"></i></div>
+              <span class="ax-micro-badge amber">Image Security</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Container Vulnerability Scanning</h5>
+            <p class="text-muted small mb-3">Inspect container base images, OS packages, and app binaries for known CVEs and malicious packages before publishing to registries.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Trivy / Clair Audit</span>
+              <strong class="text-warning font-weight-bold">Zero-Day Guard</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-lock"></i></div>
+              <span class="ax-micro-badge emerald">Policy Engine</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Configurable Quality Gates</h5>
+            <p class="text-muted small mb-3">Set strict, enforceable release criteria based on test pass rates, code coverage thresholds, latency limits, and security severity rules.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Deterministic Block</span>
+              <strong class="text-success font-weight-bold">Automated Gate</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-clipboard"></i></div>
+              <span class="ax-micro-badge cyan">Compliance Ready</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Release-Readiness Audits</h5>
+            <p class="text-muted small mb-3">Provide engineering managers with transparent audit trails showing test execution logs, verification proofs, and policy validation timestamps.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> ISO & Enterprise Ready</span>
+              <strong class="text-info font-weight-bold">Tamper-Proof</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Enforce Quality on Every Build</h2>
+      <p class="text-white-50 lead mb-4">Prevent defects from escaping into production with automated quality engineering.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Request a Technical Demo</span><i class="fa fa-calendar ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

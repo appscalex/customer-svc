@@ -1,0 +1,322 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="ax-pill-badge emerald">FinOps & Cloud Cost Optimization</div>
+          <h1 class="display-4 font-weight-bolder text-white mb-3" style="letter-spacing: -0.02em;">
+            Understand Your Cloud Spend.<br>
+            <span class="ax-gradient-text-emerald">Find Opportunities to Optimize.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Connect infrastructure usage directly with engineering decisions. Track cloud spending, identify idle or underutilized resources, and eliminate waste without slowing delivery.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%) !important;">
+              <span>Discuss Your Cloud Costs</span><i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <a routerLink="/pricing" class="ax-btn-secondary mb-2"><span>View Plans & Add-ons</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="ax-dash-container p-4">
+            <div class="ax-dash-header mb-3">
+              <span class="text-white font-weight-bold small"><i class="fa fa-line-chart text-success mr-2"></i> CLOUD COST DASHBOARD</span>
+              <span class="badge badge-success">-14% Spend</span>
+            </div>
+            <div class="row mb-3">
+              <div class="col-6">
+                <div class="p-3 rounded bg-dark border border-secondary">
+                  <span class="text-muted small d-block">Monthly Spend</span>
+                  <strong class="text-white h5 mb-0">$18,420</strong>
+                  <span class="text-success small d-block mt-1"><i class="fa fa-check"></i> Within budget</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded bg-dark border border-secondary">
+                  <span class="text-muted small d-block">Identified Savings</span>
+                  <strong class="text-success h5 mb-0">$3,200/mo</strong>
+                  <span class="text-cyan small d-block mt-1">6 opportunities</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 rounded bg-dark border border-secondary text-white-50 small mb-2">
+              <i class="fa fa-warning text-warning mr-1"></i> 4 unattached EBS volumes found ($84/mo)
+            </div>
+            <div class="p-2 rounded bg-dark border border-secondary text-white-50 small">
+              <i class="fa fa-warning text-warning mr-1"></i> Oversized dev node pool detected ($420/mo)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Cloud Cost Visibility & Governance -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge emerald">Engineering-Led FinOps</div>
+        <h2 class="font-weight-bold text-dark mb-3">Complete Cloud Cost Visibility & Governance</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Empower engineering teams with the financial context they need to eliminate cloud waste and design cost-effective cloud architectures.
+        </p>
+      </div>
+
+      <!-- Interactive FinOps Lifecycle Rail -->
+      <div class="ax-workflow-rail-box mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+          <span class="small font-weight-bold text-dark text-uppercase" style="letter-spacing: 0.05em;">
+            <i class="fa fa-dollar text-success mr-1"></i> Continuous Cloud Cost Optimization Lifecycle
+          </span>
+          <span class="badge badge-success px-2 py-1"><i class="fa fa-arrow-down mr-1"></i> Average 28% Spend Reduction</span>
+        </div>
+        <div class="ax-workflow-rail-scroll">
+          <div class="ax-workflow-track five-steps">
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(16,185,129,0.1); color: #059669;"><i class="fa fa-cloud"></i></div>
+              <div class="ax-workflow-node-title">1. Ingest Telemetry</div>
+              <div class="ax-workflow-node-sub">AWS / Azure / GCP</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(6,182,212,0.1); color: #0891b2;"><i class="fa fa-tags"></i></div>
+              <div class="ax-workflow-node-title">2. Tag & Attribute</div>
+              <div class="ax-workflow-node-sub">Per App / Environment</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(245,158,11,0.1); color: #d97706;"><i class="fa fa-search"></i></div>
+              <div class="ax-workflow-node-title">3. Detect Waste</div>
+              <div class="ax-workflow-node-sub">Idle & Orphan Assets</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;"><i class="fa fa-sliders"></i></div>
+              <div class="ax-workflow-node-title">4. Rightsize AI</div>
+              <div class="ax-workflow-node-sub">CPU & Memory Recs</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i class="fa fa-lock"></i></div>
+              <div class="ax-workflow-node-title">5. Budget Gate</div>
+              <div class="ax-workflow-node-sub">Automated Guardrail</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none text-right text-muted small mt-2" style="font-size: 0.72rem;">
+          <i class="fa fa-arrows-h mr-1"></i> Scroll horizontally to view all stages &rarr;
+        </div>
+      </div>
+<!-- Feature Grid -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-exclamation-triangle"></i></div>
+              <span class="ax-micro-badge emerald">Visibility Gap</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Eradicate Cloud Waste</h5>
+            <p class="text-muted small mb-3">Cloud bills grow unnoticed when developers lack immediate visibility into the financial impact of resource allocations, oversized clusters, and unattached volumes.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Root-cause tracing</span>
+              <strong class="text-success font-weight-bold">Zero Blindspots</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-line-chart"></i></div>
+              <span class="ax-micro-badge cyan">Hourly Metrics</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Infrastructure Cost Visibility</h5>
+            <p class="text-muted small mb-3">Track hourly and daily infrastructure expenses with multi-cloud telemetry, giving engineering leads real-time insight into utilization patterns across workloads.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Real-time ingest</span>
+              <strong class="text-info font-weight-bold">Multi-Cloud</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-pie-chart"></i></div>
+              <span class="ax-micro-badge blue">Attribution</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Environment Cost Breakdowns</h5>
+            <p class="text-muted small mb-3">Accurately attribute infrastructure spend across development, staging, QA, and production tiers, or isolate costs per microservice and team.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Tag-based grouping</span>
+              <strong class="text-primary font-weight-bold">Cost Per Service</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-trash-o"></i></div>
+              <span class="ax-micro-badge amber">Zero Waste</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Idle & Orphan Resource Sweeper</h5>
+            <p class="text-muted small mb-3">Pinpoint abandoned test clusters, detached EBS/persistent disks, idle load balancers, and unallocated elastic IPs before they accumulate charges.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> 1-click cleanup</span>
+              <strong class="text-warning font-weight-bold">Reclaim & Save</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-bell-o"></i></div>
+              <span class="ax-micro-badge purple">Spike Defense</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Spend Anomaly Detection</h5>
+            <p class="text-muted small mb-3">Catch unexpected cost spikes within minutes of occurrence. Differentiate legitimate marketing surges from runaway batch scripts or misconfigurations.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Smart thresholds</span>
+              <strong class="text-purple font-weight-bold">Instant Alert</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-sliders"></i></div>
+              <span class="ax-micro-badge emerald">AI Rightsizing</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Data-Driven Rightsizing</h5>
+            <p class="text-muted small mb-3">Receive precise CPU, memory, and container limit recommendations backed by historical telemetry, preventing both over-provisioning and out-of-memory crashes.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Safe compute sizing</span>
+              <strong class="text-success font-weight-bold">Optimum Cost</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-shield"></i></div>
+              <span class="ax-micro-badge blue">Governance</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Engineering Budget Guardrails</h5>
+            <p class="text-muted small mb-3">Establish automated budget policies and deployment limits that protect cloud margins while ensuring developers retain the freedom to innovate rapidly.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Policy enforcement</span>
+              <strong class="text-primary font-weight-bold">Budget Gates</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-balance-scale"></i></div>
+              <span class="ax-micro-badge cyan">Architecture</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Balanced Operational Trade-offs</h5>
+            <p class="text-muted small mb-3">Model cost-saving decisions against uptime SLAs, latency requirements, multi-region failover, and disaster recovery posture with transparent impact graphs.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> SLA Preservation</span>
+              <strong class="text-info font-weight-bold">Zero Degradation</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-refresh"></i></div>
+              <span class="ax-micro-badge emerald">Continuous ROI</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Continuous FinOps Feedback Loop</h5>
+            <p class="text-muted small mb-3">Embed cost accountability into pull requests and delivery pipelines: code commits show expected cloud cost impact before merging to main branches.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Infracost & Telemetry</span>
+              <strong class="text-success font-weight-bold">Shift-Left FinOps</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FinOps FAQ Section -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge emerald">FinOps Clarity</div>
+        <h2 class="font-weight-bold text-white mb-3">FinOps & Cost Optimization FAQ</h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">Click any question below to explore answers regarding cloud cost governance with AppScaleX.</p>
+      </div>
+
+      <div class="max-w-800 mx-auto">
+        <div class="ax-faq-card" [class.active]="openFaq === 0">
+          <div class="ax-faq-question" (click)="toggleFaq(0)">
+            <span class="font-weight-bold">How does AppScaleX estimate cloud costs?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer" *ngIf="openFaq === 0">
+            AppScaleX analyzes provisioned cloud infrastructure telemetry, instance types, and storage allocations against standard provider pricing models to calculate hourly and monthly expenditure estimates.
+          </div>
+        </div>
+
+        <div class="ax-faq-card" [class.active]="openFaq === 1">
+          <div class="ax-faq-question" (click)="toggleFaq(1)">
+            <span class="font-weight-bold">Does rightsizing affect production availability?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer" *ngIf="openFaq === 1">
+            All optimization recommendations highlight potential trade-offs regarding performance and availability. Changes require engineer approval and can be tested in non-production environments first.
+          </div>
+        </div>
+
+        <div class="ax-faq-card" [class.active]="openFaq === 2">
+          <div class="ax-faq-question" (click)="toggleFaq(2)">
+            <span class="font-weight-bold">Can I configure budget alerts per project?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer" *ngIf="openFaq === 2">
+            Yes, AppScaleX allows teams to define environment-level and project-level spending thresholds with email and webhook notifications when expenses approach limits.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Ready to Optimize Your Cloud Spend?</h2>
+      <p class="text-white-50 lead mb-4">Request a consultation to see how much your engineering team could save.</p>
+      <a routerLink="/contact" class="ax-btn-primary" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%) !important;">
+        <span>Discuss Your Cloud Costs</span><i class="fa fa-calendar ml-2"></i>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

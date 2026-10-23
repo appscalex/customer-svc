@@ -1,43 +1,1427 @@
-<!-- Header component start-->
+<!-- Header component start -->
 <app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
-<!-- Header component end-->
-<!-- HERO SLIDER — full width -->
-<app-revolution-slider1></app-revolution-slider1>
-<!-- MainContent -->
+<!-- Header component end -->
+
+<!-- Main Content Container -->
 <div class="main-content">
-  <!-- About Us -->
-  <app-section-vertical-one></app-section-vertical-one>
-  <!-- About Us  End-->
-  <!-- How We Works -->
-  <app-section-vertical-two></app-section-vertical-two>
-  <!-- How We Works End -->
-  <!-- How it Works -->
-  <app-section-three></app-section-three>
-  <!-- How it Works End -->
-  <!-- Our Services -->
-  <app-section-four-services></app-section-four-services>
-  <!-- Our Services -->
-  <!-- Customer -->
-  <!-- <app-section-five-customer></app-section-five-customer> -->
-  <!-- Customer End -->
-  <!-- Project -->
 
-  <!-- Project End -->
-  <!--  Service-->
-  <app-section-seven-service></app-section-seven-service>
-  <!--  Service End-->
-  <!--  Blog-->
-  <app-section-nine-blog></app-section-nine-blog>
-  <!--  Blog End-->
+  <!-- ============================================================
+       SECTION 1: HERO (ATTRACTIVE ENTERPRISE DESIGN)
+       ============================================================ -->
+  <section class="ax-dark-section ax-hero-wrapper position-relative overflow-hidden" style="padding-top: 175px !important; padding-bottom: 90px !important;">
+    <!-- Ambient Gradients -->
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -80px; left: -80px; opacity: 0.25;"></div>
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="bottom: 40px; right: -50px; opacity: 0.22;"></div>
+    <div class="ax-ambient-glow ax-ambient-glow-purple" style="top: 35%; left: 45%; opacity: 0.15;"></div>
 
-  <!-- Client -->
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <!-- Hero Left Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="ax-pill-badge blue">
+            <span class="ax-beacon-dot"></span> Next-Gen DevOps, FinOps & SRE Control Plane
+          </div>
+          <h1 class="display-4 font-weight-bolder text-white mb-3" style="line-height: 1.12; letter-spacing: -0.025em;">
+            Ship Faster.<br>
+            <span class="ax-gradient-text-dynamic">Spend Smarter.</span><br>
+            Stay Reliable.
+          </h1>
+          <p class="lead text-white-50 mb-4" style="font-size: 1.15rem; line-height: 1.7; max-width: 530px;">
+            Unify automated CI/CD pipelines, k6 quality gates, FinOps cloud cost intelligence, and SRE incident lifecycle into one enterprise control plane.
+          </p>
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2" style="font-size: 1rem; padding: 14px 32px;">
+              <span>Book a Technical Demo</span>
+              <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <a routerLink="/platform" class="ax-btn-secondary mb-2" style="font-size: 1rem; padding: 14px 28px;">
+              <i class="fa fa-compass mr-2 text-info"></i>
+              <span>Explore Platform</span>
+            </a>
+          </div>
 
-  <!-- Client End-->
-  <!-- Blog -->
+          <!-- Trust & Value Badges -->
+          <div class="pt-3 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+            <div class="row text-white-50 small font-weight-600">
+              <div class="col-6 mb-2 d-flex align-items-center">
+                <i class="fa fa-check-circle text-success mr-2" style="font-size: 1rem;"></i> Automated CI/CD & k6 Gates
+              </div>
+              <div class="col-6 mb-2 d-flex align-items-center">
+                <i class="fa fa-check-circle text-success mr-2" style="font-size: 1rem;"></i> FinOps Cloud Cost Governance
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <i class="fa fa-check-circle text-success mr-2" style="font-size: 1rem;"></i> SRE Incident Alert Correlation
+              </div>
+              <div class="col-6 d-flex align-items-center">
+                <i class="fa fa-check-circle text-success mr-2" style="font-size: 1rem;"></i> AI Operational Diagnostics
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Blog End-->
+        <!-- Hero Right Column: Interactive Integrated Dashboard Mockup -->
+        <div class="col-lg-6">
+          <div class="ax-dash-container" style="border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 24px 64px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(6, 182, 212, 0.2);">
+            <!-- Window Bar -->
+            <div class="ax-dash-header">
+              <div class="ax-window-dots">
+                <span class="ax-window-dot red"></span>
+                <span class="ax-window-dot yellow"></span>
+                <span class="ax-window-dot green"></span>
+              </div>
+              <!-- Tab Switcher -->
+              <div class="ax-dash-nav-tabs">
+                <button class="ax-dash-nav-btn" [class.active]="activeHeroTab === 'pipeline'" (click)="setHeroTab('pipeline')">
+                  <i class="fa fa-code-fork mr-1"></i> CI/CD
+                </button>
+                <button class="ax-dash-nav-btn" [class.active]="activeHeroTab === 'finops'" (click)="setHeroTab('finops')">
+                  <i class="fa fa-dollar mr-1"></i> FinOps
+                </button>
+                <button class="ax-dash-nav-btn" [class.active]="activeHeroTab === 'sre'" (click)="setHeroTab('sre')">
+                  <i class="fa fa-heartbeat mr-1"></i> SRE
+                </button>
+                <button class="ax-dash-nav-btn" [class.active]="activeHeroTab === 'ai'" (click)="setHeroTab('ai')">
+                  <i class="fa fa-magic mr-1"></i> AI Copilot
+                </button>
+              </div>
+            </div>
+
+            <!-- Tab 1: CI/CD Pipeline Mockup -->
+            <div class="ax-dash-body ax-tab-fade" *ngIf="activeHeroTab === 'pipeline'">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <span class="badge badge-success px-2 py-1 mr-2"><i class="fa fa-check mr-1"></i> PIPELINE PASSED</span>
+                  <span class="text-white-50 small">release/v2.5.0 &bull; commit #8f12a9b</span>
+                </div>
+                <span class="text-white-50 small font-weight-bold">Duration: 3m 48s</span>
+              </div>
+
+              <!-- Pipeline Stages -->
+              <div class="ax-pipeline-flow mb-3">
+                <div class="ax-pipe-node">
+                  <div class="ax-pipe-node-title">1. Build & Lint</div>
+                  <div class="ax-pipe-node-status passed"><i class="fa fa-check-circle"></i> Passed (38s)</div>
+                </div>
+                <div class="ax-pipe-arrow"><i class="fa fa-angle-right"></i></div>
+                <div class="ax-pipe-node">
+                  <div class="ax-pipe-node-title">2. k6 Tests</div>
+                  <div class="ax-pipe-node-status passed"><i class="fa fa-check-circle"></i> P95 142ms</div>
+                </div>
+                <div class="ax-pipe-arrow"><i class="fa fa-angle-right"></i></div>
+                <div class="ax-pipe-node">
+                  <div class="ax-pipe-node-title">3. Security</div>
+                  <div class="ax-pipe-node-status passed"><i class="fa fa-shield"></i> 0 Criticals</div>
+                </div>
+                <div class="ax-pipe-arrow"><i class="fa fa-angle-right"></i></div>
+                <div class="ax-pipe-node" style="border-color: #8b5cf6;">
+                  <div class="ax-pipe-node-title">4. Quality Gate</div>
+                  <div class="ax-pipe-node-status gate"><i class="fa fa-lock"></i> Approved</div>
+                </div>
+                <div class="ax-pipe-arrow"><i class="fa fa-angle-right"></i></div>
+                <div class="ax-pipe-node">
+                  <div class="ax-pipe-node-title">5. Production</div>
+                  <div class="ax-pipe-node-status passed"><i class="fa fa-cloud-upload"></i> Deployed</div>
+                </div>
+              </div>
+
+              <!-- Execution Summary Card -->
+              <div class="p-3 rounded text-white-50 small" style="background: rgba(15,23,42,0.7) !important; border: 1px solid rgba(255,255,255,0.08);">
+                <div class="row">
+                  <div class="col-4">
+                    <span class="d-block text-muted">Test Suites:</span>
+                    <strong class="text-white">142/142 Passed</strong>
+                  </div>
+                  <div class="col-4">
+                    <span class="d-block text-muted">Vulnerabilities:</span>
+                    <strong class="text-success">0 High / 0 Critical</strong>
+                  </div>
+                  <div class="col-4">
+                    <span class="d-block text-muted">Target Cluster:</span>
+                    <strong class="text-info">prod-us-east-1</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: FinOps Cost Mockup -->
+            <div class="ax-dash-body ax-tab-fade" *ngIf="activeHeroTab === 'finops'">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge badge-info px-2 py-1"><i class="fa fa-line-chart mr-1"></i> CLOUD COST INTELLIGENCE</span>
+                <span class="text-white-50 small">Month to Date: October 2026</span>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="p-3 rounded text-center" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                    <span class="text-muted small d-block">Monthly Cloud Run</span>
+                    <strong class="text-white h5 mb-0">$18,420</strong>
+                    <span class="text-success small d-block mt-1"><i class="fa fa-arrow-down"></i> -14% vs Last Month</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded text-center" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                    <span class="text-muted small d-block">Waste Elimination</span>
+                    <strong class="text-success h5 mb-0">$3,200/mo</strong>
+                    <span class="text-info small d-block mt-1">6 opportunities</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-2 rounded text-white-50 small mb-2" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                <i class="fa fa-check-circle text-success mr-1"></i> 4 unattached storage volumes pruned ($84/mo)
+              </div>
+              <div class="p-2 rounded text-white-50 small" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                <i class="fa fa-check-circle text-success mr-1"></i> Rightsized dev node pool: saves $420/mo
+              </div>
+            </div>
+
+            <!-- Tab 3: SRE Incident Mockup -->
+            <div class="ax-dash-body ax-tab-fade" *ngIf="activeHeroTab === 'sre'">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge badge-warning px-2 py-1"><i class="fa fa-bell mr-1"></i> SRE INCIDENT CORRELATION</span>
+                <span class="text-white-50 small">Active Alerts: 0 (Healthy)</span>
+              </div>
+              <div class="p-3 rounded mb-3" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="d-flex justify-content-between text-white-50 small mb-2">
+                  <span>Incident #INC-402: Latency Spike in Payments API</span>
+                  <span class="text-success">Resolved in 4m 12s</span>
+                </div>
+                <div class="small text-white-50">
+                  <strong class="text-info">Correlation Engine:</strong> Linked to deployment commit <code>#7a4b10</code> at 14:02 UTC. Automated rollback triggered & verified.
+                </div>
+              </div>
+              <div class="row text-center text-white-50 small">
+                <div class="col-4">
+                  <span class="text-muted d-block">SLO Target</span>
+                  <strong class="text-white">99.95%</strong>
+                </div>
+                <div class="col-4">
+                  <span class="text-muted d-block">Current Uptime</span>
+                  <strong class="text-success">99.99%</strong>
+                </div>
+                <div class="col-4">
+                  <span class="text-muted d-block">MTTR Average</span>
+                  <strong class="text-info">3.8 mins</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: AI Copilot Mockup -->
+            <div class="ax-dash-body ax-tab-fade" *ngIf="activeHeroTab === 'ai'">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge px-2 py-1" style="background: #8b5cf6; color: #fff;"><i class="fa fa-magic mr-1"></i> AI OPERATIONAL COPILOT</span>
+                <span class="text-white-50 small">Model: AppScaleX Diagnostic Engine</span>
+              </div>
+              <div class="p-3 rounded mb-3" style="background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="small text-white-50 mb-2">
+                  <strong class="text-info">Hypothesized Root Cause:</strong> Connection pool exhaustion on database replica <code>db-read-02</code> following high read concurrency.
+                </div>
+                <div class="small text-white-50">
+                  <strong class="text-success">Recommended Action:</strong> Scale replica pool limit from 50 to 120 and enable Redis cache on endpoint <code>/api/v2/catalog</code>.
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center text-white-50 small">
+                <span><i class="fa fa-user-circle text-info mr-1"></i> Human engineer approval required</span>
+                <span class="badge badge-success px-2 py-1">Confidence 96%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================================
+       SECTION 2: CUSTOMER PROBLEMS (CHALLENGES TO OUTCOMES)
+       ============================================================ -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge" style="background: rgba(37,99,235,0.08); border-color: rgba(37,99,235,0.2); color: #2563eb;">
+          The Operational Bottleneck
+        </div>
+        <h2 class="font-weight-bold" style="color: #0f172a; letter-spacing: -0.01em;">
+          Why Engineering Teams Struggle with Fragmented Cloud Delivery
+        </h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Engineering velocity slows down when teams juggle disparate tools for CI/CD, testing, cost management, and incident response.
+        </p>
+      </div>
+
+      <div class="row">
+        <!-- Problem 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper blue">
+              <i class="fa fa-sitemap"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Fragmented Delivery Toolchains</h5>
+            <p class="text-muted small mb-3">
+              Juggling separate tools for pipelines, testing, container registries, and deployments creates integration friction and visibility silos.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> Single unified operations control plane
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper cyan">
+              <i class="fa fa-hourglass-half"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Slow, Risky Release Cycles</h5>
+            <p class="text-muted small mb-3">
+              Manual verification, missing quality gates, and ad-hoc approval steps prolong releases and increase the risk of production outages.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> Automated pipelines with automated gates
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper emerald">
+              <i class="fa fa-money"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Blind Spots in Cloud Spending</h5>
+            <p class="text-muted small mb-3">
+              Developers lack direct feedback on infrastructure costs, resulting in over-provisioned clusters, idle nodes, and unexpected monthly bills.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> Continuous FinOps visibility & savings
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper amber">
+              <i class="fa fa-bell-slash"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Alert Fatigue & Slow Recovery</h5>
+            <p class="text-muted small mb-3">
+              Uncorrelated telemetry signals flood on-call engineers with noise, making it difficult to pinpoint root causes when incidents occur.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> SRE incident workflows & RCA context
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper purple">
+              <i class="fa fa-shield"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Disconnected Security Checks</h5>
+            <p class="text-muted small mb-3">
+              Security scans conducted as an afterthought outside the delivery pipeline leave codebases exposed to vulnerabilities and compliance gaps.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> Built-in SAST, DAST & container scans
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <div class="ax-feature-icon-wrapper blue">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Repetitive Operational Toil</h5>
+            <p class="text-muted small mb-3">
+              Engineering talent is bogged down reading logs, diagnosing deployment failures, and writing release notes manually.
+            </p>
+            <div class="pt-2 border-top text-success small font-weight-bold">
+              <i class="fa fa-arrow-right mr-1"></i> AI assistance with human oversight
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: FIVE CORE CAPABILITIES
+       ============================================================ -->
+  <section class="py-5 ax-darker-section">
+    <div class="ax-ambient-glow ax-ambient-glow-purple" style="top: 20%; right: 10%;"></div>
+
+    <div class="container py-4 position-relative" style="z-index: 2;">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge purple">Integrated Core Capabilities</div>
+        <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+          One Platform. Five Connected Disciplines.
+        </h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          AppScaleX consolidates your operational toolset into a cohesive engineering platform designed for scale.
+        </p>
+      </div>
+
+      <div class="row">
+        <!-- Capability 1: DevOps Automation -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <div class="ax-feature-icon-wrapper blue">
+              <i class="fa fa-code-fork"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">DevOps Automation</h4>
+            <p class="text-white-50 small mb-3">
+              Automate software delivery workflows from source code commits to multi-environment deployment with orchestrated pipelines and container workflows.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-info mr-2"></i> Pipeline orchestration & runners</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Environment promotion gates</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Container & registry workflows</li>
+            </ul>
+            <a routerLink="/solutions/devops-automation" class="text-info font-weight-bold small">
+              Explore DevOps Automation <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Capability 2: Quality Engineering & Testing -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <div class="ax-feature-icon-wrapper cyan">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">Quality Engineering</h4>
+            <p class="text-white-50 small mb-3">
+              Integrate automated testing, performance validation, and security analysis into delivery pipelines before releases reach production.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-info mr-2"></i> k6 performance & load testing</li>
+              <li><i class="fa fa-check text-info mr-2"></i> OWASP ZAP, SonarQube & Semgrep</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Configurable quality gates</li>
+            </ul>
+            <a routerLink="/solutions/quality-engineering" class="text-info font-weight-bold small">
+              Explore Quality Engineering <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Capability 3: FinOps -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <div class="ax-feature-icon-wrapper emerald">
+              <i class="fa fa-bar-chart"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">FinOps & Cost Control</h4>
+            <p class="text-white-50 small mb-3">
+              Understand infrastructure spending, detect idle or over-provisioned cloud resources, and make cost-aware architectural decisions.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-success mr-2"></i> Hourly & monthly cost breakdown</li>
+              <li><i class="fa fa-check text-success mr-2"></i> Idle resource identification</li>
+              <li><i class="fa fa-check text-success mr-2"></i> Optimization recommendations</li>
+            </ul>
+            <a routerLink="/solutions/finops" class="text-success font-weight-bold small">
+              Explore FinOps <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Capability 4: SRE & Incident Management -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <div class="ax-feature-icon-wrapper amber">
+              <i class="fa fa-heartbeat"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">SRE & Incident Ops</h4>
+            <p class="text-white-50 small mb-3">
+              Improve operational visibility, track latency and error thresholds, correlate alerts with recent deployments, and streamline incident recovery.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-warning mr-2"></i> Service health & metric signals</li>
+              <li><i class="fa fa-check text-warning mr-2"></i> Deployment correlation</li>
+              <li><i class="fa fa-check text-warning mr-2"></i> Incident lifecycle management</li>
+            </ul>
+            <a routerLink="/solutions/sre" class="text-warning font-weight-bold small">
+              Explore SRE & Reliability <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Capability 5: AI-Powered Engineering -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark">
+            <div class="ax-feature-icon-wrapper purple">
+              <i class="fa fa-magic"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">AI-Powered Engineering</h4>
+            <p class="text-white-50 small mb-3">
+              Turn operational logs and telemetry data into actionable intelligence, root-cause hypotheses, and remediation suggestions with human review.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-info mr-2"></i> AI-assisted incident diagnosis</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Failure log summarization</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Human-in-the-loop approvals</li>
+            </ul>
+            <a routerLink="/solutions/ai" class="text-info font-weight-bold small">
+              Explore AI Capabilities <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Capability 6: Platform Architecture Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card dark" style="background: linear-gradient(135deg, rgba(37,99,235,0.15) 0%, rgba(6,182,212,0.1) 100%); border-color: rgba(56,189,248,0.3);">
+            <div class="ax-feature-icon-wrapper cyan">
+              <i class="fa fa-cubes"></i>
+            </div>
+            <h4 class="font-weight-bold text-white mb-2">Unified Platform Architecture</h4>
+            <p class="text-white-50 small mb-3">
+              See how our integrated control plane connects every stage of the software delivery lifecycle from git commit to live operations.
+            </p>
+            <ul class="list-unstyled text-white-50 small mb-4">
+              <li><i class="fa fa-check text-info mr-2"></i> End-to-end SDLC governance</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Granular RBAC & audit trails</li>
+              <li><i class="fa fa-check text-info mr-2"></i> Extensible plugin model</li>
+            </ul>
+            <a routerLink="/platform" class="text-white font-weight-bold small">
+              View Full Architecture <i class="fa fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- ============================================================
+       SECTION 4: PLATFORM OVERVIEW (SDLC WORKFLOW WITH FULL GRID)
+       ============================================================ -->
+  <section class="py-5 ax-dark-section position-relative overflow-hidden">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: 15%; left: -60px; opacity: 0.15;"></div>
+    <div class="container py-4 position-relative" style="z-index: 2;">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge blue">Connected Software Lifecycle</div>
+        <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+          One Unified Flow Across the Software Delivery Lifecycle
+        </h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          Eliminate disconnected hand-offs by linking build, test, quality gates, deployment, and live observability into a single continuous loop.
+        </p>
+      </div>
+
+      <!-- Split Layout: 8-Stage Interactive Progression + Live Controller View -->
+      <div class="row align-items-stretch">
+        <!-- Left Column: The 8 Connected Delivery Stages (Fills Left Side) -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-primary font-weight-bold small">STAGE 01</span>
+                  <i class="fa fa-code text-primary"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Source Code</h6>
+                <p class="text-white-50 small mb-0">Git commit & webhook triggers across GitHub/GitLab</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-primary font-weight-bold small">STAGE 02</span>
+                  <i class="fa fa-cube text-primary"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Build & Lint</h6>
+                <p class="text-white-50 small mb-0">Fast Docker container builds and image packaging</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-cyan font-weight-bold small" style="color: #06b6d4;">STAGE 03</span>
+                  <i class="fa fa-check-square" style="color: #06b6d4;"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Automated Tests</h6>
+                <p class="text-white-50 small mb-0">Unit, integration & k6 load performance benchmarking</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-cyan font-weight-bold small" style="color: #06b6d4;">STAGE 04</span>
+                  <i class="fa fa-lock" style="color: #06b6d4;"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Quality Gate</h6>
+                <p class="text-white-50 small mb-0">Enforce zero-regression thresholds before promotion</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-warning font-weight-bold small">STAGE 05</span>
+                  <i class="fa fa-shield text-warning"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Security Validation</h6>
+                <p class="text-white-50 small mb-0">OWASP ZAP DAST & Semgrep SAST vulnerability scanning</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-warning font-weight-bold small">STAGE 06</span>
+                  <i class="fa fa-cloud-upload text-warning"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Deploy</h6>
+                <p class="text-white-50 small mb-0">Kubernetes & cloud release with canary promotion</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-success font-weight-bold small">STAGE 07</span>
+                  <i class="fa fa-heartbeat text-success"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Observe (SRE)</h6>
+                <p class="text-white-50 small mb-0">Real-time telemetry, SLO checks & alert correlation</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="ax-flow-stage-card">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-success font-weight-bold small">STAGE 08</span>
+                  <i class="fa fa-magic text-success"></i>
+                </div>
+                <h6 class="font-weight-bold text-white mb-1">Optimize (FinOps & AI)</h6>
+                <p class="text-white-50 small mb-0">Continuous cloud rightsizing & root-cause insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Live Unified Control Plane Card (Fills Right Side) -->
+        <div class="col-lg-6">
+          <div class="ax-flow-preview-box h-100 d-flex flex-column p-4">
+            <!-- Window Title Bar -->
+            <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom" style="border-color: rgba(255,255,255,0.08) !important;">
+              <div class="d-flex align-items-center">
+                <span class="badge badge-pill badge-primary px-2 py-1 mr-2" style="font-size: 0.75rem;">LIVE ORCHESTRATION</span>
+                <span class="text-white font-weight-bold small">AppScaleX Lifecycle Engine</span>
+              </div>
+              <span class="text-success small font-weight-bold"><i class="fa fa-circle text-success mr-1"></i> Active</span>
+            </div>
+
+            <!-- Pipeline Status Stream -->
+            <div class="p-3 rounded mb-3" style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255, 255, 255, 0.08);">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-white small font-weight-bold"><i class="fa fa-play text-info mr-2"></i>Execution #RUN-8841</span>
+                <span class="badge badge-success px-2 py-1">Completed (0 Errors)</span>
+              </div>
+              <div class="progress mb-2" style="height: 6px; background: rgba(255,255,255,0.1);">
+                <div class="progress-bar bg-success" style="width: 100%;"></div>
+              </div>
+              <div class="d-flex justify-content-between text-white-50 small font-weight-500" style="font-size: 0.75rem;">
+                <span>VCS Trigger &rarr; Lint &rarr; Test &rarr; Gate &rarr; Deploy</span>
+                <span class="text-info">Verified 100%</span>
+              </div>
+            </div>
+
+            <!-- Key Metrics Cards -->
+            <div class="row mb-3 flex-grow-1">
+              <div class="col-6 mb-2">
+                <div class="p-3 rounded h-100" style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255, 255, 255, 0.08);">
+                  <span class="text-white-50 small d-block mb-1">Quality Gate Enforcement</span>
+                  <strong class="text-white h6 mb-0 d-block"><i class="fa fa-shield text-info mr-1"></i> Pass Threshold: 98%</strong>
+                  <span class="text-success small d-block mt-1">k6 P95: 142ms &bull; 0 Vulns</span>
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="p-3 rounded h-100" style="background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255, 255, 255, 0.08);">
+                  <span class="text-white-50 small d-block mb-1">FinOps Attribution</span>
+                  <strong class="text-white h6 mb-0 d-block"><i class="fa fa-dollar text-success mr-1"></i> -$3,200/mo Saved</strong>
+                  <span class="text-info small d-block mt-1">Orphaned disks cleaned</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Call to action button -->
+            <div class="text-center pt-2">
+              <a routerLink="/platform" class="btn btn-outline-info btn-block rounded-pill py-2 font-weight-bold small">
+                Explore Full Platform Architecture <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ============================================================
+       PRODUCT VIDEO TOUR & WALKTHROUGH
+       ============================================================ -->
+  <section class="py-5 ax-darker-section position-relative overflow-hidden" style="background: #090d16 !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: 20%; left: 50%; transform: translateX(-50%); opacity: 0.18;"></div>
+
+    <div class="container py-4 position-relative" style="z-index: 2;">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <div class="ax-pill-badge cyan">
+          <i class="fa fa-play-circle mr-1"></i> Product Walkthrough
+        </div>
+        <h2 class="display-5 font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+          Watch AppScaleX in <span class="ax-gradient-text-cyan">Action</span>
+        </h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          Take a tour of the AppScaleX engineering operations platform. See how delivery pipelines, automated quality gates, cloud cost intelligence, and SRE incident workflows connect seamlessly.
+        </p>
+      </div>
+
+      <!-- Video Player Frame -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9">
+          <div class="ax-dash-container p-0" style="border: 1px solid rgba(56, 189, 248, 0.25); box-shadow: 0 24px 64px -12px rgba(0, 0, 0, 0.7), 0 0 24px rgba(6, 182, 212, 0.15);">
+            <!-- Window Titlebar -->
+            <div class="ax-dash-header d-flex justify-content-between align-items-center py-2 px-3" style="background: rgba(30, 41, 59, 0.9);">
+              <div class="ax-window-dots">
+                <span class="ax-window-dot red"></span>
+                <span class="ax-window-dot yellow"></span>
+                <span class="ax-window-dot green"></span>
+              </div>
+              <span class="text-white-50 small font-weight-bold" style="font-size: 0.8125rem;">
+                <i class="fa fa-video-camera text-info mr-2"></i>AppScaleX — Platform Overview & Live Demo
+              </span>
+              <span class="badge badge-pill badge-primary px-2 py-1" style="font-size: 0.75rem;">HD Video</span>
+            </div>
+
+            <!-- Video Player -->
+            <div class="position-relative bg-black text-center" style="background: #000000 !important;">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                class="w-100 d-block"
+                style="max-height: 540px; background: #000; outline: none; border-radius: 0 0 14px 14px;"
+              >
+                <source src="assets/video/intro.mp4" type="video/mp4">
+                <source src="video/intro.mp4" type="video/mp4">
+                Your browser does not support HTML5 video playback.
+              </video>
+            </div>
+          </div>
+
+          <!-- Video Takeaways (Perfect Equal Height & Alignment) -->
+          <div class="row justify-content-center mt-4">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="ax-video-badge h-100">
+                <i class="fa fa-code-fork text-primary"></i>
+                <span>CI/CD Automation</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="ax-video-badge h-100">
+                <i class="fa fa-check-square" style="color: #06b6d4;"></i>
+                <span>Quality Gates (k6 & ZAP)</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="ax-video-badge h-100">
+                <i class="fa fa-dollar text-success"></i>
+                <span>FinOps Cost Optimization</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="ax-video-badge h-100">
+                <i class="fa fa-magic" style="color: #a78bfa;"></i>
+                <span>AI Incident Diagnostics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================================
+       SECTION 5: QUALITY ENGINEERING & TESTING SHOWCASE
+       ============================================================ -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="ax-pill-badge" style="background: rgba(6,182,212,0.1); border-color: rgba(6,182,212,0.3); color: #0891b2;">
+            Quality Engineering & Testing
+          </div>
+          <h2 class="font-weight-bold text-dark mb-3" style="letter-spacing: -0.01em;">
+            Test Smarter.<br>Release with Confidence.
+          </h2>
+          <p class="text-muted lead mb-4" style="font-size: 1.05rem;">
+            Integrate automated functionality testing, performance load testing, code quality checks, and application security testing directly into your delivery workflows before software reaches production.
+          </p>
+
+          <div class="mb-4">
+            <div class="d-flex mb-3">
+              <div class="mr-3 text-info"><i class="fa fa-tachometer fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-dark mb-1">k6 Performance & Load Testing</h6>
+                <p class="text-muted small mb-0">Simulate traffic benchmarks and validate latency (P95/P99) before traffic cutover.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="mr-3 text-info"><i class="fa fa-shield fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-dark mb-1">Dynamic & Static Security (OWASP ZAP, Semgrep)</h6>
+                <p class="text-muted small mb-0">Automate vulnerability scanning, secret detection, and code-quality analysis.</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="mr-3 text-info"><i class="fa fa-lock fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-dark mb-1">Configurable Quality Gates</h6>
+                <p class="text-muted small mb-0">Halt promotions automatically when code coverage drops or critical flaws are detected.</p>
+              </div>
+            </div>
+          </div>
+
+          <a routerLink="/solutions/quality-engineering" class="ax-btn-primary">
+            <span>Explore Quality Engineering</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Testing Dashboard Mockup -->
+        <div class="col-lg-6">
+          <div class="ax-dash-container">
+            <div class="ax-dash-header">
+              <span class="text-white font-weight-bold small"><i class="fa fa-check-circle text-success mr-2"></i> QUALITY GATE EXECUTION REPORT</span>
+              <span class="badge badge-success">GATE PASSED</span>
+            </div>
+            <div class="p-4">
+              <!-- Metric Summary -->
+              <div class="row mb-3">
+                <div class="col-6 mb-3">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">k6 Load Latency (P95)</span>
+                    <strong class="text-white h5 mb-0">142 ms</strong>
+                    <span class="text-success small d-block"><i class="fa fa-check"></i> Target < 250ms</span>
+                  </div>
+                </div>
+                <div class="col-6 mb-3">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">Throughput Sustained</span>
+                    <strong class="text-white h5 mb-0">2,500 RPS</strong>
+                    <span class="text-success small d-block"><i class="fa fa-check"></i> Zero errors</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">OWASP ZAP DAST</span>
+                    <strong class="text-white h5 mb-0">0 Critical</strong>
+                    <span class="text-muted small d-block">2 Low informational</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">SonarQube / Semgrep</span>
+                    <strong class="text-white h5 mb-0">Grade A</strong>
+                    <span class="text-success small d-block">84.2% test coverage</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Readiness Verdict -->
+              <div class="p-3 rounded border border-success" style="background: rgba(16,185,129,0.08);">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <strong class="text-success small"><i class="fa fa-check-circle mr-1"></i> Release Promotion Allowed</strong>
+                    <p class="text-white-50 small mb-0">Artifact <code>sha256:d8a1...</code> passed all 4 configured quality gates.</p>
+                  </div>
+                  <span class="badge badge-pill badge-success px-3 py-1">Ready for Prod</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 6: DEVOPS AUTOMATION SHOWCASE
+       ============================================================ -->
+  <section class="py-5 ax-dark-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Dashboard Mockup on Left -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="ax-dash-container">
+            <div class="ax-dash-header">
+              <span class="text-white font-weight-bold small"><i class="fa fa-terminal text-info mr-2"></i> PIPELINE ORCHESTRATION</span>
+              <span class="badge badge-primary">Running: build-deploy-prod</span>
+            </div>
+            <div class="p-4">
+              <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom border-secondary">
+                <div>
+                  <h6 class="text-white mb-0 font-weight-bold">payment-service &bull; release-v2.5.0</h6>
+                  <span class="text-muted small">Triggered by merge into <code>main</code> &bull; Commit #891cf2</span>
+                </div>
+                <span class="badge badge-pill badge-success px-2 py-1">Stage 3 of 4</span>
+              </div>
+
+              <!-- Terminal Output Box -->
+              <div class="p-3 rounded bg-dark border border-secondary text-white-50 font-monospace small mb-3" style="font-family: monospace; font-size: 0.8125rem; background: #090d16 !important;">
+                <div class="text-success">[00:01] Initializing container runtime... OK</div>
+                <div class="text-info">[00:14] Running unit & integration suites (142 tests)... OK</div>
+                <div class="text-white">[00:48] Security validation: Semgrep SAST scan completed: 0 findings</div>
+                <div class="text-white">[01:12] Building container image: appscalex.azurecr.io/payment:v2.5.0</div>
+                <div class="text-info">[02:30] Deploying to staging-east cluster (Canary 10%)...</div>
+                <div class="text-success">[03:15] Quality gate passed: Zero errors detected. Ready for approval.</div>
+              </div>
+
+              <!-- Action Gate -->
+              <div class="d-flex justify-content-between align-items-center p-3 rounded" style="background: rgba(30,41,59,0.7);">
+                <div class="small text-white-50">
+                  <i class="fa fa-user-circle text-info mr-1"></i> Required Reviewer: <strong>Platform Lead</strong>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-sm btn-success px-3 font-weight-bold">Approve Promotion</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy on Right -->
+        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 pl-lg-5">
+          <div class="ax-pill-badge blue">DevOps Automation</div>
+          <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+            Streamline Delivery from Commit to Cloud
+          </h2>
+          <p class="text-white-50 lead mb-4" style="font-size: 1.05rem;">
+            Automate software delivery pipelines with standardized environments, container image management, deployment approvals, and comprehensive execution visibility.
+          </p>
+
+          <ul class="list-unstyled text-white-50 mb-4">
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fa fa-check-circle text-info mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Pipeline Orchestration:</strong> Define, execute, and monitor automated delivery workflows across source repositories and cloud platforms.
+              </div>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fa fa-check-circle text-info mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Environment Governance:</strong> Standardize dev, staging, and production environments with secrets management and approval workflows.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="fa fa-check-circle text-info mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Container Workflows:</strong> Seamlessly integrate Docker and Kubernetes builds with automated container scanning and deployment rules.
+              </div>
+            </li>
+          </ul>
+
+          <a routerLink="/solutions/devops-automation" class="ax-btn-secondary">
+            <span>Explore DevOps Automation</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 7: FINOPS SHOWCASE
+       ============================================================ -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="ax-pill-badge emerald">FinOps & Cloud Cost Optimization</div>
+          <h2 class="font-weight-bold text-dark mb-3" style="letter-spacing: -0.01em;">
+            Take Control of Cloud Costs Without Slowing Engineering Down.
+          </h2>
+          <p class="text-muted lead mb-4" style="font-size: 1.05rem;">
+            Gain continuous visibility into cloud infrastructure spending. Detect idle and underutilized resources, track spending trends, and empower engineering teams to make cost-aware architecture decisions.
+          </p>
+
+          <div class="row mb-4">
+            <div class="col-sm-6 mb-3">
+              <div class="p-3 rounded bg-white border border-light shadow-sm">
+                <i class="fa fa-eye text-success mb-2" style="font-size: 1.4rem;"></i>
+                <h6 class="font-weight-bold text-dark mb-1">Infrastructure Cost Visibility</h6>
+                <p class="text-muted small mb-0">Track hourly and monthly infrastructure expenses mapped to services.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="p-3 rounded bg-white border border-light shadow-sm">
+                <i class="fa fa-trash-o text-success mb-2" style="font-size: 1.4rem;"></i>
+                <h6 class="font-weight-bold text-dark mb-1">Idle Resource Detection</h6>
+                <p class="text-muted small mb-0">Identify unattached storage volumes, orphaned IP addresses, and over-provisioned nodes.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded bg-white border border-light shadow-sm">
+                <i class="fa fa-sliders text-success mb-2" style="font-size: 1.4rem;"></i>
+                <h6 class="font-weight-bold text-dark mb-1">Optimization Insights</h6>
+                <p class="text-muted small mb-0">Receive clear, actionable rightsizing recommendations before bills escalate.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded bg-white border border-light shadow-sm">
+                <i class="fa fa-balance-scale text-success mb-2" style="font-size: 1.4rem;"></i>
+                <h6 class="font-weight-bold text-dark mb-1">Balanced Trade-Offs</h6>
+                <p class="text-muted small mb-0">Evaluate cost savings against performance, availability, and resilience.</p>
+              </div>
+            </div>
+          </div>
+
+          <a routerLink="/solutions/finops" class="ax-btn-primary" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%) !important;">
+            <span>Explore FinOps Capabilities</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- FinOps Dashboard Mockup -->
+        <div class="col-lg-6">
+          <div class="ax-dash-container">
+            <div class="ax-dash-header">
+              <span class="text-white font-weight-bold small"><i class="fa fa-pie-chart text-success mr-2"></i> CLOUD INFRASTRUCTURE SPEND OVERVIEW</span>
+              <span class="badge badge-success">Optimized</span>
+            </div>
+            <div class="p-4">
+              <!-- Spending Cards -->
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">Monthly Cloud Spend</span>
+                    <strong class="text-white h4 mb-0">$18,420</strong>
+                    <span class="text-success small d-block mt-1"><i class="fa fa-arrow-down mr-1"></i> -14% optimization</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary">
+                    <span class="text-muted small d-block">Potential Savings</span>
+                    <strong class="text-success h4 mb-0">$3,200/mo</strong>
+                    <span class="text-cyan small d-block mt-1"><i class="fa fa-check mr-1"></i> 6 rightsizing actions</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Identified Opportunities -->
+              <h6 class="text-white small font-weight-bold mb-2">Identified Optimization Opportunities</h6>
+              <div class="p-2 rounded bg-dark border border-secondary mb-2 text-white-50 small d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="text-white font-weight-bold">4 unattached EBS volumes</span>
+                  <span class="d-block text-muted">us-east-1 &bull; 800 GB provisioned gp3</span>
+                </div>
+                <strong class="text-success">Save $84/mo</strong>
+              </div>
+              <div class="p-2 rounded bg-dark border border-secondary mb-3 text-white-50 small d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="text-white font-weight-bold">Over-provisioned dev cluster node group</span>
+                  <span class="d-block text-muted">Avg CPU 14% over 30 days &bull; Resize to t3.large</span>
+                </div>
+                <strong class="text-success">Save $420/mo</strong>
+              </div>
+
+              <div class="p-2 text-muted small text-center" style="background: rgba(15,23,42,0.6); font-size: 0.75rem;">
+                <i class="fa fa-info-circle mr-1"></i> Real-time cloud usage monitoring. Potential savings calculated based on verified resource telemetry.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 8: SRE SHOWCASE
+       ============================================================ -->
+  <section class="py-5 ax-dark-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- SRE Incident Workflow Diagram on Left -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="ax-dash-container">
+            <div class="ax-dash-header">
+              <span class="text-white font-weight-bold small"><i class="fa fa-heartbeat text-danger mr-2"></i> INCIDENT LIFECYCLE WORKFLOW</span>
+              <span class="badge badge-warning">SEV-2 Resolved</span>
+            </div>
+            <div class="p-4">
+              <!-- Lifecycle Steps -->
+              <div class="ax-incident-workflow">
+                <div class="ax-incident-step resolved-step">
+                  <div class="small font-weight-bold text-success">1. Signal</div>
+                  <span class="text-muted" style="font-size: 0.75rem;">Latency Spike</span>
+                </div>
+                <div class="ax-incident-step resolved-step">
+                  <div class="small font-weight-bold text-success">2. Alert</div>
+                  <span class="text-muted" style="font-size: 0.75rem;">P99 > 300ms</span>
+                </div>
+                <div class="ax-incident-step resolved-step">
+                  <div class="small font-weight-bold text-success">3. Incident</div>
+                  <span class="text-muted" style="font-size: 0.75rem;">INC-4819</span>
+                </div>
+                <div class="ax-incident-step resolved-step">
+                  <div class="small font-weight-bold text-success">4. Investigate</div>
+                  <span class="text-muted" style="font-size: 0.75rem;">RCA Correlation</span>
+                </div>
+                <div class="ax-incident-step active-step">
+                  <div class="small font-weight-bold text-warning">5. Resolved</div>
+                  <span class="text-muted" style="font-size: 0.75rem;">MTTR 7.2m</span>
+                </div>
+              </div>
+
+              <!-- Incident Detail Card -->
+              <div class="p-3 rounded bg-dark border border-secondary text-white-50 small mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <strong class="text-white"><i class="fa fa-exclamation-triangle text-warning mr-1"></i> Incident #INC-4819: Payment API Latency</strong>
+                  <span class="badge badge-success">MTTR: 7.2 min</span>
+                </div>
+                <p class="text-muted mb-2">
+                  <strong>Trigger:</strong> Alert fired when P99 latency crossed 300ms threshold following deployment v2.4.9.
+                </p>
+                <p class="text-muted mb-0">
+                  <strong>Resolution:</strong> Automated rollback executed with platform confirmation. Error rate returned to 0.01%.
+                </p>
+              </div>
+
+              <!-- Signal Monitors -->
+              <div class="row text-center">
+                <div class="col-4">
+                  <span class="text-muted small d-block">Error Rate</span>
+                  <strong class="text-success">0.01%</strong>
+                </div>
+                <div class="col-4">
+                  <span class="text-muted small d-block">Cluster CPU</span>
+                  <strong class="text-info">48%</strong>
+                </div>
+                <div class="col-4">
+                  <span class="text-muted small d-block">Availability</span>
+                  <strong class="text-white">99.98%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy on Right -->
+        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 pl-lg-5">
+          <div class="ax-pill-badge amber">Site Reliability Engineering</div>
+          <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+            Detect Problems Earlier. Recover Faster. Build Confidence.
+          </h2>
+          <p class="text-white-50 lead mb-4" style="font-size: 1.05rem;">
+            Empower SRE and operations teams with real-time health visibility, threshold alerting, deployment failure detection, and streamlined incident investigation workflows.
+          </p>
+
+          <ul class="list-unstyled text-white-50 mb-4">
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fa fa-check-circle text-warning mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Signal Detection & Thresholds:</strong> Monitor CPU, memory, latency, and error rate signals with configurable severity levels.
+              </div>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fa fa-check-circle text-warning mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Deployment Correlation:</strong> Instantly match operational spikes with recent code deployments and environment changes.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="fa fa-check-circle text-warning mr-3 mt-1"></i>
+              <div>
+                <strong class="text-white">Structured Incident Lifecycle:</strong> Manage issues through New, Acknowledged, Investigating, and Resolved states with complete audit history.
+              </div>
+            </li>
+          </ul>
+
+          <a routerLink="/solutions/sre" class="ax-btn-secondary">
+            <span>Explore SRE & Reliability</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 9: AI SHOWCASE
+       ============================================================ -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="ax-pill-badge purple">AI-Powered Engineering Intelligence</div>
+          <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+            Turn Engineering Data Into Actionable Intelligence.
+          </h2>
+          <p class="text-white-50 lead mb-4" style="font-size: 1.05rem;">
+            Leverage AI to interpret operational telemetry, summarize incident logs, formulate root cause hypotheses backed by evidence, and suggest remediation steps with mandatory human oversight.
+          </p>
+
+          <div class="mb-4">
+            <div class="d-flex mb-3">
+              <div class="mr-3 text-info"><i class="fa fa-search fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-white mb-1">AI-Assisted Troubleshooting</h6>
+                <p class="text-white-50 small mb-0">Summarize thousands of lines of deployment and application logs in seconds.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="mr-3 text-info"><i class="fa fa-lightbulb-o fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-white mb-1">Evidence-Backed Root Cause Analysis</h6>
+                <p class="text-white-50 small mb-0">Correlate code changes, configuration updates, and infrastructure telemetry to form root-cause hypotheses.</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="mr-3 text-info"><i class="fa fa-user-circle-o fa-2x"></i></div>
+              <div>
+                <h6 class="font-weight-bold text-white mb-1">Human-in-the-Loop Governance</h6>
+                <p class="text-white-50 small mb-0">Maintain total engineer control—recommendations require review and approval before execution.</p>
+              </div>
+            </div>
+          </div>
+
+          <a routerLink="/solutions/ai" class="ax-btn-primary" style="background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%) !important;">
+            <span>See AI in Action</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <!-- AI Analysis Panel Mockup -->
+        <div class="col-lg-6">
+          <div class="ax-ai-box">
+            <div class="ax-ai-header">
+              <span class="ax-ai-tag"><i class="fa fa-magic"></i> AI Operational Diagnosis</span>
+              <span class="badge badge-secondary small">Model: Operational Intelligence</span>
+            </div>
+
+            <!-- Identified Issue -->
+            <div class="mb-3">
+              <span class="text-muted small text-uppercase font-weight-bold d-block mb-1">1. Identified Issue</span>
+              <div class="p-2 rounded bg-dark border border-danger text-white small">
+                <i class="fa fa-exclamation-circle text-danger mr-2"></i>
+                Spike in HTTP 502 Bad Gateway responses on <code>payment-svc</code> (error rate reached 4.8%).
+              </div>
+            </div>
+
+            <!-- Relevant Evidence -->
+            <div class="mb-3">
+              <span class="text-muted small text-uppercase font-weight-bold d-block mb-1">2. Relevant Telemetry Evidence</span>
+              <div class="p-2 rounded bg-dark border border-secondary text-white-50 small">
+                <ul class="mb-0 pl-3">
+                  <li>Container memory usage jumped from 45% to 94% following deployment #512.</li>
+                  <li>PostgreSQL connection pool exhausted: 100/100 active connections with high idle time.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Probable Root Cause -->
+            <div class="mb-3">
+              <span class="text-muted small text-uppercase font-weight-bold d-block mb-1">3. Probable Root Cause Hypothesis</span>
+              <div class="p-2 rounded bg-dark border border-warning text-white-50 small">
+                Unclosed database connection handle in <code>PaymentController.verifyWebhook()</code> introduced in commit #891cf2.
+              </div>
+            </div>
+
+            <!-- Recommended Next Steps -->
+            <div>
+              <span class="text-muted small text-uppercase font-weight-bold d-block mb-1">4. Recommended Next Steps</span>
+              <div class="p-3 rounded border border-info" style="background: rgba(6,182,212,0.08);">
+                <p class="text-white small mb-2">
+                  Roll back pod to previous stable release <code>v2.4.8</code> and patch connection timeout handler.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-muted small font-italic"><i class="fa fa-lock mr-1"></i> Requires human engineer sign-off</span>
+                  <button class="btn btn-sm btn-info px-3 font-weight-bold">Approve Action</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 10: UNIFIED PLATFORM BENEFITS
+       ============================================================ -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge" style="background: rgba(37,99,235,0.08); border-color: rgba(37,99,235,0.2); color: #2563eb;">
+          Enterprise Value
+        </div>
+        <h2 class="font-weight-bold text-dark mb-3" style="letter-spacing: -0.01em;">
+          The Strategic Advantage of a Unified Platform
+        </h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Bring developers, DevOps engineers, FinOps practitioners, and SRE teams onto a single operational plane.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-compress text-primary mr-2"></i> Reduced Tool Fragmentation</h5>
+            <p class="text-muted small mb-0">
+              Replace disconnected point solutions with a single platform that handles builds, tests, cloud costs, and incidents together.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-bolt text-primary mr-2"></i> Accelerated Release Velocity</h5>
+            <p class="text-muted small mb-0">
+              Automated delivery pipelines and integrated quality gates help teams ship releases faster and with greater consistency.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-dollar text-primary mr-2"></i> Smarter Cloud Spending</h5>
+            <p class="text-muted small mb-0">
+              Equip engineering teams with real-time cost visibility to prevent runaway infrastructure bills and identify idle resources.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-life-ring text-primary mr-2"></i> Faster Incident Recovery</h5>
+            <p class="text-muted small mb-0">
+              Correlate telemetry signals with recent deployments and leverage AI diagnosis to shorten MTTR and maintain customer trust.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-shield text-primary mr-2"></i> Built-In Security Governance</h5>
+            <p class="text-muted small mb-0">
+              Shift security and compliance left with automated vulnerability checks, role-based access control, and deployment audit trails.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-matrix-card">
+            <h5 class="font-weight-bold text-dark mb-2"><i class="fa fa-line-chart text-primary mr-2"></i> Executive Leadership Visibility</h5>
+            <p class="text-muted small mb-0">
+              Provide CTOs and engineering leaders with clear visibility into deployment velocity, infrastructure spending, and system reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 11: HOW IT WORKS (ONBOARDING JOURNEY)
+       ============================================================ -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge blue">Simple Onboarding</div>
+        <h2 class="font-weight-bold text-white mb-3" style="letter-spacing: -0.01em;">
+          How Engineering Teams Get Started
+        </h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          Get your projects, pipelines, and cloud environments up and running in five straightforward steps.
+        </p>
+      </div>
+
+      <div class="row text-center">
+        <!-- Step 1 -->
+        <div class="col-lg col-md-4 col-sm-6 mb-4">
+          <div class="p-3 rounded border border-dark h-100" style="background: rgba(30,41,59,0.4); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white font-weight-bold mb-3" style="width: 44px; height: 44px;">
+              1
+            </div>
+            <h6 class="font-weight-bold text-white mb-2">Connect Source</h6>
+            <p class="text-white-50 small mb-0">Link GitHub, GitLab, or Bitbucket repositories with secure credentials.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-lg col-md-4 col-sm-6 mb-4">
+          <div class="p-3 rounded border border-dark h-100" style="background: rgba(30,41,59,0.4); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-info text-white font-weight-bold mb-3" style="width: 44px; height: 44px;">
+              2
+            </div>
+            <h6 class="font-weight-bold text-white mb-2">Configure Workflows</h6>
+            <p class="text-white-50 small mb-0">Define projects, environments, container registries, and approval policies.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-lg col-md-4 col-sm-6 mb-4">
+          <div class="p-3 rounded border border-dark h-100" style="background: rgba(30,41,59,0.4); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning text-white font-weight-bold mb-3" style="width: 44px; height: 44px;">
+              3
+            </div>
+            <h6 class="font-weight-bold text-white mb-2">Automate Delivery</h6>
+            <p class="text-white-50 small mb-0">Execute automated builds, k6 load tests, security scans, and deployments.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-lg col-md-4 col-sm-6 mb-4">
+          <div class="p-3 rounded border border-dark h-100" style="background: rgba(30,41,59,0.4); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success text-white font-weight-bold mb-3" style="width: 44px; height: 44px;">
+              4
+            </div>
+            <h6 class="font-weight-bold text-white mb-2">Monitor Health & Cost</h6>
+            <p class="text-white-50 small mb-0">Track real-time service telemetry, error rates, and infrastructure spending.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="col-lg col-md-4 col-sm-6 mb-4">
+          <div class="p-3 rounded border border-dark h-100" style="background: rgba(30,41,59,0.4); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle text-white font-weight-bold mb-3" style="width: 44px; height: 44px; background: #8b5cf6;">
+              5
+            </div>
+            <h6 class="font-weight-bold text-white mb-2">Optimize with AI</h6>
+            <p class="text-white-50 small mb-0">Leverage AI insights to rightsize clusters and investigate operational anomalies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 12: FINAL CONVERSION CTA BANNER
+       ============================================================ -->
+  <section class="py-5 ax-dark-section text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+
+    <div class="container py-5 position-relative" style="z-index: 2;">
+      <div class="max-w-700 mx-auto">
+        <div class="ax-pill-badge mb-3">Accelerate Your Engineering Operations</div>
+        <h2 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+          Ready to Make Your Engineering Operations More Efficient?
+        </h2>
+        <p class="text-white-50 lead mb-4" style="font-size: 1.15rem; line-height: 1.7;">
+          Discover how AppScaleX can help your team automate delivery, integrate quality engineering, control cloud costs, and build more reliable systems.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2">
+            <span>Book a Technical Demo</span>
+            <i class="fa fa-calendar ml-2"></i>
+          </a>
+          <a routerLink="/pricing" class="ax-btn-secondary mb-2">
+            <span>View Pricing & Plans</span>
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
-<!-- MainContent End-->
-<!-- Footer start -->
+<!-- Main Content End -->
+
+<!-- Footer component start -->
 <app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
-<!-- Footer end -->
+<!-- Footer component end -->

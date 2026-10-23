@@ -1,0 +1,616 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-cyan" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge cyan">Predictable SaaS Packaging</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Transparent Plans for <span class="ax-gradient-text-cyan">Growing Engineering Teams</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Choose a plan tailored to your delivery scale. Start with automated CI/CD pipelines, expand into FinOps and
+            Quality Engineering, or deploy full Enterprise governance.
+          </p>
+          <div class="d-inline-flex align-items-center px-3 py-2 rounded border border-secondary text-white-50 small"
+            style="background: rgba(30,41,59,0.5);">
+            <i class="fa fa-info-circle text-info mr-2"></i> Custom enterprise quotes available. We adapt to your
+            cluster and project scope.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Detailed Feature Comparison Table with Clear Inclusions & Extra Indicators -->
+  <section class="py-5 ax-white-section border-top">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <div class="ax-pill-badge blue">Capability Inclusions & Highlights</div>
+        <h2 class="font-weight-bold text-dark mb-3">Compare Plan Capabilities</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          See exactly what is included in each tier, what extra capabilities unlock in Growth, and exclusive enterprise
+          features.
+        </p>
+      </div>
+
+      <section class="py-5 ax-light-section">
+        <div class="container py-4">
+          <div class="row align-items-stretch">
+
+            <!-- Plan 1: Starter -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ax-pricing-card h-100 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="ax-pricing-title mb-0">Starter</h3>
+                  <span class="badge badge-light border text-muted px-2 py-1" style="font-size: 0.75rem;">CORE
+                    ESSENTIALS</span>
+                </div>
+                <p class="ax-pricing-desc">For small engineering teams getting started with automated DevOps delivery.
+                </p>
+                <div class="ax-pricing-scope">
+                  <span class="text-dark font-weight-bold" style="font-size: 1.5rem;">Contact Sales</span>
+                  <span class="d-block text-muted small font-weight-normal">Tailored to project count</span>
+                </div>
+
+                <!-- Included In Starter -->
+                <div class="mb-2">
+                  <span class="small font-weight-bold text-dark text-uppercase d-block mb-2"
+                    style="font-size: 0.75rem; letter-spacing: 0.05em; color: #475569;">
+                    <i class="fa fa-check-circle text-success mr-1"></i> Included in Starter:
+                  </span>
+                  <ul class="ax-pricing-list mb-3">
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Core Pipeline Runners:</strong>
+                        <span>automated build workflows</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Up to 5 Projects:</strong>
+                        <span>multi-environment delivery</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Docker Container Builds:</strong>
+                        <span>image registry push</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Execution Logs:</strong>
+                        <span>7 days build & deploy history</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Git Webhooks:</strong>
+                        <span>GitHub, GitLab repository triggers</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-check text-success"></i>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Standard Support:</strong>
+                        <span>community & email support</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Not Included in Starter -->
+                <div class="p-2 rounded mb-4" style="background: #f8fafc; border: 1px dashed #cbd5e1;">
+                  <span class="small font-weight-bold text-muted text-uppercase d-block mb-1"
+                    style="font-size: 0.7rem;">
+                    Not in Starter (Upgrade to Growth):
+                  </span>
+                  <ul class="list-unstyled mb-0 small text-muted" style="line-height: 1.6;">
+                    <li><i class="fa fa-times text-danger mr-2"></i> Quality Engineering (k6 & ZAP)</li>
+                    <li><i class="fa fa-times text-danger mr-2"></i> FinOps Cloud Cost Visibility</li>
+                    <li><i class="fa fa-times text-danger mr-2"></i> SRE Incident Correlation</li>
+                  </ul>
+                </div>
+
+                <a routerLink="/contact"
+                  class="btn btn-outline-primary btn-block rounded-pill font-weight-bold py-2 mt-auto">
+                  Request Starter Quote
+                </a>
+              </div>
+            </div>
+
+            <!-- Plan 2: Growth (Featured) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ax-pricing-card featured h-100 d-flex flex-column"
+                style="border: 2px solid #2563eb; box-shadow: 0 16px 40px rgba(37,99,235,0.15);">
+                <span class="ax-pricing-ribbon">Most Popular</span>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="ax-pricing-title mb-0" style="color: #1d4ed8;">Growth</h3>
+                  <span class="badge badge-pill badge-primary px-2 py-1" style="font-size: 0.75rem;">TEAM SCALE</span>
+                </div>
+                <p class="ax-pricing-desc">For engineering teams scaling delivery, automated testing, and cloud
+                  infrastructure.</p>
+                <div class="ax-pricing-scope">
+                  <span class="text-dark font-weight-bold" style="font-size: 1.5rem;">Contact Sales</span>
+                  <span class="d-block text-muted small font-weight-normal">Customized team deployment</span>
+                </div>
+
+                <!-- Included From Starter Banner -->
+                <div class="p-2 mb-3 rounded" style="background: rgba(37,99,235,0.08); border-left: 3px solid #2563eb;">
+                  <strong class="text-primary small d-block"><i class="fa fa-check-circle mr-1"></i> Includes All 6
+                    Starter Features:</strong>
+                  <span class="text-muted small" style="font-size: 0.78rem;">Pipelines, Docker container builds, Git
+                    webhooks</span>
+                </div>
+
+                <!-- What Extra Things Are Present in Growth -->
+                <div class="mb-3">
+                  <span class="small font-weight-bold text-dark text-uppercase d-block mb-2"
+                    style="font-size: 0.75rem; letter-spacing: 0.05em; color: #1e40af;">
+                    <i class="fa fa-plus-circle text-primary mr-1"></i> Extra Capabilities in Growth:
+                  </span>
+                  <ul class="ax-pricing-list mb-3">
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Unlimited Projects:</strong>
+                        <span>high concurrency execution</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>k6 Performance Testing:</strong>
+                        <span>automated load gates</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Semgrep & OWASP ZAP:</strong>
+                        <span>SAST & DAST security</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>FinOps Cost Tracking:</strong>
+                        <span>AWS/Azure/GCP visibility</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Idle Resource Alerts:</strong>
+                        <span>unattached disks & IPs</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Multi-Stage Gates:</strong>
+                        <span>staging/production approvals</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-primary px-2 py-0.5 mr-2" style="font-size: 0.68rem; font-weight: 700; margin-top: 2px;">+ EXTRA</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Priority Support:</strong>
+                        <span>direct Slack channel & email</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Growth Add-ons -->
+                <div class="p-2 rounded mb-4"
+                  style="background: rgba(6,182,212,0.06); border: 1px dashed rgba(6,182,212,0.3);">
+                  <span class="small font-weight-bold text-info text-uppercase d-block mb-1" style="font-size: 0.7rem;">
+                    <i class="fa fa-cube mr-1"></i> Optional Add-ons for Growth:
+                  </span>
+                  <span class="small text-muted d-block" style="font-size: 0.78rem;">
+                    SRE incident correlation & AI Copilot can be licensed as add-ons.
+                  </span>
+                </div>
+
+                <a routerLink="/contact" class="ax-btn-primary btn-block text-center py-2 mt-auto font-weight-bold">
+                  Discuss Growth Plan
+                </a>
+              </div>
+            </div>
+
+            <!-- Plan 3: Enterprise -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="ax-pricing-card h-100 d-flex flex-column" style="border: 2px solid #0f172a;">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="ax-pricing-title mb-0" style="color: #0f172a;">Enterprise</h3>
+                  <span class="badge badge-dark text-white px-2 py-1" style="font-size: 0.75rem;">MISSION
+                    CRITICAL</span>
+                </div>
+                <p class="ax-pricing-desc">For organizations requiring advanced governance, SRE incident operations, and
+                  AI intelligence.</p>
+                <div class="ax-pricing-scope">
+                  <span class="text-dark font-weight-bold" style="font-size: 1.5rem;">Custom Quote</span>
+                  <span class="d-block text-muted small font-weight-normal">Annual enterprise terms</span>
+                </div>
+
+                <!-- Included From Growth Banner -->
+                <div class="p-2 mb-3 rounded" style="background: rgba(15,23,42,0.06); border-left: 3px solid #0f172a;">
+                  <strong class="text-dark small d-block"><i class="fa fa-check-circle mr-1"></i> Includes All Growth &
+                    Starter Features:</strong>
+                  <span class="text-muted small" style="font-size: 0.78rem;">Full CI/CD, k6 performance, FinOps tracking
+                    & quality gates</span>
+                </div>
+
+                <!-- What Extra Things Are Present in Enterprise -->
+                <div class="mb-3">
+                  <span class="small font-weight-bold text-dark text-uppercase d-block mb-2"
+                    style="font-size: 0.75rem; letter-spacing: 0.05em; color: #0f172a;">
+                    <i class="fa fa-star text-warning mr-1"></i> Enterprise-Exclusive Inclusions:
+                  </span>
+                  <ul class="ax-pricing-list mb-3">
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Dedicated VPC:</strong>
+                        <span>private cloud cluster deployment</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Full SRE Incident Suite:</strong>
+                        <span>alert & deploy correlation</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>AI Diagnostic Copilot:</strong>
+                        <span>automated root cause analysis</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>SAML 2.0 & SSO:</strong>
+                        <span>Okta, Azure AD, Google auth</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Multi-Org RBAC:</strong>
+                        <span>immutable enterprise audit logs</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>Dedicated Architect:</strong>
+                        <span>white-glove onboarding</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="badge badge-dark text-white px-2 py-0.5 mr-2" style="font-size: 0.65rem; font-weight: 700; margin-top: 2px;">EXCLUSIVE</span>
+                      <div class="ax-pricing-item-desc">
+                        <strong>99.99% Financial SLA:</strong>
+                        <span>24/7 incident war room</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <a routerLink="/contact" class="btn btn-dark btn-block rounded-pill font-weight-bold py-2 mt-auto">
+                  Contact Enterprise Sales
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Capability Legend Bar -->
+      <!-- <div class="d-flex flex-wrap justify-content-center align-items-center p-3 mb-4 rounded" style="background: #f8fafc; border: 1px solid #e2e8f0;">
+          <span class="small font-weight-bold text-dark mr-3"><i class="fa fa-info-circle text-primary mr-1"></i> STATUS GUIDE:</span>
+          <span class="small text-success font-weight-bold mr-3"><i class="fa fa-check-circle mr-1"></i> Included</span>
+          <span class="badge badge-primary px-2 py-1 font-weight-bold mr-3" style="font-size: 0.72rem;">+ EXTRA IN TIER</span>
+          <span class="badge badge-info px-2 py-1 font-weight-bold mr-3" style="font-size: 0.72rem;"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span>
+          <span class="small text-muted font-weight-bold"><i class="fa fa-times text-danger mr-1"></i> Not Included</span>
+        </div> -->
+
+      <!-- <div class="table-responsive">
+          <table class="ax-table-custom">
+            <thead>
+              <tr>
+                <th style="width: 34%;">Capability & Scope</th>
+                <th style="width: 22%; text-align: center;">
+                  <span class="d-block font-weight-bold" style="font-size: 1.1rem; color: #0f172a;">Starter</span>
+                  <span class="d-block small text-muted font-weight-normal mt-1">For early delivery teams</span>
+                </th>
+                <th class="ax-table-col-growth" style="width: 22%; text-align: center;">
+                  <span class="badge badge-pill badge-primary px-2 py-1 mb-1" style="font-size: 0.72rem; letter-spacing: 0.04em;">MOST POPULAR</span>
+                  <span class="d-block font-weight-bold" style="font-size: 1.15rem; color: #1d4ed8;">Growth</span>
+                  <span class="d-block small text-primary font-weight-normal mt-1">For scaling engineering teams</span>
+                </th>
+                <th style="width: 22%; text-align: center; background: rgba(15,23,42,0.04);">
+                  <span class="badge badge-pill badge-dark px-2 py-1 mb-1" style="font-size: 0.72rem; letter-spacing: 0.04em;">MISSION CRITICAL</span>
+                  <span class="d-block font-weight-bold" style="font-size: 1.1rem; color: #0f172a;">Enterprise</span>
+                  <span class="d-block small text-muted font-weight-normal mt-1">For large-scale operations</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-code-fork text-primary mr-2"></i>1. CI/CD & Delivery Automation</td>
+              </tr>
+              <tr>
+                <td>Pipeline Orchestration & Runners</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">(Up to 5 Projects)</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">(Unlimited Projects)</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">(Multi-Org Scale)</span></td>
+              </tr>
+              <tr>
+                <td>Container Builds & Docker Registry Push</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small">(High Concurrency)</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">(Dedicated Runners)</span></td>
+              </tr>
+              <tr>
+                <td>Deployment Promotion Gates</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">Basic Manual Approval</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Multi-Stage Automated Gates</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Multi-Tier RBAC & Governance</span></td>
+              </tr>
+              <tr>
+                <td>Source Repository Webhooks (GitHub, GitLab, Bitbucket)</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">(Self-Hosted VCS)</span></td>
+              </tr>
+              <tr>
+                <td>Execution History & Artifact Retention</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">7 Days History</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">90 Days History</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Unlimited Immutable History</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-shield text-info mr-2"></i>2. Quality Engineering & Automated Testing</td>
+              </tr>
+              <tr>
+                <td>Automated Unit & Integration Testing</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span></td>
+              </tr>
+              <tr>
+                <td>k6 Performance & Load Testing</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Automated Load Gates</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Advanced Stress & Benchmarks</span></td>
+              </tr>
+              <tr>
+                <td>Semgrep SAST Code Security Scans</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Standard Rule Packs</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Custom Policy Enforcement</span></td>
+              </tr>
+              <tr>
+                <td>OWASP ZAP Dynamic Web & API Security (DAST)</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Automated API Scans</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Continuous Policy Scans</span></td>
+              </tr>
+              <tr>
+                <td>Configurable Quality Gate Thresholds</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Pass/Fail Thresholds</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Zero-Bypass Hard Stops</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-line-chart text-success mr-2"></i>3. FinOps & Cloud Infrastructure Cost Management</td>
+              </tr>
+              <tr>
+                <td>Multi-Cloud Infrastructure Cost Visibility</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">AWS, Azure, GCP</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Multi-Cloud & Custom Attribution</span></td>
+              </tr>
+              <tr>
+                <td>Idle Resource & Orphaned Disk Detection</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Automated Waste Alerts</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Automated Rightsizing Policies</span></td>
+              </tr>
+              <tr>
+                <td>Budget Alerts & Webhook Notifications</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Slack & Email Alerts</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Multi-Team Department Quotas</span></td>
+              </tr>
+              <tr>
+                <td>Cost Forecasting & Anomaly Reports</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Monthly Spend Trends</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">AI Predictive Spend Modeling</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-heartbeat text-warning mr-2"></i>4. Site Reliability Engineering (SRE) & Incident Operations</td>
+              </tr>
+              <tr>
+                <td>Incident Lifecycle & Alert Correlation</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-info px-2 py-1 font-weight-bold"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Full SRE Suite</span></td>
+              </tr>
+              <tr>
+                <td>Deployment-to-Incident Correlation</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-info px-2 py-1 font-weight-bold"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Real-Time Trigger Analysis</span></td>
+              </tr>
+              <tr>
+                <td>On-Call & Webhook Alerts (PagerDuty, Opsgenie, Slack)</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Webhooks & Slack</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Bi-Directional Integration</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-magic text-purple mr-2"></i>5. AI-Powered Engineering Intelligence</td>
+              </tr>
+              <tr>
+                <td>AI Diagnostic Summarization & RCA Copilot</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-info px-2 py-1 font-weight-bold"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Full Diagnostic Copilot</span></td>
+              </tr>
+              <tr>
+                <td>Hypothesized Root Cause & Remediation Steps</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-info px-2 py-1 font-weight-bold"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">With Source Code Context</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-lock text-dark mr-2"></i>6. Enterprise Security, Governance & Deployment</td>
+              </tr>
+              <tr>
+                <td>Infrastructure Deployment</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">Shared Cloud SaaS</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Dedicated Tenant SaaS</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Custom Dedicated VPC / Cluster</span></td>
+              </tr>
+              <tr>
+                <td>Single Sign-On (SAML 2.0, Okta, Azure AD)</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-info px-2 py-1 font-weight-bold"><i class="fa fa-plus-circle mr-1"></i> Optional Add-On</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Full SAML / Okta SSO</span></td>
+              </tr>
+              <tr>
+                <td>Role-Based Access Control (RBAC)</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">Standard Team Roles</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Configurable Project Roles</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Multi-Org Custom RBAC</span></td>
+              </tr>
+              <tr>
+                <td>Immutable Audit Logs & Enterprise Compliance</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">30 Days Audit Trails</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Unlimited Compliance Trails</span></td>
+              </tr>
+
+              <tr class="table-section-header">
+                <td colspan="4"><i class="fa fa-headphones text-info mr-2"></i>7. Support & Service Level Agreement (SLA)</td>
+              </tr>
+              <tr>
+                <td>Support Coverage</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">Community & Email</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">Priority Slack & Email</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Dedicated 24/7 Channel & War Room</span></td>
+              </tr>
+              <tr>
+                <td>Guaranteed Uptime SLA</td>
+                <td class="text-center"><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small">Standard 99.0%</span></td>
+                <td class="text-center ax-table-col-growth"><span class="badge badge-primary px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-primary small font-weight-bold">99.5% Uptime SLA</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-success small font-weight-bold">99.99% Financial SLA</span></td>
+              </tr>
+              <tr>
+                <td>Dedicated Solutions Architect & Onboarding</td>
+                <td class="text-center"><span class="text-muted font-weight-600"><i class="fa fa-times text-danger mr-1"></i> Not Included</span></td>
+                <td class="text-center ax-table-col-growth"><span class="text-muted small">Assisted Setup Docs</span></td>
+                <td class="text-center"><span class="badge badge-dark px-2 py-1 mb-1 font-weight-bold" style="font-size: 0.68rem;">+ EXTRA</span><br><span class="text-success font-weight-bold"><i class="fa fa-check mr-1"></i> Included</span><span class="d-block text-muted small font-weight-bold">Dedicated Architect & Architecture Reviews</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+
+    </div>
+  </section>
+
+  <!-- Pricing FAQ -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge blue">Got Questions?</div>
+        <h2 class="font-weight-bold text-white mb-3">Pricing FAQ</h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">Click any question below to explore answers regarding
+          billing, packaging, and commercial terms.</p>
+      </div>
+
+      <div class="max-w-800 mx-auto">
+        <div class="ax-faq-card" [class.active]="openFaq === 0">
+          <div class="ax-faq-question" (click)="toggleFaq(0)">
+            <span>How is pricing structured for AppScaleX?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer">
+            Pricing is designed around active projects, managed environments, and pipeline execution volume, ensuring
+            early-stage teams and large enterprises only pay for what they use without surprise overages.
+          </div>
+        </div>
+
+        <div class="ax-faq-card" [class.active]="openFaq === 1">
+          <div class="ax-faq-question" (click)="toggleFaq(1)">
+            <span>Are FinOps and SRE capabilities available separately?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer">
+            Yes. FinOps cloud cost optimization and SRE incident lifecycle management can be licensed as targeted
+            add-ons to Growth plans or bundled comprehensively within Enterprise agreements.
+          </div>
+        </div>
+
+        <div class="ax-faq-card" [class.active]="openFaq === 2">
+          <div class="ax-faq-question" (click)="toggleFaq(2)">
+            <span>Can we deploy AppScaleX inside our private cloud or VPC?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer">
+            Yes. Enterprise customers can deploy AppScaleX runners and control planes directly inside their dedicated
+            AWS, Azure, or GCP Virtual Private Clouds (VPC) or private Kubernetes clusters for full data isolation.
+          </div>
+        </div>
+
+        <div class="ax-faq-card" [class.active]="openFaq === 3">
+          <div class="ax-faq-question" (click)="toggleFaq(3)">
+            <span>How do we request a custom quote or proof of concept (PoC)?</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="ax-faq-answer">
+            Simply click 'Book a Demo' or 'Contact Sales' to share your team size and repository requirements. Our
+            engineering solutions architects will schedule an introductory technical consultation and tailor a trial
+            environment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center"
+    style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Need a Custom Quote for Your Team?</h2>
+      <p class="text-white-50 lead mb-4">Connect with our solutions team to discuss tailored pricing and deployment
+        options.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Talk to Sales</span><i class="fa fa-envelope ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

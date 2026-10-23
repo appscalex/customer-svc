@@ -1,71 +1,109 @@
 <!-- Header -->
 <header class="style-one {{ headeClass ? headeClass : '' }}" id="main-header">
-  <div class="container-fluid sub-header">
-    <div class="row">
+  <!-- Sub-Header (Top Bar) -->
+  <div class="container-fluid sub-header d-none d-md-block">
+    <div class="row align-items-center">
       <div class="col-auto">
         <div class="number-info">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="mailto:{{ contactInfo.email }}"><i class="fa fa-envelope"></i>{{ contactInfo.email }}</a>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="mailto:{{ contactInfo.email }}"><i class="fa fa-envelope mr-1"></i>{{ contactInfo.email }}</a>
             </li>
             <li class="list-inline-item">
-              <a href="tel:{{ contactInfo.contactNumber }}"><i class="fa fa-phone"></i>{{ contactInfo.contactNumber }}</a>
+              <a href="tel:{{ contactInfo.contactNumber }}"><i class="fa fa-phone mr-1"></i>{{ contactInfo.contactNumber }}</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-auto ml-auto sub-main">
         <div class="social-icone">
-          <ul class="list-inline">
-            <li class="d-inline">
-              <a href="https://www.facebook.com/people/Appscalex/100093702220184/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+          <ul class="list-inline mb-0">
+            <li class="d-inline mr-2">
+              <a href="https://www.linkedin.com/company/app-scale-x/home/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="d-inline mr-2">
+              <a href="https://twitter.com/appscalex" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="d-inline mr-2">
+              <a href="https://www.facebook.com/people/Appscalex/100093702220184/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
             </li>
             <li class="d-inline">
-              <a href="https://twitter.com/appscalex" target="_blank"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="d-inline">
-              <a href="https://www.instagram.com/appscalex/" target="_blank"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="d-inline">
-              <a href="https://www.linkedin.com/company/appscalex" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/appscalex/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid main-header">
-    <div class="row">
-      <div class="col-sm-12">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img id="{{ logoId ? 'logo_img' : '' }}" class="img-fluid logo" src="{{ logoImg }}" alt="AppScaleX"/>
+
+  <!-- Main Header Bar -->
+  <div class="container-fluid main-header position-relative">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a class="navbar-brand py-2 mr-auto mr-lg-4 d-flex align-items-center" routerLink="/home" (click)="closeNav()">
+            <img class="img-fluid logo" src="./assets/images/logo.png" alt="AppScaleX DevOps Platform" style="max-height: 40px; width: auto;" />
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="ion-navicon"></i></span>
+
+          <!-- Mobile Hamburger Toggler Button -->
+          <button class="navbar-toggler d-lg-none" 
+                  type="button" 
+                  (click)="toggleNav($event)" 
+                  [attr.aria-expanded]="!isNavCollapsed" 
+                  aria-label="Toggle navigation"
+                  style="padding: 6px 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; background: #ffffff;">
+            <i class="fa" [ngClass]="isNavCollapsed ? 'fa-bars text-dark' : 'fa-times text-primary'" style="font-size: 1.25rem;"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="menu-main-menu-container">
-              <ul id="top-menu" class="navbar-nav ml-auto">
-                <li class="menu-item {{ option.isCurrent !== undefined && option.isCurrent ? 'current-menu-item' : '' }}" *ngFor="let option of navItemList">
-                  <a href="{{ option.href }}">{{ option.title }}</a><i *ngIf="option.submenu" class="fa fa-angle-down toggledrop" aria-hidden="true"></i>
-                  <ul class="sub-menu" *ngIf="option.submenu">
-                    <li *ngFor="let child of option.submenu" class="menu-item {{ child.isCurrent !== undefined && child.isCurrent ? 'current-menu-item' : '' }}">
-                      <a class="isubmenu" [routerLink]="child.href" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">{{ child.title }}</a><i *ngIf="child.submenu" class="fa fa-angle-down toggledrop" aria-hidden="true"></i>
-                      <ul class="sub-menu" *ngIf="child.submenu">
-                        <li class="menu-item" *ngFor="let subchild of child.submenu">
-                          <a class="isubmenu" [routerLink]="subchild.href" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">{{ subchild.title }}</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+
+          <!-- Nav Links Container (Collapsible on Mobile, Horizontal on Desktop) -->
+          <div class="collapse navbar-collapse" [class.show]="!isNavCollapsed" id="navbarSupportedContent">
+            <ul id="top-menu" class="navbar-nav ml-auto align-items-lg-center">
+              <li class="menu-item" *ngFor="let option of navItemList" [class.has-dropdown]="option.submenu" [class.mobile-open]="isSubmenuOpen(option.title)">
+                <!-- If option has submenu, avoid routerLink navigation so it strictly toggles the accordion -->
+                <a *ngIf="option.submenu && option.submenu.length > 0"
+                   href="javascript:void(0)"
+                   class="nav-link-custom d-flex align-items-center justify-content-between"
+                   style="cursor: pointer;"
+                   (click)="handleNavClick(option, $event)">
+                  <span>{{ option.title }}</span>
+                  <i class="fa ml-2" 
+                     [ngClass]="isSubmenuOpen(option.title) ? 'fa-angle-up' : 'fa-angle-down'" 
+                     aria-hidden="true"></i>
+                </a>
+
+                <!-- Standard single link navigation -->
+                <a *ngIf="!option.submenu || option.submenu.length === 0"
+                   [routerLink]="option.href" 
+                   [routerLinkActive]="['active']" 
+                   [routerLinkActiveOptions]="{exact: false}" 
+                   class="nav-link-custom d-flex align-items-center justify-content-between"
+                   (click)="closeNav()">
+                  <span>{{ option.title }}</span>
+                </a>
+
+                <!-- Submenu Accordion Drawer -->
+                <ul class="sub-menu" *ngIf="option.submenu" [class.d-block]="isSubmenuOpen(option.title)">
+                  <li *ngFor="let child of option.submenu" class="menu-item">
+                    <a class="isubmenu" 
+                       [routerLink]="child.href" 
+                       [routerLinkActive]="['active']" 
+                       [routerLinkActiveOptions]="{exact: true}"
+                       (click)="closeNav()">
+                      {{ child.title }}
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="sub-main">
-            <div class="blue-btn button">
-              <a routerLink="/company/contact-us">Get Started</a>
+
+          <!-- Desktop Right-Side CTAs (Strictly hidden on mobile) -->
+          <div class="sub-main d-none d-lg-flex align-items-center ml-3 ml-xl-4 flex-shrink-0">
+            <div class="blue-btn button p-0">
+              <a routerLink="/contact" class="ax-btn-primary" style="padding: 9px 22px !important; font-size: 13.5px !important;">
+                <span>Book a Demo</span>
+              </a>
             </div>
           </div>
         </nav>

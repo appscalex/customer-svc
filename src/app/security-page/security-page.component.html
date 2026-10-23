@@ -1,0 +1,153 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-purple" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge purple">Enterprise Governance & Security</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Security Built into <span class="ax-gradient-text">Every Delivery Stage</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            AppScaleX implements defense-in-depth principles across role-based access controls, encrypted secrets management, automated vulnerability scanning, and immutable audit logs.
+          </p>
+          <a routerLink="/contact" class="ax-btn-primary"><span>Discuss Security Requirements</span><i class="fa fa-shield ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Pillars: Our Security Architecture Pillars -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge purple">Zero-Trust Framework</div>
+        <h2 class="font-weight-bold text-dark mb-3">Our Security Architecture Pillars</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          How AppScaleX protects customer source code, cloud credentials, infrastructure perimeter, and pipeline execution.
+        </p>
+      </div>
+
+      <!-- Compliance & Security Assurance Strip -->
+      <div class="d-flex flex-wrap justify-content-center align-items-center p-3 mb-5 rounded" style="background: #f8fafc; border: 1px solid #e2e8f0;">
+        <span class="small font-weight-bold text-dark mr-3"><i class="fa fa-shield text-purple mr-1"></i> SECURITY BENCHMARKS:</span>
+        <span class="badge badge-light px-2.5 py-1 font-weight-bold mr-2 text-dark border"><i class="fa fa-check text-success mr-1"></i> Enterprise Grade Aligned</span>
+        <span class="badge badge-light px-2.5 py-1 font-weight-bold mr-2 text-dark border"><i class="fa fa-check text-success mr-1"></i> ISO 27001 Principles</span>
+        <span class="badge badge-light px-2.5 py-1 font-weight-bold mr-2 text-dark border"><i class="fa fa-lock text-primary mr-1"></i> AES-256 at Rest</span>
+        <span class="badge badge-light px-2.5 py-1 font-weight-bold mr-2 text-dark border"><i class="fa fa-key text-warning mr-1"></i> TLS 1.3 in Transit</span>
+        <span class="badge badge-light px-2.5 py-1 font-weight-bold text-dark border"><i class="fa fa-user-secret text-info mr-1"></i> Zero-Knowledge Vault</span>
+      </div>
+
+      <div class="row">
+        <!-- Pillar 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-id-card-o"></i></div>
+              <span class="ax-micro-badge purple">OIDC / SAML</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Role-Based Access Control</h5>
+            <p class="text-muted small mb-3">Granular permission tiers for developers, security auditors, QA engineers, and platform administrators. Integrated with Keycloak, Okta, and Azure AD.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Least-Privilege</span>
+              <strong class="text-purple font-weight-bold">Enterprise SSO</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-lock"></i></div>
+              <span class="ax-micro-badge purple">Envelope Encryption</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Encrypted Secrets Handling</h5>
+            <p class="text-muted small mb-3">API keys, tokens, and SSH credentials are encrypted at rest with AES-256 and automatically masked in all pipeline stdout, terminal streams, and logs.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Automatic Masking</span>
+              <strong class="text-purple font-weight-bold">Zero Plaintext</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-sitemap"></i></div>
+              <span class="ax-micro-badge cyan">Network Policy</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Environment Isolation</h5>
+            <p class="text-muted small mb-3">Strict network segmentation and credential boundaries isolate Development, Staging, and Production workloads across distinct Kubernetes namespaces and clusters.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Multi-Cluster Guard</span>
+              <strong class="text-info font-weight-bold">Isolated Scopes</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-check-circle"></i></div>
+              <span class="ax-micro-badge amber">Dual-Key Gate</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Mandatory Approval Gates</h5>
+            <p class="text-muted small mb-3">Enforce mandatory multi-engineer reviews, QA signoffs, or automated OPA policy validations before release artifacts can be deployed to production workloads.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Four-Eyes Principle</span>
+              <strong class="text-warning font-weight-bold">Release Signoff</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-bug"></i></div>
+              <span class="ax-micro-badge blue">Continuous Scan</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Continuous SAST & DAST</h5>
+            <p class="text-muted small mb-3">Native integration of Semgrep static analysis, OWASP ZAP dynamic endpoint scanning, and Trivy container CVE auditing blocks vulnerable builds early.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Shift-Left Security</span>
+              <strong class="text-primary font-weight-bold">Zero Criticals</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-history"></i></div>
+              <span class="ax-micro-badge emerald">Enterprise Ready</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Immutable Audit Trails</h5>
+            <p class="text-muted small mb-3">Every pipeline run, config change, environment variable update, and deployment event is cryptographically logged with user identity and exact UTC timestamp.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Tamper-Proof Logs</span>
+              <strong class="text-success font-weight-bold">Full Provenance</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Have Specific Enterprise Compliance Needs?</h2>
+      <p class="text-white-50 lead mb-4">Speak directly with our security architects to review your deployment and governance requirements.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Schedule a Security Review</span><i class="fa fa-calendar ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

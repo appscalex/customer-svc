@@ -1,0 +1,217 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="ax-pill-badge blue">DevOps Automation Solution</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Automate Software Delivery.<br>
+            <span class="ax-gradient-text">Accelerate Engineering.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Orchestrate complex CI/CD delivery pipelines, automate multi-stage builds, enforce promotion approvals, and manage container workloads across hybrid cloud environments.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2"><span>Book a DevOps Demo</span><i class="fa fa-arrow-right ml-2"></i></a>
+            <a routerLink="/pricing" class="ax-btn-secondary mb-2"><span>View Plans</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="ax-dash-container p-4">
+            <div class="ax-dash-header mb-3">
+              <span class="text-white font-weight-bold small"><i class="fa fa-terminal text-info mr-2"></i> PIPELINE EXECUTION</span>
+              <span class="badge badge-success">v2.5.0 STABLE</span>
+            </div>
+            <div class="p-3 rounded bg-dark border border-secondary text-white-50 small mb-3">
+              <div class="text-success">[OK] SCM Webhook: Triggered by git commit #419f2a</div>
+              <div class="text-info">[OK] Build: Docker multi-stage build succeeded (38s)</div>
+              <div class="text-info">[OK] Static Scan: Semgrep SAST 0 vulnerabilities</div>
+              <div class="text-success">[OK] Target: Deployed to Kubernetes cluster prod-east</div>
+            </div>
+            <div class="d-flex justify-content-between text-muted small">
+              <span>Runner: Cloud Agent</span>
+              <span class="text-success font-weight-bold">Status: All Steps Passed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Capabilities: Engineered for Velocity & Reliability -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge blue">Enterprise Delivery Engine</div>
+        <h2 class="font-weight-bold text-dark mb-3">Engineered for Velocity and Reliability</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Eliminate manual handoffs, reduce pipeline failures, and establish reproducible deployment standards across every environment.
+        </p>
+      </div>
+
+      <!-- Interactive Delivery Lifecycle Rail -->
+      <div class="ax-workflow-rail-box mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+          <span class="small font-weight-bold text-dark text-uppercase" style="letter-spacing: 0.05em;">
+            <i class="fa fa-bolt text-primary mr-1"></i> Continuous Delivery Pipeline Continuum
+          </span>
+          <span class="badge badge-success px-2 py-1"><i class="fa fa-check-circle mr-1"></i> Zero-Downtime Guarantee</span>
+        </div>
+        <div class="ax-workflow-rail-scroll">
+          <div class="ax-workflow-track">
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i class="fa fa-code-fork"></i></div>
+              <div class="ax-workflow-node-title">1. Git Trigger</div>
+              <div class="ax-workflow-node-sub">Branch / Tag / PR</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(6,182,212,0.1); color: #0891b2;"><i class="fa fa-cogs"></i></div>
+              <div class="ax-workflow-node-title">2. Matrix Build</div>
+              <div class="ax-workflow-node-sub">Parallel Runners</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;"><i class="fa fa-cube"></i></div>
+              <div class="ax-workflow-node-title">3. OCI Packaging</div>
+              <div class="ax-workflow-node-sub">ECR / ACR / GCR</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(245,158,11,0.1); color: #d97706;"><i class="fa fa-shield"></i></div>
+              <div class="ax-workflow-node-title">4. Policy Gate</div>
+              <div class="ax-workflow-node-sub">Dual-Key Approval</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(16,185,129,0.1); color: #059669;"><i class="fa fa-cloud-upload"></i></div>
+              <div class="ax-workflow-node-title">5. Multi-Target</div>
+              <div class="ax-workflow-node-sub">Canary / Rolling</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(15,23,42,0.1); color: #0f172a;"><i class="fa fa-line-chart"></i></div>
+              <div class="ax-workflow-node-title">6. Telemetry</div>
+              <div class="ax-workflow-node-sub">SLO & Regressions</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none text-right text-muted small mt-2" style="font-size: 0.72rem;">
+          <i class="fa fa-arrows-h mr-1"></i> Scroll horizontally to view all stages &rarr;
+        </div>
+      </div>
+<!-- Feature Grid -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-code-fork"></i></div>
+              <span class="ax-micro-badge blue">Matrix Caching</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Pipeline Orchestration</h5>
+            <p class="text-muted small mb-3">Define reusable delivery workflows with parallel execution, artifact caching, and dynamic matrix builds to cut runtimes by up to 70%.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> YAML & UI Defined</span>
+              <strong class="text-primary font-weight-bold">Multi-Stage</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-cloud-upload"></i></div>
+              <span class="ax-micro-badge cyan">Zero-Downtime</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Automated Deployment</h5>
+            <p class="text-muted small mb-3">Deploy safely to Kubernetes clusters, VMs, and serverless compute with automated canary, blue-green, and rolling cutover policies.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Auto-Rollback Guard</span>
+              <strong class="text-info font-weight-bold">K8s & Cloud</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-sliders"></i></div>
+              <span class="ax-micro-badge emerald">Scoped Isolation</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Environment Management</h5>
+            <p class="text-muted small mb-3">Manage development, staging, UAT, and production environments with cryptographically scoped secrets, variables, and cluster bindings.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Multi-Tier Scoping</span>
+              <strong class="text-success font-weight-bold">Dev &rarr; Prod</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-check-circle"></i></div>
+              <span class="ax-micro-badge amber">Dual-Key Gate</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Deployment Approvals</h5>
+            <p class="text-muted small mb-3">Enforce manual sign-offs or automated policy-driven gates before promoting code changes to sensitive production workloads.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Audit Compliance</span>
+              <strong class="text-warning font-weight-bold">RBAC Enforced</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-cube"></i></div>
+            <h5 class="font-weight-bold text-dark mb-2">Container Image Workflows</h5>
+            <p class="text-muted small mb-3">Build, tag, scan, and publish OCI-compliant container images directly to AWS ECR, Azure ACR, Google Artifact Registry, or Harbor.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Multi-Arch Builds</span>
+              <strong class="text-purple font-weight-bold">Docker & OCI</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-file-text-o"></i></div>
+              <span class="ax-micro-badge blue">Git-Synced</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Automated Release Notes</h5>
+            <p class="text-muted small mb-3">Automatically parse git commits, PR descriptions, and issue tracker IDs into polished, publish-ready changelogs for engineering teams.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Slack & Jira Sync</span>
+              <strong class="text-primary font-weight-bold">Auto-Generated</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Upgrade Your DevOps Workflow Today</h2>
+      <p class="text-white-50 lead mb-4">See how AppScaleX accelerates delivery and eliminates release bottlenecks.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Schedule a Live Demo</span><i class="fa fa-arrow-right ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

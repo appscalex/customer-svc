@@ -1,7 +1,31 @@
 <!-- Loading [START] -->
-<div id="loading">
-  <div class="loading-center">
-    <img src="./assets/images/loader.gif" alt="loader" />
+<div id="loading" *ngIf="!isLoaded" [class.ax-loader-fading]="isFading">
+  <div class="loading-center ax-loader-container text-center">
+    <!-- Brand Logo with Pulsing Glow -->
+    <div class="ax-loader-logo-wrapper mb-4">
+      <div class="ax-loader-pulse-glow"></div>
+      <img src="./assets/images/logo.png" alt="AppScaleX" class="ax-loader-logo" />
+    </div>
+
+    <!-- Futuristic Dual Orbit Spinner -->
+    <div class="ax-loader-orbit-spinner mb-3">
+      <div class="ax-orbit-ring ax-orbit-ring-1"></div>
+      <div class="ax-orbit-ring ax-orbit-ring-2"></div>
+      <div class="ax-orbit-core"></div>
+    </div>
+
+    <!-- Status Text with Shimmer -->
+    <div class="ax-loader-text">
+      <span class="ax-loader-title">APPSCALEX</span>
+      <span class="ax-loader-sub">
+        <i class="fa fa-circle-o-notch fa-spin mr-1"></i> Initializing Autonomous Platform...
+      </span>
+    </div>
+
+    <!-- Progress Line Bar -->
+    <div class="ax-loader-progress-track">
+      <div class="ax-loader-progress-bar"></div>
+    </div>
   </div>
 </div>
 <!-- Loading [END] -->

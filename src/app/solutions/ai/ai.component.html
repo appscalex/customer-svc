@@ -1,0 +1,226 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-purple" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="ax-pill-badge purple">AI-Powered Engineering Intelligence</div>
+          <h1 class="display-4 font-weight-bolder text-white mb-3" style="letter-spacing: -0.02em;">
+            Turn Engineering Data Into<br>
+            <span class="ax-gradient-text">Actionable Intelligence.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Use AI-assisted analysis to interpret complex operational telemetry, summarize logs, formulate evidence-backed root cause hypotheses, and recommend next steps with human oversight.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2" style="background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%) !important;">
+              <span>See AI in Action</span><i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <a routerLink="/platform" class="ax-btn-secondary mb-2"><span>Platform Architecture</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="ax-ai-box">
+            <div class="ax-ai-header">
+              <span class="ax-ai-tag"><i class="fa fa-magic"></i> AI Diagnostic Copilot</span>
+              <span class="badge badge-secondary">Confidence: 94%</span>
+            </div>
+            <p class="text-white small mb-2"><strong>Issue:</strong> Elevated 502 errors post-deploy v2.4.9</p>
+            <div class="ax-ai-step-item mb-2">
+              <div class="ax-ai-step-num">1</div>
+              <div class="text-white-50 small"><strong>Evidence:</strong> 94% memory utilization, 100/100 DB connections pool saturated.</div>
+            </div>
+            <div class="ax-ai-step-item mb-2">
+              <div class="ax-ai-step-num">2</div>
+              <div class="text-white-50 small"><strong>Hypothesis:</strong> Connection timeout leak in commit #891cf2.</div>
+            </div>
+            <div class="p-2 rounded border border-info small text-white mt-2" style="background: rgba(6,182,212,0.1);">
+              <div class="d-flex justify-content-between align-items-center">
+                <span>Suggested Action: Rollback to v2.4.8</span>
+                <button class="btn btn-sm btn-info py-0 px-2 font-weight-bold" style="font-size: 0.75rem;">Approve</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasoning Flow -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge purple">Explainable Intelligence</div>
+        <h2 class="font-weight-bold text-dark mb-3">How AI Assists Engineering Operations</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          A transparent, evidence-backed diagnostic continuum that assists engineers with deep contextual reasoning while keeping humans firmly in control.
+        </p>
+      </div>
+
+      <!-- Interactive Neural Reasoning Architecture Rail -->
+      <div class="ax-workflow-rail-box mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+          <span class="small font-weight-bold text-dark text-uppercase" style="letter-spacing: 0.05em;">
+            <i class="fa fa-magic text-purple mr-1"></i> Multi-Step Explainable Reasoning Architecture
+          </span>
+          <span class="badge badge-purple px-2 py-1" style="background: rgba(139,92,246,0.15); color: #7c3aed; font-weight: 700;">
+            <i class="fa fa-lock mr-1"></i> 100% Deterministic & Auditable
+          </span>
+        </div>
+        <div class="ax-workflow-rail-scroll">
+          <div class="ax-workflow-track five-steps">
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i class="fa fa-terminal"></i></div>
+              <div class="ax-workflow-node-title">1. Operational Ingest</div>
+              <div class="ax-workflow-node-sub">Logs / Metrics / Traces</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(6,182,212,0.1); color: #0891b2;"><i class="fa fa-code-fork"></i></div>
+              <div class="ax-workflow-node-title">2. Context Mining</div>
+              <div class="ax-workflow-node-sub">Git Commits / PRs</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;"><i class="fa fa-microchip"></i></div>
+              <div class="ax-workflow-node-title">3. Neural Reasoning</div>
+              <div class="ax-workflow-node-sub">Root Cause Analysis</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(245,158,11,0.1); color: #d97706;"><i class="fa fa-file-text-o"></i></div>
+              <div class="ax-workflow-node-title">4. Evidence Synthesis</div>
+              <div class="ax-workflow-node-sub">Confidence Score %</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(16,185,129,0.1); color: #059669;"><i class="fa fa-check-circle"></i></div>
+              <div class="ax-workflow-node-title">5. Human Gate</div>
+              <div class="ax-workflow-node-sub">Engineer 1-Click Fix</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none text-right text-muted small mt-2" style="font-size: 0.72rem;">
+          <i class="fa fa-arrows-h mr-1"></i> Scroll horizontally to view all stages &rarr;
+        </div>
+      </div>
+<!-- Feature Grid -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-file-text-o"></i></div>
+              <span class="ax-micro-badge purple">95% Log Reduction</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Log & Event Summarization</h5>
+            <p class="text-muted small mb-3">Transform massive volumes of Kubernetes stdout, syslog streams, and distributed traces into concise, human-readable triage summaries in seconds.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Noise filtering</span>
+              <strong class="text-purple font-weight-bold">Executive Summary</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-search"></i></div>
+              <span class="ax-micro-badge blue">Pipeline AI</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Deployment Failure Analysis</h5>
+            <p class="text-muted small mb-3">Diagnose build breaks, container crashloops, Helm upgrade timeouts, and schema migration errors with clear pointers to the exact offending lines and dependencies.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Stacktrace parsing</span>
+              <strong class="text-primary font-weight-bold">Line-Level Pinpoint</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-lightbulb-o"></i></div>
+              <span class="ax-micro-badge cyan">Zero Black-Box</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Evidence-Backed Hypotheses</h5>
+            <p class="text-muted small mb-3">Every AI diagnostic insight is substantiated with verifiable signals, commit hashes, release tags, and latency spikes—never unexplainable guesswork.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Auditable proof</span>
+              <strong class="text-info font-weight-bold">Verifiable Signals</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-wrench"></i></div>
+              <span class="ax-micro-badge amber">Runbook Assist</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Actionable Remediation Plans</h5>
+            <p class="text-muted small mb-3">Receive structured remediation procedures, from config rollbacks to pod rightsizing and threadpool adjustments, tailored directly to the diagnosed root cause.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> 1-click execution</span>
+              <strong class="text-warning font-weight-bold">Step-by-Step Runbook</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-user-circle-o"></i></div>
+              <span class="ax-micro-badge emerald">Human-in-the-Loop</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Mandatory Human Governance</h5>
+            <p class="text-muted small mb-3">AI proposes insights and mitigations, but never executes modifications against production systems without explicit authorization from an authorized engineer.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> RBAC dual-key signoff</span>
+              <strong class="text-success font-weight-bold">Zero Autonomous Risk</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-pencil-square-o"></i></div>
+              <span class="ax-micro-badge purple">Auto-Changelog</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Automated Release Documentation</h5>
+            <p class="text-muted small mb-3">Automatically synthesize pull requests, merged git commits, Jira tickets, and performance benchmarks into clean, stakeholder-ready release bulletins.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Markdown & Confluence</span>
+              <strong class="text-purple font-weight-bold">Always Synced</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Empower Your Engineers with AI Intelligence</h2>
+      <p class="text-white-50 lead mb-4">See how AppScaleX reduces operational toil and accelerates problem resolution.</p>
+      <a routerLink="/contact" class="ax-btn-primary" style="background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%) !important;">
+        <span>Schedule an AI Intelligence Demo</span><i class="fa fa-calendar ml-2"></i>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

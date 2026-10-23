@@ -1,14 +1,165 @@
 <!-- Header component start-->
 <app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
 <!-- Header component end-->
-<app-top-banner [data]="data"></app-top-banner>
+
 <div class="main-content">
-    <app-our-services></app-our-services>
-    <app-section-two></app-section-two>
-    <app-section-three></app-section-three>
-    <!-- <app-our-testimonial></app-our-testimonial> -->
-    <!-- <app-our-partner></app-our-partner> -->
+  <!-- Hero Section -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge blue">About AppScaleX</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Automating DevOps.<br>
+            <span class="ax-gradient-text">Accelerating Engineering.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            AppScaleX was founded with a straightforward goal: eliminate the operational friction that slows engineering teams down. We bring DevOps automation, quality engineering, cloud cost intelligence, and reliability engineering into a single unified control plane.
+          </p>
+          <a routerLink="/contact" class="ax-btn-primary"><span>Connect with Our Team</span><i class="fa fa-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Mission & Vision: Guiding Principles -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge blue">Guiding Principles</div>
+        <h2 class="font-weight-bold text-dark mb-3">Our Mission and Vision</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Why we built AppScaleX and how we define the future of software delivery and engineering operations.
+        </p>
+      </div>
+
+      <div class="row align-items-stretch">
+        <!-- Our Mission Card -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="p-4 p-md-5 rounded bg-white border shadow-sm h-100 d-flex flex-column position-relative" style="border-top: 4px solid #2563eb !important; box-shadow: 0 10px 30px rgba(37,99,235,0.06) !important;">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="ax-feature-icon-wrapper blue mb-0" style="width: 52px; height: 52px; font-size: 1.35rem;">
+                <i class="fa fa-bullseye"></i>
+              </div>
+              <span class="ax-micro-badge blue">Core Purpose</span>
+            </div>
+            <h3 class="font-weight-bold text-dark mb-3">Our Mission</h3>
+            <p class="text-muted leading-relaxed mb-4" style="font-size: 1.02rem;">
+              To empower software engineering organizations to ship with high velocity, build with uncompromised quality, operate with financial discipline, and maintain exceptional service reliability. We believe developers should spend their time building product value—not fighting tool fragmentation and infrastructure complexity.
+            </p>
+
+            <div class="mt-auto pt-3 border-top">
+              <h6 class="font-weight-bold text-dark mb-3 small text-uppercase" style="letter-spacing: 0.05em;">Our Core Commitments:</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2.5 d-flex align-items-start">
+                  <i class="fa fa-check-circle text-primary mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Eradicate Tool Fragmentation:</strong> Unify CI/CD, testing, FinOps, SRE, and AI into one continuous pane of glass.</span>
+                </li>
+                <li class="mb-2.5 d-flex align-items-start">
+                  <i class="fa fa-check-circle text-primary mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Accelerate Engineering Velocity:</strong> Automate manual handoffs and multi-cloud cutovers so teams ship 10x faster.</span>
+                </li>
+                <li class="d-flex align-items-start">
+                  <i class="fa fa-check-circle text-primary mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Enterprise-Grade Governance:</strong> Enforce strict verification gates and dual-key signoffs for total release safety.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Vision Card -->
+        <div class="col-lg-6">
+          <div class="p-4 p-md-5 rounded bg-white border shadow-sm h-100 d-flex flex-column position-relative" style="border-top: 4px solid #06b6d4 !important; box-shadow: 0 10px 30px rgba(6,182,212,0.06) !important;">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="ax-feature-icon-wrapper cyan mb-0" style="width: 52px; height: 52px; font-size: 1.35rem;">
+                <i class="fa fa-eye"></i>
+              </div>
+              <span class="ax-micro-badge cyan">The Future State</span>
+            </div>
+            <h3 class="font-weight-bold text-dark mb-3">Our Vision</h3>
+            <p class="text-muted leading-relaxed mb-4" style="font-size: 1.02rem;">
+              An engineering ecosystem where delivery pipelines, quality gates, cloud cost analytics, and incident operations exist within a seamless, intelligent continuum. Where AI assists engineers with evidence-based insights while preserving complete human control and enterprise governance.
+            </p>
+
+            <div class="mt-auto pt-3 border-top">
+              <h6 class="font-weight-bold text-dark mb-3 small text-uppercase" style="letter-spacing: 0.05em;">Future Engineering Horizons:</h6>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2.5 d-flex align-items-start">
+                  <i class="fa fa-check-circle text-info mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Autonomous Operational Intelligence:</strong> Explainable AI that correlates code commits, test suites, costs, and regressions in real time.</span>
+                </li>
+                <li class="mb-2.5 d-flex align-items-start">
+                  <i class="fa fa-check-circle text-info mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Engineering-Led Financial Discipline:</strong> Cloud efficiency engineered directly into pipeline architectures before merges occur.</span>
+                </li>
+                <li class="d-flex align-items-start">
+                  <i class="fa fa-check-circle text-info mr-2 mt-1" style="font-size: 1rem;"></i>
+                  <span class="small text-muted"><strong class="text-dark">Continuous Resilience by Design:</strong> Proactive failure prevention and instantaneous, automated remediation for zero-downtime operations.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Engineering Philosophy -->
+  <section class="py-5 ax-darker-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge cyan">Our Core Philosophy</div>
+        <h2 class="font-weight-bold text-white mb-3">Why Unified Workflows Matter</h2>
+        <p class="text-white-50 lead" style="font-size: 1.05rem;">
+          Modern cloud engineering fails when tools operate in isolated silos. Here is how we think about connected operations.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="p-4 rounded border border-dark h-100 text-center" style="background: rgba(30,41,59,0.5); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="text-info font-weight-bold mb-2">01. VELOCITY</div>
+            <h5 class="text-white font-weight-bold mb-2">Automate Repetitive Toil</h5>
+            <p class="text-white-50 small mb-0">Free engineers from manual builds, packaging, and deployments with robust, repeatable pipelines.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="p-4 rounded border border-dark h-100 text-center" style="background: rgba(30,41,59,0.5); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="text-info font-weight-bold mb-2">02. QUALITY</div>
+            <h5 class="text-white font-weight-bold mb-2">Automated Quality Gates</h5>
+            <p class="text-white-50 small mb-0">Quality and security validation must happen continuously inside the pipeline before releases reach users.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="p-4 rounded border border-dark h-100 text-center" style="background: rgba(30,41,59,0.5); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="text-success font-weight-bold mb-2">03. FINOPS</div>
+            <h5 class="text-white font-weight-bold mb-2">Cost-Aware Decisions</h5>
+            <p class="text-white-50 small mb-0">Infrastructure costs shouldn't be an end-of-month surprise. Give engineers continuous visibility into spending.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="p-4 rounded border border-dark h-100 text-center" style="background: rgba(30,41,59,0.5); border-color: rgba(255,255,255,0.08) !important;">
+            <div class="text-warning font-weight-bold mb-2">04. RELIABILITY</div>
+            <h5 class="text-white font-weight-bold mb-2">Resilience by Design</h5>
+            <p class="text-white-50 small mb-0">Connect observability signals directly to deployments to identify regressions instantly and recover faster.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Partner with AppScaleX</h2>
+      <p class="text-white-50 lead mb-4">Join engineering teams delivering software faster, smarter, and with greater confidence.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Get in Touch with Us</span><i class="fa fa-envelope ml-2"></i></a>
+    </div>
+  </section>
 </div>
+
 <!-- Footer start -->
 <app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
 <!-- Footer end -->

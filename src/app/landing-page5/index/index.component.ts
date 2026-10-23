@@ -13,7 +13,7 @@ export class IndexComponent implements OnInit {
   contactInfo: any = {
     contactNumber: '+91-9435160024',
     email: 'support@appscalex.com',
-    address: '123, Arlington Court, Clover Village, Wanowrie, Pune 411040'
+    address: 'ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066, India'
   };
 
   footerProp: any = {
@@ -23,7 +23,7 @@ export class IndexComponent implements OnInit {
     description: 'The most powerful tool we have as developers is automation.',
   };
 
-  
+
 
   constructor(private plugins: PluginsService) { }
 
@@ -34,7 +34,7 @@ export class IndexComponent implements OnInit {
     const current = this;
     current.plugins.revolutionSlider();
     // tslint:disable-next-line:only-arrow-functions
-    setTimeout(function() {
+    setTimeout(function () {
       current.plugins.index();
     }, 200);
   }

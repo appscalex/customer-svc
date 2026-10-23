@@ -1,0 +1,88 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge blue">Knowledge Base</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Frequently Asked <span class="ax-gradient-text">Questions</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Everything you need to know about the AppScaleX platform, deployment models, FinOps, SRE, AI intelligence, and onboarding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion List -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4 max-w-800">
+
+      <h4 class="font-weight-bold text-dark mb-3">Platform Overview</h4>
+      <div class="ax-faq-card" [class.active]="openFaq === 0">
+        <div class="ax-faq-question" (click)="toggleFaq(0)">What is AppScaleX? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">AppScaleX is an integrated engineering operations platform that unites DevOps CI/CD automation, quality engineering, cloud cost optimization (FinOps), site reliability engineering (SRE), and AI-powered engineering intelligence into a unified control plane.</div>
+      </div>
+      <div class="ax-faq-card" [class.active]="openFaq === 1">
+        <div class="ax-faq-question" (click)="toggleFaq(1)">How does AppScaleX differ from standard CI/CD tools? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Standard CI/CD tools focus solely on build and deploy steps. AppScaleX extends delivery into live operations: embedding automated quality gates (k6, OWASP ZAP), continuous cloud spending visibility, SRE alert correlation, and AI-assisted troubleshooting into a single lifecycle.</div>
+      </div>
+
+      <h4 class="font-weight-bold text-dark mt-4 mb-3">DevOps & Quality Engineering</h4>
+      <div class="ax-faq-card" [class.active]="openFaq === 2">
+        <div class="ax-faq-question" (click)="toggleFaq(2)">Which source code management platforms are supported? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">AppScaleX integrates natively with GitHub, GitLab, and Bitbucket using secure webhooks, OAuth2 tokens, and fine-grained repository permissions.</div>
+      </div>
+      <div class="ax-faq-card" [class.active]="openFaq === 3">
+        <div class="ax-faq-question" (click)="toggleFaq(3)">How do configurable quality gates work? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Quality gates evaluate automated test results (unit, integration, k6 performance benchmarks, and Semgrep security scans) against predefined thresholds. If any critical condition fails, the pipeline halts promotion automatically.</div>
+      </div>
+
+      <h4 class="font-weight-bold text-dark mt-4 mb-3">FinOps & Cost Management</h4>
+      <div class="ax-faq-card" [class.active]="openFaq === 4">
+        <div class="ax-faq-question" (click)="toggleFaq(4)">How does AppScaleX track cloud infrastructure costs? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">AppScaleX correlates provisioned cloud resources across AWS, Azure, and GCP with hourly and monthly cost telemetry, breaking down expenses by service, environment, and cluster.</div>
+      </div>
+      <div class="ax-faq-card" [class.active]="openFaq === 5">
+        <div class="ax-faq-question" (click)="toggleFaq(5)">Can AppScaleX detect idle resources? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Yes, our FinOps engine flags unattached storage volumes, orphaned static IPs, and underutilized nodes based on measured CPU and memory metrics over 30-day windows.</div>
+      </div>
+
+      <h4 class="font-weight-bold text-dark mt-4 mb-3">SRE & AI Intelligence</h4>
+      <div class="ax-faq-card" [class.active]="openFaq === 6">
+        <div class="ax-faq-question" (click)="toggleFaq(6)">How does deployment correlation assist incident response? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">When an alert fires, AppScaleX automatically correlates the timing with recent code deployments, configuration updates, and container version promotions to instantly identify probable triggers.</div>
+      </div>
+      <div class="ax-faq-card" [class.active]="openFaq === 7">
+        <div class="ax-faq-question" (click)="toggleFaq(7)">Is human review required for AI recommendations? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Yes. AppScaleX AI acts as an operational copilot that hypothesizes root causes and suggests remediation steps. All critical production interventions require explicit engineer sign-off.</div>
+      </div>
+
+      <h4 class="font-weight-bold text-dark mt-4 mb-3">Onboarding & Commercials</h4>
+      <div class="ax-faq-card" [class.active]="openFaq === 8">
+        <div class="ax-faq-question" (click)="toggleFaq(8)">How long does onboarding typically take? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Most teams connect their source repositories, configure environments, and run their first automated delivery pipeline in less than an hour. Dedicated enterprise onboarding is also available.</div>
+      </div>
+      <div class="ax-faq-card" [class.active]="openFaq === 9">
+        <div class="ax-faq-question" (click)="toggleFaq(9)">How can I book a live demonstration or request pricing? <i class="fa fa-angle-down"></i></div>
+        <div class="ax-faq-answer">Visit our Contact page to schedule a live technical demo with an AppScaleX solutions engineer and receive a tailored quote for your organization.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Still Have Questions?</h2>
+      <p class="text-white-50 lead mb-4">Our engineering team is here to help walk through your technical requirements.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Get in Touch with Us</span><i class="fa fa-envelope ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

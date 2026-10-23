@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PluginsService } from '../../xamin/plugins.service';
 import { topMenuBarItems } from '../../../constants/menu';
-import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { ContactService } from './contact.service';
 
@@ -34,7 +34,7 @@ export class ContactUsComponent implements OnInit {
     // },
     {
       title: 'India Office',
-      address: '123, Arlington Court, Clover Village, Wanowrie, Pune 411040'
+      address: 'ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066, India'
     },
 
   ];
@@ -43,18 +43,18 @@ export class ContactUsComponent implements OnInit {
     private contactService: ContactService) {
 
     this.angForm = this.fb.group({
-      name: ['', Validators.required ],
-      email: ['', Validators.required ],
-      phone: ['' ],
-      subject: ['', Validators.required ],
-      message: ['', Validators.required ]
-   });
+      name: ['', Validators.required],
+      email: ['', Validators.required],
+      phone: [''],
+      subject: ['', Validators.required],
+      message: ['', Validators.required]
+    });
 
-   }
+  }
 
   ngOnInit() {
     const current = this;
-    setTimeout(function() {
+    setTimeout(function () {
       current.plugins.index();
     }, 200);
   }
@@ -62,18 +62,18 @@ export class ContactUsComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.angForm.valid) {
-        let data =  this.angForm.value ||  {};
-        this.contactService.create(data)
+      let data = this.angForm.value || {};
+      this.contactService.create(data)
         .subscribe({
           next: (res) => {
-          this.showForm = false;
+            this.showForm = false;
           },
-          error: (e) => { 
+          error: (e) => {
             console.error(e);
           }
         });
-      
+
     }
-}
+  }
 
 }

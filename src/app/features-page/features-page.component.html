@@ -1,0 +1,470 @@
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero Section -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-blue" style="top: -50px; left: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="ax-pill-badge blue">Complete Platform Directory</div>
+          <h1 class="display-4 font-weight-bold text-white mb-3" style="letter-spacing: -0.02em;">
+            Every Capability Built for <span class="ax-gradient-text">Engineering Scale</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Explore the comprehensive feature directory of AppScaleX across build orchestration, automated testing, cloud cost governance, SRE incident operations, and AI intelligence.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2"><span>Book Technical Walkthrough</span><i class="fa fa-calendar ml-2"></i></a>
+            <a routerLink="/pricing" class="ax-btn-secondary mb-2"><span>View Pricing Plans</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KPI Strip: Responsive & Clean -->
+  <section class="py-3 border-bottom" style="background: #0f172a; border-color: rgba(255, 255, 255, 0.08) !important;">
+    <div class="container">
+      <div class="row no-gutters mx-n2">
+        <div class="col-6 col-lg-3 px-2 py-1.5 mb-2 mb-lg-0">
+          <div class="rounded d-flex align-items-center h-100" style="background: rgba(30, 41, 59, 0.55); border: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 18px !important;">
+            <div class="text-cyan mr-3 font-weight-bold" style="font-size: 1.65rem; line-height: 1; flex-shrink: 0;">30+</div>
+            <div class="text-left overflow-hidden">
+              <strong class="d-block text-white text-truncate" style="font-size: 0.82rem; line-height: 1.25;">Integrated Features</strong>
+              <span class="text-white-50 text-truncate d-block" style="font-size: 0.72rem;">Full SDLC scope</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 px-2 py-1.5 mb-2 mb-lg-0">
+          <div class="rounded d-flex align-items-center h-100" style="background: rgba(30, 41, 59, 0.55); border: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 18px !important;">
+            <div class="text-primary mr-3 font-weight-bold" style="font-size: 1.65rem; line-height: 1; flex-shrink: 0;">7</div>
+            <div class="text-left overflow-hidden">
+              <strong class="d-block text-white text-truncate" style="font-size: 0.82rem; line-height: 1.25;">Core Disciplines</strong>
+              <span class="text-white-50 text-truncate d-block" style="font-size: 0.72rem;">Continuous platform</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 px-2 py-1.5 mb-2 mb-lg-0">
+          <div class="rounded d-flex align-items-center h-100" style="background: rgba(30, 41, 59, 0.55); border: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 18px !important;">
+            <div class="text-success mr-3 font-weight-bold" style="font-size: 1.65rem; line-height: 1; flex-shrink: 0;">100%</div>
+            <div class="text-left overflow-hidden">
+              <strong class="d-block text-white text-truncate" style="font-size: 0.82rem; line-height: 1.25;">Policy Governed</strong>
+              <span class="text-white-50 text-truncate d-block" style="font-size: 0.72rem;">Strict verification</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 px-2 py-1.5 mb-2 mb-lg-0">
+          <div class="rounded d-flex align-items-center h-100" style="background: rgba(30, 41, 59, 0.55); border: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 18px !important;">
+            <div class="text-warning mr-3 font-weight-bold" style="font-size: 1.65rem; line-height: 1; flex-shrink: 0;">0</div>
+            <div class="text-left overflow-hidden">
+              <strong class="d-block text-white text-truncate" style="font-size: 0.82rem; line-height: 1.25;">Plugin Sprawl</strong>
+              <span class="text-white-50 text-truncate d-block" style="font-size: 0.72rem;">Zero messy add-ons</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Categories Matrix -->
+  <section id="features-catalog" class="py-5 ax-light-section">
+    <div class="container py-4">
+
+      <!-- Category Filter Tabs Bar -->
+      <div class="d-flex flex-wrap justify-content-center mb-5 pb-3">
+        <button type="button" (click)="setCategory('all', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'all'">
+          <i class="fa fa-th-large text-primary mr-2"></i> All Disciplines
+        </button>
+        <button type="button" (click)="setCategory('cat-build', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-build'">
+          <i class="fa fa-code-fork text-primary mr-2"></i> Build &amp; Release
+        </button>
+        <button type="button" (click)="setCategory('cat-infra', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-infra'">
+          <i class="fa fa-server text-info mr-2"></i> Infrastructure
+        </button>
+        <button type="button" (click)="setCategory('cat-quality', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-quality'">
+          <i class="fa fa-check-square-o text-success mr-2"></i> Quality Engineering
+        </button>
+        <button type="button" (click)="setCategory('cat-security', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-security'">
+          <i class="fa fa-shield text-purple mr-2"></i> Security &amp; SAST
+        </button>
+        <button type="button" (click)="setCategory('cat-finops', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-finops'">
+          <i class="fa fa-dollar text-success mr-2"></i> FinOps Cost
+        </button>
+        <button type="button" (click)="setCategory('cat-sre', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-sre'">
+          <i class="fa fa-heartbeat text-warning mr-2"></i> SRE Resilience
+        </button>
+        <button type="button" (click)="setCategory('cat-ai', $event)" class="ax-filter-chip mr-2 mb-2" [class.active]="selectedCategory === 'cat-ai'">
+          <i class="fa fa-magic text-purple mr-2"></i> AI Operations
+        </button>
+      </div>
+
+      <!-- Category 1: Build & Release -->
+      <div class="mb-5" id="cat-build">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper blue mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-code-fork"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Build and Release Automation</h3>
+            <span class="text-muted small">High-speed delivery pipelines, reproducible builds, and safe deployment cutovers</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge blue">Orchestration</span>
+                <i class="fa fa-sitemap text-primary"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Pipeline Orchestration</h5>
+              <p class="text-muted small mb-3">Define multi-stage delivery workflows with parallel execution, artifact caching, and matrix builds to slash cycle times.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> YAML & Visual Designer</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge blue">Containers</span>
+                <i class="fa fa-cube text-primary"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Build Automation</h5>
+              <p class="text-muted small mb-3">Fast, reproducible container and application builds with dedicated isolated runners, BuildKit, and shared layer caches.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Multi-Arch Docker/OCI</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">Zero Downtime</span>
+                <i class="fa fa-cloud-upload text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Deployment Orchestration</h5>
+              <p class="text-muted small mb-3">Automate rollouts to Kubernetes, ECS, VMs, and serverless targets with configurable rolling, canary, or blue-green cutovers.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Automated Health Probes</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge blue">Audit</span>
+                <i class="fa fa-file-text-o text-primary"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Automated Release Notes</h5>
+              <p class="text-muted small mb-3">Automatically parse merged pull requests, commit author details, and ticket keys into polished, stakeholder-ready changelogs.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Slack & Jira Publishing</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge blue">Traceability</span>
+                <i class="fa fa-history text-primary"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Execution History & Audits</h5>
+              <p class="text-muted small mb-3">Full historical visibility into pipeline execution durations, trigger origins, full terminal logs, and stored artifacts for every build.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Immutable Audit Logs</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">Safety</span>
+                <i class="fa fa-undo text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">1-Click Instant Rollback</h5>
+              <p class="text-muted small mb-3">Revert unhealthy deployments to the last verified stable release in under 15 seconds without rerunning full build stages.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Sub-15s Rollback SLA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Infrastructure & Environments -->
+      <div class="mb-5" id="cat-infra">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper cyan mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-server"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Infrastructure & Environments</h3>
+            <span class="text-muted small">Standardized environment tiers, multi-cloud cluster bindings, and encrypted secret scopes</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">Tiering</span>
+                <i class="fa fa-sliders text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Environment Management</h5>
+              <p class="text-muted small mb-3">Standardize configurations, replica counts, and policies across Development, Staging, UAT, and Production tiers.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Multi-Cluster Support</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge purple">Security</span>
+                <i class="fa fa-key text-purple"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Scoped Variables & Secrets</h5>
+              <p class="text-muted small mb-3">Encrypt secrets and API credentials at rest with AES-256 and restrict variable visibility strictly to designated environment scopes.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Masked in All Logs</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">OCI Registry</span>
+                <i class="fa fa-archive text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Container Registry Sync</h5>
+              <p class="text-muted small mb-3">Seamless integration with AWS ECR, Azure ACR, Google Artifact Registry, and Docker Hub with automated authentication.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Automated OIDC Handshake</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: Quality Engineering & Testing -->
+      <div class="mb-5" id="cat-quality">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper emerald mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-check-square-o"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Quality Engineering & Testing</h3>
+            <span class="text-muted small">k6 load simulation, automated regression suites, and deterministic release gates</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge emerald">Test Suites</span>
+                <i class="fa fa-check-circle text-success"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Automated CI/CD Testing</h5>
+              <p class="text-muted small mb-3">Execute unit, integration, end-to-end, and contract tests on every push with parallel runner orchestration.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> JUnit & TestNG Results</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">Performance</span>
+                <i class="fa fa-tachometer text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">k6 Performance & Load</h5>
+              <p class="text-muted small mb-3">Run automated load tests, simulate thousands of virtual users, and measure P95/P99 latency against baseline SLA budgets.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Automated Latency Gates</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge emerald">Policy</span>
+                <i class="fa fa-lock text-success"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Deterministic Quality Gates</h5>
+              <p class="text-muted small mb-3">Halt pipeline progress automatically when code coverage drops, test failures occur, or latency exceeds strict limits.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> 100% Policy Enforced</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4: Security and Code Quality -->
+      <div class="mb-5" id="cat-security">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper purple mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-shield"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Security and Code Quality</h3>
+            <span class="text-muted small">SonarQube & Semgrep SAST, OWASP ZAP DAST, and container CVE audits</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge purple">SAST</span>
+                <i class="fa fa-search text-purple"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">SonarQube & Semgrep SAST</h5>
+              <p class="text-muted small mb-3">Static source code scanning to detect vulnerabilities, security hotspots, code smells, and dependency risks before merge.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Inline Pull Request Comments</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge purple">DAST</span>
+                <i class="fa fa-shield text-purple"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">OWASP ZAP Dynamic Scanning</h5>
+              <p class="text-muted small mb-3">Automated dynamic application security tests executed against live staging endpoints to catch OWASP Top 10 vulnerabilities.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Active Staging Probe</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge amber">CVE Audit</span>
+                <i class="fa fa-archive text-warning"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Container CVE Scans</h5>
+              <p class="text-muted small mb-3">Inspect container base images and OS packages for known vulnerabilities using Trivy before deploying to production clusters.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Block on Critical CVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 5: FinOps -->
+      <div class="mb-5" id="cat-finops">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper emerald mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-dollar"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Cloud Cost Management & FinOps</h3>
+            <span class="text-muted small">Hourly expenditure tracking, idle resource detection, and rightsizing recommendations</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge emerald">Visibility</span>
+                <i class="fa fa-line-chart text-success"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Infrastructure Cost Tracking</h5>
+              <p class="text-muted small mb-3">Monitor hourly and monthly multi-cloud spend across AWS, Azure, and Google Cloud with unified cost dashboards.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Real-Time Telemetry</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge emerald">Zero Waste</span>
+                <i class="fa fa-trash-o text-success"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Idle Resource Sweeper</h5>
+              <p class="text-muted small mb-3">Pinpoint abandoned test clusters, orphaned storage volumes, and unattached IPs to eliminate unnecessary cloud waste.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> 1-Click Resource Cleanup</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge cyan">Rightsizing</span>
+                <i class="fa fa-sliders text-info"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Workload Rightsizing AI</h5>
+              <p class="text-muted small mb-3">Get tailored compute and memory rightsizing suggestions based on actual workload metrics to optimize container utilization.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Safe Headroom Guidance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 6: SRE -->
+      <div class="mb-5" id="cat-sre">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper amber mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-heartbeat"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">Site Reliability Engineering (SRE)</h3>
+            <span class="text-muted small">Service health monitoring, deployment correlation, and incident triage</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge amber">Health</span>
+                <i class="fa fa-tachometer text-warning"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Service Health Observability</h5>
+              <p class="text-muted small mb-3">Monitor CPU, memory saturation, container restart loops, error rates, and P99 latency across all deployed microservices.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Instant Cluster Sync</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge blue">Root Cause</span>
+                <i class="fa fa-refresh text-primary"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Deployment Correlation</h5>
+              <p class="text-muted small mb-3">Connect telemetry regressions, latency spikes, or error bursts directly to recent git commit hashes and pull requests.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Zero-Guesswork Triage</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge amber">Alerts</span>
+                <i class="fa fa-bell text-warning"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Multi-Channel Incident Alerts</h5>
+              <p class="text-muted small mb-3">Route smart, deduplicated alerts to Slack, Microsoft Teams, PagerDuty, or Webhooks when critical thresholds are breached.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Smart Deduplication</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 7: AI Engineering Operations -->
+      <div class="mb-5" id="cat-ai">
+        <div class="d-flex align-items-center mb-4 pb-2 border-bottom">
+          <div class="ax-feature-icon-wrapper purple mr-3 mb-0" style="width: 44px; height: 44px; font-size: 1.15rem;"><i class="fa fa-magic"></i></div>
+          <div>
+            <h3 class="font-weight-bold text-dark mb-0">AI-Powered Engineering Operations</h3>
+            <span class="text-muted small">Evidence-backed root cause assistance, log summaries, and human-in-the-loop governance</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge purple">Log AI</span>
+                <i class="fa fa-file-text-o text-purple"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Log & Trace Summarization</h5>
+              <p class="text-muted small mb-3">Distill millions of stdout log lines and error stacktraces into actionable, human-readable root-cause explanations.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> 95% Noise Reduction</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge purple">Failure AI</span>
+                <i class="fa fa-wrench text-purple"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Build Failure Diagnosis</h5>
+              <p class="text-muted small mb-3">Automatically parse build breaks, helm timeouts, and schema errors with exact line-level recommendations.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> Line-by-Line Fixes</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="ax-feature-interactive-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="ax-micro-badge emerald">Governance</span>
+                <i class="fa fa-user-circle-o text-success"></i>
+              </div>
+              <h5 class="font-weight-bold text-dark mb-2">Human-in-the-Loop Governance</h5>
+              <p class="text-muted small mb-3">AI proposes hypotheses and remediation runbooks, but never applies changes without explicit human authorization.</p>
+              <div class="mt-auto pt-2 border-top small text-muted"><i class="fa fa-check text-success mr-1"></i> 100% Engineer In-Control</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Ready to Experience Every Feature?</h2>
+      <p class="text-white-50 lead mb-4">See how AppScaleX unifies delivery, quality, FinOps, SRE, and AI for modern engineering teams.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Schedule a Personalized Demo</span><i class="fa fa-arrow-right ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

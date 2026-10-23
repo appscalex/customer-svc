@@ -1,0 +1,221 @@
+<!-- Header -->
+<app-header [logoImg]="logoImage" [navItemList]="navItems" [contactInfo]="contactInfo"></app-header>
+
+<div class="main-content">
+  <!-- Hero -->
+  <section class="ax-dark-section py-5" style="padding-top: 180px !important; padding-bottom: 80px !important;">
+    <div class="ax-ambient-glow ax-ambient-glow-purple" style="top: -50px; right: -50px;"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="ax-pill-badge amber">Site Reliability Engineering & Incident Management</div>
+          <h1 class="display-4 font-weight-bolder text-white mb-3" style="letter-spacing: -0.02em;">
+            Detect Problems Earlier.<br>
+            <span class="ax-gradient-text">Recover Faster. Build Confidence.</span>
+          </h1>
+          <p class="lead text-white-50 mb-4" style="line-height: 1.7;">
+            Monitor infrastructure and service signals, classify alerts, correlate incidents with recent code releases, and coordinate fast, reliable incident recovery.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a routerLink="/contact" class="ax-btn-primary mr-3 mb-2"><span>Explore SRE Capabilities</span><i class="fa fa-arrow-right ml-2"></i></a>
+            <a routerLink="/platform" class="ax-btn-secondary mb-2"><span>Platform Architecture</span></a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="ax-dash-container p-4">
+            <div class="ax-dash-header mb-3">
+              <span class="text-white font-weight-bold small"><i class="fa fa-heartbeat text-danger mr-2"></i> SRE INCIDENT TIMELINE</span>
+              <span class="badge badge-warning">SEV-2 Alert</span>
+            </div>
+            <div class="ax-incident-workflow mb-3">
+              <div class="ax-incident-step resolved-step"><strong class="small text-success">Signal</strong></div>
+              <div class="ax-incident-step resolved-step"><strong class="small text-success">Alert</strong></div>
+              <div class="ax-incident-step active-step"><strong class="small text-warning">Investigating</strong></div>
+              <div class="ax-incident-step"><strong class="small text-muted">Resolved</strong></div>
+            </div>
+            <div class="p-3 rounded bg-dark border border-secondary text-white-50 small">
+              <strong class="text-white d-block mb-1">INC-4819: Payment API Latency Spike</strong>
+              <p class="text-muted small mb-2">Correlated with release #512 &bull; Root cause: DB pool exhaustion</p>
+              <div class="d-flex justify-content-between text-success">
+                <span>Mitigation: Rollback deployed</span>
+                <span class="font-weight-bold">MTTR: 7.2 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incident Lifecycle & Features: End-to-End Reliability Engineering -->
+  <section class="py-5 ax-light-section">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="ax-pill-badge amber">Operational Resilience Engine</div>
+        <h2 class="font-weight-bold text-dark mb-3">End-to-End Reliability Engineering</h2>
+        <p class="text-muted lead" style="font-size: 1.05rem;">
+          Connect your alerts, infrastructure telemetry, pipeline deployments, and incident triage into one unified resilience platform.
+        </p>
+      </div>
+
+      <!-- Interactive Incident Lifecycle Rail -->
+      <div class="ax-workflow-rail-box mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom flex-wrap gap-2">
+          <span class="small font-weight-bold text-dark text-uppercase" style="letter-spacing: 0.05em;">
+            <i class="fa fa-heartbeat text-danger mr-1"></i> Automated Incident Triage & Resolution Continuum
+          </span>
+          <span class="badge badge-warning px-2 py-1" style="background: rgba(245,158,11,0.15); color: #d97706; font-weight: 700;">
+            <i class="fa fa-shield mr-1"></i> 99.99% Availability Target
+          </span>
+        </div>
+        <div class="ax-workflow-rail-scroll">
+          <div class="ax-workflow-track five-steps">
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(239,68,68,0.1); color: #ef4444;"><i class="fa fa-bolt"></i></div>
+              <div class="ax-workflow-node-title">1. Signal Detection</div>
+              <div class="ax-workflow-node-sub">&lt; 30s Alert Trigger</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(245,158,11,0.1); color: #d97706;"><i class="fa fa-bell"></i></div>
+              <div class="ax-workflow-node-title">2. Team Escalation</div>
+              <div class="ax-workflow-node-sub">Slack / Teams / Pager</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(37,99,235,0.1); color: #2563eb;"><i class="fa fa-refresh"></i></div>
+              <div class="ax-workflow-node-title">3. Deploy Correlate</div>
+              <div class="ax-workflow-node-sub">Instant PR / Commit ID</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(139,92,246,0.1); color: #7c3aed;"><i class="fa fa-search-plus"></i></div>
+              <div class="ax-workflow-node-title">4. Root Cause AI</div>
+              <div class="ax-workflow-node-sub">Telemetry Evidence</div>
+            </div>
+            <div class="ax-workflow-connector"><i class="fa fa-arrow-right"></i></div>
+            <div class="ax-workflow-node">
+              <div class="ax-workflow-node-icon" style="background: rgba(16,185,129,0.1); color: #059669;"><i class="fa fa-check-circle"></i></div>
+              <div class="ax-workflow-node-title">5. Auto-Mitigate</div>
+              <div class="ax-workflow-node-sub">1-Click Safe Rollback</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none text-right text-muted small mt-2" style="font-size: 0.72rem;">
+          <i class="fa fa-arrows-h mr-1"></i> Scroll horizontally to view all stages &rarr;
+        </div>
+      </div>
+<!-- Feature Grid -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper amber mb-0"><i class="fa fa-tachometer"></i></div>
+              <span class="ax-micro-badge amber">SLI / SLO Tracking</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Service Health Visibility</h5>
+            <p class="text-muted small mb-3">Track CPU, memory saturation, container restart loops, error rates, and P95/P99 latencies across all microservices with unified real-time dashboards.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Multi-Cluster Health</span>
+              <strong class="text-warning font-weight-bold">Sub-Minute Sync</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper red mb-0" style="background: rgba(239,68,68,0.1); color: #ef4444;"><i class="fa fa-bell"></i></div>
+              <span class="ax-micro-badge amber">Zero Fatigue</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Configurable Alert Rules</h5>
+            <p class="text-muted small mb-3">Define static thresholds and dynamic deviation rules with multi-channel routing to Slack, Microsoft Teams, PagerDuty, or custom Webhooks.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Smart deduplication</span>
+              <strong class="text-danger font-weight-bold">Multi-Channel</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper blue mb-0"><i class="fa fa-refresh"></i></div>
+              <span class="ax-micro-badge blue">Blast-Radius</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Deployment Correlation</h5>
+            <p class="text-muted small mb-3">Instantly connect performance degradations, latency spikes, or memory leaks to the exact code commits and pull request merges that caused them.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Commit hash tagging</span>
+              <strong class="text-primary font-weight-bold">Zero Guesswork</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper purple mb-0"><i class="fa fa-list-alt"></i></div>
+              <span class="ax-micro-badge purple">SEV-1 &rarr; SEV-4</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Incident Lifecycle Triage</h5>
+            <p class="text-muted small mb-3">Manage engineering incidents across New, Acknowledged, Investigating, and Resolved states with assigned incident commanders and live war rooms.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> War-room sync</span>
+              <strong class="text-purple font-weight-bold">Mean-Time-To-Resolve</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper cyan mb-0"><i class="fa fa-search-plus"></i></div>
+              <span class="ax-micro-badge cyan">Diagnostic AI</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Root Cause Assistance</h5>
+            <p class="text-muted small mb-3">Surface relevant stacktraces, pod restarts, configuration drifts, and database query latency to slash MTTR from hours to minutes.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Automated evidence</span>
+              <strong class="text-info font-weight-bold">Instant Triage</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="ax-feature-interactive-card">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="ax-feature-icon-wrapper emerald mb-0"><i class="fa fa-history"></i></div>
+              <span class="ax-micro-badge emerald">Audit Proof</span>
+            </div>
+            <h5 class="font-weight-bold text-dark mb-2">Post-Incident Retrospectives</h5>
+            <p class="text-muted small mb-3">Automatically assemble immutable incident timelines, impact graphs, and action items for blameless post-mortems and compliance audits.</p>
+            <div class="mt-auto pt-2 border-top d-flex align-items-center justify-content-between small text-muted">
+              <span><i class="fa fa-check text-success mr-1"></i> Exportable reports</span>
+              <strong class="text-success font-weight-bold">Blameless Review</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 ax-dark-section text-center" style="background: linear-gradient(135deg, #0c1445 0%, #1e3a8a 55%, #161D2F 100%) !important;">
+    <div class="container py-4">
+      <h2 class="font-weight-bold text-white mb-3">Improve Your System Reliability</h2>
+      <p class="text-white-50 lead mb-4">Discover how AppScaleX helps engineering teams detect and resolve incidents faster.</p>
+      <a routerLink="/contact" class="ax-btn-primary"><span>Request an SRE Demo</span><i class="fa fa-arrow-right ml-2"></i></a>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>

@@ -31,8 +31,14 @@ export class PluginsService {
 
   // Function for toggle page Loader...
   public loaderInit(): void {
-    this.$('#load').fadeOut();
-    this.$('#loading').delay(1000).fadeOut('slow');
+    if (this.$ && this.$('#loading').length) {
+      this.$('#load').fadeOut();
+      setTimeout(() => {
+        if (this.$ && this.$('#loading').length) {
+          this.$('#loading').addClass('loaded').fadeOut('slow');
+        }
+      }, 2000);
+    }
   }
 
   public global_scroll($): void {
