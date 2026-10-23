@@ -5826,3 +5826,59 @@ button.ax-filter-chip.active i {
   border-left: 3px solid #2563eb !important;
   padding-left: 14px !important;
 }
+
+/* ==========================================================================
+   DYNAMIC RESPONSIVE HERO PADDING SYSTEM (Desktop & Mobile)
+   Eliminates huge blank gaps on mobile view while maintaining perfect desktop clearance
+   ========================================================================== */
+.ax-hero-wrapper,
+.ax-page-hero,
+section.ax-hero-wrapper,
+section.ax-page-hero,
+.main-content > section:first-of-type.ax-dark-section,
+.main-content > div:first-child > section:first-of-type.ax-dark-section {
+  padding-top: 175px !important;
+  padding-bottom: 80px !important;
+  box-sizing: border-box !important;
+  transition: padding-top 0.25s ease, padding-bottom 0.25s ease !important;
+}
+
+/* Medium Desktop / Laptops (992px to 1199.98px) */
+@media (max-width: 1199.98px) {
+  .ax-hero-wrapper,
+  .ax-page-hero,
+  section.ax-hero-wrapper,
+  section.ax-page-hero,
+  .main-content > section:first-of-type.ax-dark-section,
+  .main-content > div:first-child > section:first-of-type.ax-dark-section {
+    padding-top: 155px !important;
+    padding-bottom: 70px !important;
+  }
+}
+
+/* Mobile & Tablet Viewport (max-width: 991.98px) */
+/* Top bar is hidden, mobile header is ~64px compact */
+@media (max-width: 991.98px) {
+  .ax-hero-wrapper,
+  .ax-page-hero,
+  section.ax-hero-wrapper,
+  section.ax-page-hero,
+  .main-content > section:first-of-type.ax-dark-section,
+  .main-content > div:first-child > section:first-of-type.ax-dark-section {
+    padding-top: 92px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+/* Small Smartphone Viewport (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .ax-hero-wrapper,
+  .ax-page-hero,
+  section.ax-hero-wrapper,
+  section.ax-page-hero,
+  .main-content > section:first-of-type.ax-dark-section,
+  .main-content > div:first-child > section:first-of-type.ax-dark-section {
+    padding-top: 82px !important;
+    padding-bottom: 38px !important;
+  }
+}
